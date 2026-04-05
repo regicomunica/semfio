@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Esportes Final - Comunica SEM FIO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#405f91",
+                    "on-tertiary-container": "#f3673b",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#466270",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#191c1d",
+                    "on-surface": "#191c1d",
+                    "on-primary-fixed-variant": "#264778",
+                    "on-surface-variant": "#43474f",
+                    "on-secondary-fixed": "#001f2a",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-container-high": "#e7e8e9",
+                    "inverse-surface": "#2e3132",
+                    "primary": "#001736",
+                    "tertiary-fixed": "#ffdbd0",
+                    "on-secondary-fixed-variant": "#2e4b57",
+                    "error": "#ba1a1a",
+                    "tertiary": "#330800",
+                    "surface-variant": "#e1e3e4",
+                    "tertiary-container": "#561400",
+                    "background": "#f8f9fa",
+                    "inverse-primary": "#a9c7ff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#7594ca",
+                    "on-primary-fixed": "#001b3d",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#852300",
+                    "surface": "#f8f9fa",
+                    "secondary-fixed-dim": "#adcbda",
+                    "on-error": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "secondary-container": "#c6e4f4",
+                    "primary-fixed": "#d6e3ff",
+                    "outline": "#747780",
+                    "on-secondary-container": "#4a6774",
+                    "surface-dim": "#d9dadb",
+                    "tertiary-fixed-dim": "#ffb59f",
+                    "outline-variant": "#c4c6d0",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#c9e7f7",
+                    "primary-fixed-dim": "#a9c7ff",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#3a0a00",
+                    "primary-container": "#002b5b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#001736]/85 backdrop-blur-md shadow-sm flex justify-between items-center px-6 h-16 w-full max-w-full">
+<div class="text-2xl font-black text-white font-['Newsreader'] tracking-tight">Comunica SEM FIO</div>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-slate-300 hover:text-white transition-colors font-['Newsreader'] font-bold tracking-tight" href="politica.html">Política</a>
+<a class="text-slate-300 hover:text-white transition-colors font-['Newsreader'] font-bold tracking-tight" href="tecnologia.html">Tecnologia</a>
+<a class="text-slate-300 hover:text-white transition-colors font-['Newsreader'] font-bold tracking-tight" href="saude.html">Saúde</a>
+<a class="text-slate-300 hover:text-white transition-colors font-['Newsreader'] font-bold tracking-tight" href="educacao.html">Educação</a>
+<a class="text-slate-300 hover:text-white transition-colors font-['Newsreader'] font-bold tracking-tight" href="justica.html">Justiça</a>
+<a class="text-[#f3673b] border-b-2 border-[#f3673b] pb-1 font-['Newsreader'] font-bold tracking-tight" href="index.html">Esportes</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-2 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="bg-white/10 border-none text-white text-sm rounded-lg pl-9 pr-4 py-1.5 focus:ring-1 focus:ring-[#f3673b] w-48 transition-all" placeholder="Buscar no Esportes" type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-4 py-1.5 rounded-md text-sm font-bold hover:bg-opacity-90 transition-all scale-95 duration-200 active:opacity-80">Sign In</button>
+</div>
+</nav>
+<div class="flex pt-16 flex-1">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col py-4 px-3 h-screen w-64 border-r border-slate-200 sticky top-16 bg-[#f8f9fa]">
+<div class="px-4 mb-6">
+<h2 class="text-lg font-bold text-[#001736]">Editoriais</h2>
+<p class="text-xs text-slate-500">Comunica SEM FIO - Regional</p>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-4 py-2 text-slate-600 hover:bg-slate-100 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-[#f3673b]">policy</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Política</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-600 hover:bg-slate-100 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-[#f3673b]">biotech</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Tecnologia</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-600 hover:bg-slate-100 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-[#f3673b]">construction</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Infraestrutura</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-600 hover:bg-slate-100 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-[#f3673b]">medical_services</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Saúde</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-600 hover:bg-slate-100 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-[#f3673b]">school</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Educação</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-600 hover:bg-slate-100 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-[#f3673b]">gavel</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Justiça</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-600 hover:bg-slate-100 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-[#f3673b]">eco</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Meio Ambiente</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-[#f3673b] font-bold bg-[#f3f4f5] rounded-lg translate-x-1 duration-150" href="#">
+<span class="material-symbols-outlined text-xl">sports_soccer</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Esportes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-600 hover:bg-slate-100 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-[#f3673b]">explore</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Turismo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-600 hover:bg-slate-100 transition-colors rounded-lg group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-[#f3673b]">theater_comedy</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Novelas</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 px-4 py-8 md:px-8 max-w-7xl mx-auto">
+<!-- Hero Bento Section -->
+<section class="grid grid-cols-1 md:grid-cols-4 grid-rows-auto md:grid-rows-2 gap-6 mb-12">
+<!-- Large Featured Story -->
+<article class="md:col-span-3 md:row-span-2 relative overflow-hidden rounded-xl bg-surface-container-lowest group">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent z-10"></div>
+<img alt="Destaque" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="dynamic wide shot of a full stadium at night with stadium lights creating a dramatic lens flare and cheering crowds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqf1iZVdXM1bJYujg94x0lJ1jRsOKK75fmTM1K9ehx49rF8su2NkHYDdmpX2TF7ltiQB_cizeIKDDm8Ybv4JIluHlU_fSnvgRPtyK6X-KXxkwfzCW1RI0oezoqX8HNsSsjapbE_MzKzTzcExiXx09CY-8bTg4ELYiH58Thk5bUMS8W7EV9AUTPN7VmKXMIl8ce4aTeAtC5Q_5cICniVQEHFvDpM-xIiACRTvwpC8FQfxsN1NoZSx_wdRE0ElmbfZuF8ooZ2Do4Ojk"/>
+<div class="absolute bottom-0 left-0 p-8 z-20">
+<span class="bg-on-tertiary-container text-white text-xs px-3 py-1 rounded-full font-bold uppercase tracking-widest mb-4 inline-block">Mercado da Bola</span>
+<h1 class="text-4xl md:text-5xl text-white font-bold leading-tight mb-4 max-w-2xl">Reforço de Peso: Clube Regional Garante Camisa 10 para o Estadual</h1>
+<p class="text-slate-200 text-lg max-w-xl hidden md:block">Negociação sigilosa foi concluída nesta madrugada. O atleta já desembarca no aeroporto local para exames médicos.</p>
+</div>
+</article>
+<!-- Sidebar News 1 -->
+<article class="md:col-span-1 rounded-xl bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between border-l-4 border-on-tertiary-container">
+<div>
+<span class="text-on-tertiary-container font-bold text-xs uppercase tracking-wider">Campeonato Catarinense</span>
+<h3 class="text-xl font-bold mt-2 text-primary">Tabela de Classificação Atualizada</h3>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="text-sm text-slate-500">Há 15 min</span>
+<span class="material-symbols-outlined text-on-tertiary-container">chevron_right</span>
+</div>
+</article>
+<!-- Sidebar News 2 -->
+<article class="md:col-span-1 rounded-xl bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between border-l-4 border-primary">
+<div>
+<span class="text-primary font-bold text-xs uppercase tracking-wider">Vôlei Masculino</span>
+<h3 class="text-xl font-bold mt-2 text-primary">Regional avança para as quartas de final</h3>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="text-sm text-slate-500">Há 1 hora</span>
+<span class="material-symbols-outlined text-on-tertiary-container">chevron_right</span>
+</div>
+</article>
+</section>
+<!-- Tonal Shift: Regional Clubs Section -->
+<section class="bg-surface-container-low -mx-4 md:-mx-8 px-4 md:px-8 py-12 mb-12">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h2 class="text-3xl font-bold text-primary">Clubes da Região</h2>
+<p class="text-on-surface-variant">Acompanhe de perto o dia a dia do seu time do coração.</p>
+</div>
+<button class="text-on-tertiary-container font-bold flex items-center gap-2 hover:underline transition-all">
+                        Ver Todos <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Club Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden hover:shadow-md transition-all">
+<img alt="Treino" class="w-full h-48 object-cover" data-alt="close up of a professional soccer ball on fresh green turf with morning dew and sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOpyAcqa83AR12p8dC-9SFuqlhutwPpsnYEwWs0B-cSIEF1doXnzULSflL9Rm0BjLFF7AeO4cDHsNHBPjUanxr_1ioXGnaI7ju4YQyjQUXR4fUMvmeixW_5ZWFaauPI-tbjFDbuN76n_hMI5vq_vbY3bWyC0pVq95LX3kB5EBdgp17_8_qqIZzxUWWc2E8CsAwg-qYf9CrLyuqSat4D8LFW3aYSsHE7FeWS1t6E7q9umCn_311JdKD3aSu2jfya0Vi4VIDs7oopgY"/>
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">Bastidores do Treino</h3>
+<p class="text-sm text-slate-600 mb-4">Técnico ajusta posicionamento tático antes do clássico de domingo. Foco total na defesa.</p>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs">AVA</div>
+<span class="text-xs font-bold text-primary uppercase">Avaí Notícias</span>
+</div>
+</div>
+</div>
+<!-- Club Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden hover:shadow-md transition-all">
+<img alt="Torcida" class="w-full h-48 object-cover" data-alt="vibrant abstract close up of a crowd in a stadium wearing team colors and waving flags" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMS6HGbM4DjJ3cfx4faLdQ2rz0wId8BojV_avTv0kfNpUzrPoeTABHsIBUnUfjoAl92cyjCgsecdgy1eQiut_7INdS9XkZE1Hz60vci1sHMjMPjdrOsbREU7kbKki1ZVxmfGSYPdmweKzEcGQiFfamvz9JJ7p9SMxZ_Kijjs79tt_qUazZGu2RkTHYww0y3Zg9L6OI10dgmzDRvn6cl4lJPJxYy_gWeyLGKhuOIVBjHkUh4a9YNiaLn-XFlJ1ZLx-GYUwGLvWOLbM"/>
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">Sócios em Festa</h3>
+<p class="text-sm text-slate-600 mb-4">Novas vantagens para o programa de sócio-torcedor foram anunciadas pela diretoria nesta manhã.</p>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-[#f3673b] flex items-center justify-center text-white font-bold text-xs">FIG</div>
+<span class="text-xs font-bold text-primary uppercase">Figueira News</span>
+</div>
+</div>
+</div>
+<!-- Club Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden hover:shadow-md transition-all">
+<img alt="Estádio" class="w-full h-48 object-cover" data-alt="atmospheric shot of an empty soccer stadium at dusk with mist hovering over the pitch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd4qTf6MuqP1jKfaSbktGFhy6skEaR21aEI56hlA1DAIrYthtf5uGUsTgkMe-06D_VgA00ouAp7tIQn64zGAX58FDZIhJ_SvajoEGvlkR61ZvsbyzIMJoASQ8Hgm3gjHpB9iQNYyeDwth52_7BLgD0Vruim3TrLE5E3IJqOKTXG10Qa41il-c3xU5JhT1qMjBaiLDLn3dnJMoGrWAocA-9P7-KePh0IIM-fGNOiakowmmV2XNV8SGuFEKS2chVpmVkm1JaTUOa6vE"/>
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">Obras no Estádio</h3>
+<p class="text-sm text-slate-600 mb-4">Cronograma de reforma segue acelerado para garantir a segurança dos torcedores no próximo mês.</p>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-white font-bold text-xs">CHA</div>
+<span class="text-xs font-bold text-primary uppercase">Chape Online</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Layout: Transfer News -->
+<section class="mb-12">
+<h2 class="text-2xl font-bold text-primary border-b-4 border-on-tertiary-container w-max mb-8 pb-1">Mercado e Transferências</h2>
+<div class="flex flex-col gap-4">
+<div class="flex flex-col md:flex-row items-center gap-6 p-4 rounded-xl hover:bg-surface-container-low transition-all">
+<span class="text-2xl font-bold text-slate-300">01</span>
+<div class="flex-1">
+<h4 class="text-lg font-bold text-primary">Atacante do exterior entra no radar de clube regional</h4>
+<p class="text-sm text-slate-500">Conversas iniciais indicam contrato de 2 anos.</p>
+</div>
+<div class="text-right">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold">EM NEGOCIAÇÃO</span>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-6 p-4 rounded-xl hover:bg-surface-container-low transition-all">
+<span class="text-2xl font-bold text-slate-300">02</span>
+<div class="flex-1">
+<h4 class="text-lg font-bold text-primary">Zagueiro se despede em rede social</h4>
+<p class="text-sm text-slate-500">Jogador ruma para o futebol europeu após 4 temporadas.</p>
+</div>
+<div class="text-right">
+<span class="bg-error-container text-on-error-container px-3 py-1 rounded-full text-xs font-bold">SAÍDA CONFIRMADA</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full py-8 mt-auto bg-[#f3f4f5] border-t border-slate-200 flex flex-col items-center justify-center gap-4 w-full px-8 text-center">
+<div class="flex gap-6 mb-2">
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Privacidade</a>
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Termos</a>
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Contato</a>
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Sobre</a>
+</div>
+<p class="font-['Public_Sans'] text-xs tracking-wide uppercase text-[#001736]">© Reginaldo Osnildo 2026 | CNPJ: 51.872.360/0001-14</p>
+</footer>
+<!-- Mobile Bottom Navigation Shell -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-[#001736]/95 backdrop-blur-md px-6 py-3 flex justify-around items-center z-50 border-t border-white/10">
+<a class="flex flex-col items-center text-slate-400" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] mt-1">Início</span>
+</a>
+<a class="flex flex-col items-center text-[#f3673b]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">sports_soccer</span>
+<span class="text-[10px] mt-1">Esportes</span>
+</a>
+<a class="flex flex-col items-center text-slate-400" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] mt-1">Descobrir</span>
+</a>
+<a class="flex flex-col items-center text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] mt-1">Perfil</span>
+</a>
+</div>
+</body></html>
