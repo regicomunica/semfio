@@ -1,387 +1,371 @@
 <!DOCTYPE html>
 
 <html class="light" lang="pt-BR"><head>
-<!-- Google Tag Manager -->
-<!-- GTM Head Placeholder -->
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Política Final - Pronta para Publicação</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;0,800;1,400&amp;family=Public+Sans:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind -->
+<title>Política Final | Comunica SEM FIO</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "tertiary-fixed-dim": "#ffb59f",
-                    "on-secondary-container": "#4a6774",
-                    "inverse-surface": "#2e3132",
-                    "on-primary-fixed": "#001b3d",
-                    "surface": "#f8f9fa",
-                    "surface-dim": "#d9dadb",
-                    "secondary-fixed": "#c9e7f7",
-                    "error": "#ba1a1a",
-                    "on-background": "#191c1d",
-                    "on-secondary": "#ffffff",
-                    "surface-container-high": "#e7e8e9",
-                    "surface-container-lowest": "#ffffff",
-                    "secondary": "#466270",
-                    "secondary-container": "#c6e4f4",
-                    "on-tertiary": "#ffffff",
-                    "surface-bright": "#f8f9fa",
-                    "primary-container": "#002b5b",
-                    "primary-fixed": "#d6e3ff",
-                    "on-tertiary-fixed": "#3a0a00",
-                    "secondary-fixed-dim": "#adcbda",
-                    "error-container": "#ffdad6",
-                    "inverse-primary": "#a9c7ff",
-                    "surface-container-highest": "#e1e3e4",
-                    "on-primary": "#ffffff",
-                    "on-surface": "#191c1d",
-                    "on-tertiary-container": "#f3673b",
-                    "on-secondary-fixed": "#001f2a",
-                    "inverse-on-surface": "#f0f1f2",
-                    "on-surface-variant": "#43474f",
-                    "on-secondary-fixed-variant": "#2e4b57",
-                    "outline": "#747780",
-                    "primary": "#001736",
-                    "outline-variant": "#c4c6d0",
-                    "primary-fixed-dim": "#a9c7ff",
-                    "on-primary-container": "#7594ca",
-                    "tertiary": "#330800",
-                    "tertiary-container": "#561400",
-                    "surface-container-low": "#f3f4f5",
-                    "on-error-container": "#93000a",
-                    "on-error": "#ffffff",
-                    "background": "#f8f9fa",
-                    "tertiary-fixed": "#ffdbd0",
-                    "on-tertiary-fixed-variant": "#852300",
-                    "surface-variant": "#e1e3e4",
-                    "surface-tint": "#405f91",
-                    "surface-container": "#edeeef",
-                    "on-primary-fixed-variant": "#264778"
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#405f91",
+                        "on-tertiary-container": "#f3673b",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#466270",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#191c1d",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed-variant": "#264778",
+                        "on-surface-variant": "#43474f",
+                        "on-secondary-fixed": "#001f2a",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-surface": "#2e3132",
+                        "primary": "#001736",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-secondary-fixed-variant": "#2e4b57",
+                        "error": "#ba1a1a",
+                        "tertiary": "#330800",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary-container": "#561400",
+                        "background": "#f8f9fa",
+                        "inverse-primary": "#a9c7ff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#7594ca",
+                        "on-primary-fixed": "#001b3d",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary-fixed-variant": "#852300",
+                        "surface": "#f8f9fa",
+                        "secondary-fixed-dim": "#adcbda",
+                        "on-error": "#ffffff",
+                        "surface-container": "#edeeef",
+                        "secondary-container": "#c6e4f4",
+                        "primary-fixed": "#d6e3ff",
+                        "outline": "#747780",
+                        "on-secondary-container": "#4a6774",
+                        "surface-dim": "#d9dadb",
+                        "tertiary-fixed-dim": "#ffb59f",
+                        "outline-variant": "#c4c6d0",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#c9e7f7",
+                        "primary-fixed-dim": "#a9c7ff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#3a0a00",
+                        "primary-container": "#002b5b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Newsreader", "serif"],
-                    "body": ["Public Sans", "sans-serif"],
-                    "label": ["Public Sans", "sans-serif"]
-            }
-          },
         }
-      }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        body { font-family: 'Public Sans', sans-serif; }
+        .serif-headline { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
     </style>
 </head>
-<body class="bg-surface text-on-background font-body selection:bg-on-tertiary-container selection:text-white">
-<!-- Google Tag Manager (noscript) -->
-<!-- GTM Body Placeholder -->
-<!-- TopNavBar Component -->
-<header class="fixed top-0 w-full z-50 bg-white/95 dark:bg-blue-950/95 backdrop-blur-md border-b border-outline-variant/10">
-<div class="flex flex-col w-full max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4">
-<div class="flex justify-between items-center w-full mb-3 md:mb-4">
-<a class="hover:opacity-90 transition-opacity" href="index.html">
-<h1 class="text-xl md:text-3xl font-serif font-bold text-blue-950 dark:text-white truncate pr-4">Comunica SEM FIO</h1>
-</a>
-<div class="flex items-center gap-3 md:gap-6 shrink-0">
-<div class="hidden sm:flex items-center gap-4 text-blue-900 dark:text-blue-200">
-<button aria-label="Search" class="material-symbols-outlined cursor-pointer hover:text-on-tertiary-container transition-colors" data-icon="search">search</button>
-<button aria-label="Global View" class="material-symbols-outlined cursor-pointer hover:text-on-tertiary-container transition-colors" data-icon="public">public</button>
-</div>
-<a class="bg-primary text-on-primary px-3 py-2 md:px-6 md:py-2 rounded-md font-label text-[10px] md:text-xs uppercase tracking-wider font-semibold hover:bg-primary/90 transition-all whitespace-nowrap" href="estados.html">Selecionar Estado</a>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#001736]/85 backdrop-blur-md dark:bg-slate-950/85 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-full">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black text-white font-['Newsreader']">Comunica SEM FIO</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-['Newsreader'] font-bold tracking-tight text-[#f3673b] border-b-2 border-[#f3673b] pb-1" href="#">Política</a>
+<a class="font-['Newsreader'] font-bold tracking-tight text-slate-300 hover:text-white transition-colors" href="#">Tecnologia</a>
+<a class="font-['Newsreader'] font-bold tracking-tight text-slate-300 hover:text-white transition-colors" href="#">Saúde</a>
+<a class="font-['Newsreader'] font-bold tracking-tight text-slate-300 hover:text-white transition-colors" href="#">Educação</a>
+<a class="font-['Newsreader'] font-bold tracking-tight text-slate-300 hover:text-white transition-colors" href="#">Justiça</a>
+<a class="font-['Newsreader'] font-bold tracking-tight text-slate-300 hover:text-white transition-colors" href="#">Esportes</a>
 </div>
 </div>
-<nav class="flex items-center gap-4 md:gap-8 overflow-x-auto no-scrollbar pt-3 border-t border-outline-variant/10">
-<a class="text-slate-600 dark:text-slate-300 hover:text-on-tertiary-container transition-colors duration-300 font-label text-[10px] md:text-xs uppercase tracking-wider font-semibold whitespace-nowrap" href="index.html">Brasil</a>
-<a class="text-on-tertiary-container border-b-2 border-on-tertiary-container pb-1 transition-colors duration-300 font-label text-[10px] md:text-xs uppercase tracking-wider font-bold whitespace-nowrap" href="politica.html">Política</a>
-<a class="text-slate-600 dark:text-slate-300 hover:text-on-tertiary-container transition-colors duration-300 font-label text-[10px] md:text-xs uppercase tracking-wider font-semibold whitespace-nowrap" href="mundo.html">Mundo</a>
-<a class="text-slate-600 dark:text-slate-300 hover:text-on-tertiary-container transition-colors duration-300 font-label text-[10px] md:text-xs uppercase tracking-wider font-semibold whitespace-nowrap" href="tecnologia.html">Tecnologia</a>
-<a class="text-slate-600 dark:text-slate-300 hover:text-on-tertiary-container transition-colors duration-300 font-label text-[10px] md:text-xs uppercase tracking-wider font-semibold whitespace-nowrap" href="economia.html">Economia</a>
-<a class="text-slate-600 dark:text-slate-300 hover:text-on-tertiary-container transition-colors duration-300 font-label text-[10px] md:text-xs uppercase tracking-wider font-semibold whitespace-nowrap" href="educacao.html">Educação</a>
-<a class="text-slate-600 dark:text-slate-300 hover:text-on-tertiary-container transition-colors duration-300 font-label text-[10px] md:text-xs uppercase tracking-wider font-semibold whitespace-nowrap" href="saude.html">Saúde</a>
-<a class="text-slate-600 dark:text-slate-300 hover:text-on-tertiary-container transition-colors duration-300 font-label text-[10px] md:text-xs uppercase tracking-wider font-semibold whitespace-nowrap" href="esportes.html">Esportes</a>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="bg-white/10 border-none rounded-full py-1.5 pl-10 pr-4 text-sm text-white focus:ring-2 focus:ring-[#f3673b] w-48" placeholder="Pesquisar..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-4 py-1.5 rounded-md text-sm font-bold scale-95 duration-200 active:opacity-80">Sign In</button>
+</div>
+</div>
 </nav>
-</div>
-</header>
-<div class="max-w-7xl mx-auto flex flex-col lg:flex-row min-h-screen">
+<div class="flex min-h-screen pt-16">
 <!-- SideNavBar -->
-<aside class="hidden lg:flex flex-col sticky top-0 h-screen w-64 bg-slate-50 dark:bg-blue-950 px-6 pt-36 pb-8 border-r border-outline-variant/10">
-<div class="mb-8">
-<h2 class="font-label text-xs uppercase tracking-widest text-on-tertiary-container font-bold mb-1">Intelligence Feed</h2>
-<p class="text-[10px] text-slate-400 uppercase tracking-tighter">Real-time updates</p>
+<aside class="hidden lg:flex flex-col py-4 px-3 h-[calc(100vh-4rem)] w-64 border-r border-slate-200 dark:border-slate-800 bg-[#f8f9fa] sticky top-16">
+<div class="mb-6 px-2">
+<h2 class="text-lg font-bold text-[#001736] dark:text-white">Editoriais</h2>
+<p class="text-xs text-slate-500 font-['Public_Sans']">Comunica SEM FIO - Regional</p>
 </div>
-<nav class="space-y-2">
-<a class="flex items-center gap-3 text-slate-500 hover:bg-white hover:shadow-sm p-3 rounded-xl transition-all duration-200 group" href="index.html">
-<span class="material-symbols-outlined text-xl" data-icon="bolt">bolt</span>
-<span class="font-sans text-sm">Brasil</span>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 text-[#f3673b] font-bold bg-[#f3f4f5] dark:bg-slate-900 rounded-lg translate-x-1 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="policy">policy</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Política</span>
 </a>
-<a class="flex items-center gap-3 text-on-tertiary-container font-semibold bg-white shadow-sm p-3 rounded-xl transition-all duration-200" href="politica.html">
-<span class="material-symbols-outlined text-xl" data-icon="gavel">gavel</span>
-<span class="font-sans text-sm">Política</span>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Tecnologia</span>
 </a>
-<a class="flex items-center gap-3 text-slate-500 hover:bg-white hover:shadow-sm p-3 rounded-xl transition-all duration-200 group" href="mundo.html">
-<span class="material-symbols-outlined text-xl" data-icon="language">language</span>
-<span class="font-sans text-sm">Mundo</span>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="construction">construction</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Infraestrutura</span>
 </a>
-<a class="flex items-center gap-3 text-slate-500 hover:bg-white hover:shadow-sm p-3 rounded-xl transition-all duration-200 group" href="tecnologia.html">
-<span class="material-symbols-outlined text-xl" data-icon="devices">devices</span>
-<span class="font-sans text-sm">Tecnologia</span>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Saúde</span>
 </a>
-<a class="flex items-center gap-3 text-slate-500 hover:bg-white hover:shadow-sm p-3 rounded-xl transition-all duration-200 group" href="economia.html">
-<span class="material-symbols-outlined text-xl" data-icon="payments">payments</span>
-<span class="font-sans text-sm">Economia</span>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Educação</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Justiça</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Meio Ambiente</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="sports_soccer">sports_soccer</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Esportes</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Turismo</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined" data-icon="theater_comedy">theater_comedy</span>
+<span class="font-['Public_Sans'] font-medium text-sm">Novelas</span>
 </a>
 </nav>
 </aside>
 <!-- Main Content -->
-<main class="flex-grow pt-32 md:pt-40 lg:pt-44 pb-20 px-4 md:px-8">
-<!-- Editorial Header Section -->
-<header class="mb-8 md:mb-12">
-<div class="flex items-center gap-3 mb-4">
-<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[9px] md:text-[10px] font-bold uppercase tracking-widest rounded-full">Editorial Intelligence</span>
-<div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+<main class="flex-1 px-4 md:px-8 py-8 max-w-7xl mx-auto">
+<!-- Hero Bento Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12">
+<!-- Primary Lead -->
+<article class="md:col-span-8 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm group">
+<div class="relative h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern government building facade with reflection in water at dusk, sharp architectural lines and dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzFh99LMQwmdywIHJqxuKaRuDqObP_oKqkr3nVSioVXVMmu_azufHEzIyiA13Rm4ChAUaqIy9oOkK4gIEGOuWEAbdXiWgmBXnY8Hb4yqTy59I_f6g_0eD_ruplbiOTbkzsWTcQo74E4HVwpbdBZ11OWSsIvvsMz4pkbU7UEZBrBmjKi0qz-5nszTFwDNas8-3CY-UmyMXyf2M0Rr-XoREAxp6J0GGRelVwpGEVOj9ou3X_Trqo0LmZrJABQ470lvvZ0Z1yHftklMM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="inline-block bg-on-tertiary-container text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4">Urgente</span>
+<h1 class="serif-headline text-4xl md:text-5xl text-white font-bold leading-tight mb-4">Reforma Tributária: O Impacto nas Capitais do Nordeste em 2026</h1>
+<p class="text-slate-300 font-body text-lg max-w-2xl leading-relaxed">Analistas apontam mudanças drásticas na arrecadação municipal após a última votação no Senado.</p>
 </div>
-<h2 class="font-headline text-3xl md:text-5xl lg:text-6xl font-extrabold text-primary mb-6 leading-tight max-w-4xl">Política: O que acontece em Brasília e nos Estados</h2>
-<!-- State Filters Navigation -->
-<nav aria-label="Filtro por estado" class="flex flex-wrap gap-2 py-4 overflow-x-auto no-scrollbar border-y border-outline-variant/15">
-<a class="bg-primary text-on-primary px-3 py-1.5 md:px-5 md:py-2 rounded-md font-label text-[9px] md:text-[10px] uppercase tracking-wider font-semibold hover:opacity-80 transition-all whitespace-nowrap" href="politica.html">São Paulo</a>
-<a class="bg-secondary-container text-on-secondary-container px-3 py-1.5 md:px-5 md:py-2 rounded-md font-label text-[9px] md:text-[10px] uppercase tracking-wider font-semibold hover:opacity-80 transition-all whitespace-nowrap" href="politica.html">Rio de Janeiro</a>
-<a class="bg-secondary-container text-on-secondary-container px-3 py-1.5 md:px-5 md:py-2 rounded-md font-label text-[9px] md:text-[10px] uppercase tracking-wider font-semibold hover:opacity-80 transition-all whitespace-nowrap" href="politica.html">Minas Gerais</a>
-<a class="bg-secondary-container text-on-secondary-container px-3 py-1.5 md:px-5 md:py-2 rounded-md font-label text-[9px] md:text-[10px] uppercase tracking-wider font-semibold hover:opacity-80 transition-all whitespace-nowrap" href="politica.html">Bahia</a>
-<a class="bg-secondary-container text-on-secondary-container px-3 py-1.5 md:px-5 md:py-2 rounded-md font-label text-[9px] md:text-[10px] uppercase tracking-wider font-semibold hover:opacity-80 transition-all whitespace-nowrap" href="politica.html">Paraná</a>
-<a class="border border-primary text-primary px-3 py-1.5 md:px-5 md:py-2 rounded-md font-label text-[9px] md:text-[10px] uppercase tracking-wider font-semibold hover:bg-primary hover:text-white transition-all whitespace-nowrap" href="estados.html">Ver Todos</a>
-</nav>
-</header>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-<!-- News Feed Columns -->
-<section class="lg:col-span-8 space-y-12">
-<!-- National News Container -->
-<div class="space-y-8 md:space-y-12" id="featured-politics">
-<div class="flex items-center gap-4 mb-4">
-<h3 class="font-label text-xs font-black uppercase tracking-widest text-primary">Destaque Nacional</h3>
-<div class="h-px flex-grow bg-outline-variant/10"></div>
 </div>
-<!-- News Article 1 -->
-<article class="group" itemscope="" itemtype="https://schema.org/NewsArticle">
-<meta content="2024-05-20T10:00:00Z" itemprop="datePublished"/>
-<meta content="Folha de S.Paulo" itemprop="publisher"/>
-<div class="flex flex-col sm:flex-row gap-4 md:gap-8 bg-surface-container-lowest rounded-xl p-4 md:p-6 transition-all hover:shadow-xl hover:shadow-primary/5 border-transparent border-2 hover:border-on-tertiary-container/10">
-<div class="w-full sm:w-1/3 aspect-[4/3] rounded-xl overflow-hidden relative">
-<img alt="Modern geometric architecture of the Brazilian National Congress in Brasilia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" itemprop="image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA49vAOZeJg5XbCRxXpHSu4q95-Bqn4vq9pqXLRegta3vHXk8M-h3dq-gRFl7wXLz298RlivcwFnH46WDMw1_l0Dze6EbH9026sY-_zzi846zg8q3kYs2JuZBd1xm1o_5joO5pvc9hqerBxrKLz2_GY8md3hOjtYZggDCeDFFxx9iM3PxASdOv4_BVDb7HaKnM0QtbDZmf7kpQCKs_c1k73AMgeykfN27lHXY3rkjN_9FA31OZcAf0crffoVCKjVv40osG90liLW1M"/>
-<div class="absolute top-3 left-3 bg-on-tertiary-container text-white px-2 py-0.5 text-[9px] font-bold uppercase tracking-widest rounded-sm">Brasília</div>
-</div>
-<div class="w-full sm:w-2/3 flex flex-col justify-center">
-<div class="flex items-center gap-2 mb-2 md:mb-3">
-<span class="font-label text-[9px] md:text-[10px] font-bold text-on-secondary-fixed-variant uppercase">Folha de S.Paulo</span>
-<span aria-hidden="true" class="text-outline-variant">•</span>
-<time class="text-[9px] md:text-[10px] text-outline uppercase font-semibold">2 horas atrás</time>
-</div>
-<h3 class="font-headline text-xl md:text-2xl font-bold text-primary mb-2 md:mb-3 leading-snug group-hover:text-on-tertiary-fixed-variant transition-colors" itemprop="headline">
-                                        Câmara acelera votação de reforma administrativa; entenda os principais pontos
-                                    </h3>
-<p class="text-on-surface-variant text-sm mb-4 line-clamp-2" itemprop="description">
-                                        O texto base prevê novas regras para contratação e avaliação de desempenho, enfrentando forte resistência de sindicatos.
-                                    </p>
-<a class="flex items-center gap-2 text-on-tertiary-container font-label text-[10px] font-bold uppercase tracking-widest hover:gap-4 transition-all" href="politica.html" itemprop="url">
-                                        Ler na Folha
-                                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</article>
+<!-- Trending Topics Column -->
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl flex-1">
+<h3 class="text-on-tertiary-container font-bold text-xs uppercase tracking-widest mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">trending_up</span> Em Alta Agora
+                        </h3>
+<ul class="space-y-4">
+<li class="border-b border-slate-200 pb-3 last:border-0">
+<a class="block group" href="#">
+<span class="text-[10px] text-slate-500 font-bold block mb-1">BRASÍLIA</span>
+<h4 class="serif-headline text-lg font-bold group-hover:text-on-tertiary-container transition-colors">Novos Ministros tomam posse no Planalto</h4>
 </a>
-</div>
-</div>
-</article>
-<!-- News Article 2 -->
-<article class="group" itemscope="" itemtype="https://schema.org/NewsArticle">
-<meta content="2024-05-20T08:00:00Z" itemprop="datePublished"/>
-<div class="flex flex-col sm:flex-row-reverse gap-4 md:gap-8 bg-surface-container-lowest rounded-xl p-4 md:p-6 transition-all hover:shadow-xl hover:shadow-primary/5 border-transparent border-2 hover:border-on-tertiary-container/10">
-<div class="w-full sm:w-1/3 aspect-[4/3] rounded-xl overflow-hidden">
-<img alt="Hands shaking in office setting" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" itemprop="image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3V-2sJAeW1MSLt2oCtvcR7SY8CfWnPBp1sr23sf7RoMUUFN-aC0m6Y8fOCdMsZCMn4ERrPunyql1oaLpq_E5Ub8E8JlQ8ST5JLV3WN6mMuqRtIeMltYOrRE2ec1wMw3tAlJU6Mu7Unta7JBIlTUo06nmnFKgjqGP7Ch2st1vCdhCghRduHteXwxNVbbA9xqUF9prpVuz4DdNWhQQa9v34pAu9gB_oLhyLVktHkBpZWeogIPyavXBUo9WRTcV61PUSCzvIPRDJt3A"/>
-</div>
-<div class="w-full sm:w-2/3 flex flex-col justify-center">
-<div class="flex items-center gap-2 mb-2 md:mb-3">
-<span class="font-label text-[9px] md:text-[10px] font-bold text-on-secondary-fixed-variant uppercase">Estadão</span>
-<span aria-hidden="true" class="text-outline-variant">•</span>
-<time class="text-[9px] md:text-[10px] text-outline uppercase font-semibold">4 horas atrás</time>
-</div>
-<h3 class="font-headline text-xl md:text-2xl font-bold text-primary mb-2 md:mb-3 leading-snug" itemprop="headline">
-                                        Articulação do Planalto busca pacificar relação com o Judiciário
-                                    </h3>
-<p class="text-on-surface-variant text-sm mb-4 line-clamp-2" itemprop="description">
-                                        Reunião de emergência tenta traçar linha de diálogo sobre limites de competência entre os poderes da República.
-                                    </p>
-<a class="flex items-center gap-2 text-on-tertiary-container font-label text-[10px] font-bold uppercase tracking-widest hover:gap-4 transition-all" href="politica.html" itemprop="url">
-                                        Resumo Estadão
-                                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</li>
+<li class="border-b border-slate-200 pb-3 last:border-0">
+<a class="block group" href="#">
+<span class="text-[10px] text-slate-500 font-bold block mb-1">ECONOMIA</span>
+<h4 class="serif-headline text-lg font-bold group-hover:text-on-tertiary-container transition-colors">Dólar recua após anúncio do Banco Central</h4>
 </a>
-</div>
-</div>
-</article>
-</div>
-<!-- Horizontal Ad Placeholder -->
-<section class="my-8 md:my-12 py-6 border-y border-outline-variant/10 flex flex-col items-center justify-center bg-surface-container-low/20 rounded-xl" id="ad-leaderboard-politics">
-<!-- AdSense Slot Placeholder -->
-<span class="text-[9px] font-bold text-outline uppercase tracking-widest mb-3">Publicidade</span>
-<div class="w-full max-w-[728px] h-24 md:h-32 bg-surface-container-highest/50 border border-dashed border-outline-variant/30 flex items-center justify-center rounded-lg group hover:bg-surface-container-highest transition-colors">
-<p class="text-xs md:text-sm text-outline font-label uppercase tracking-tighter">Leaderboard 728x90</p>
-</div>
-</section>
-<!-- State News Container -->
-<div class="space-y-8 md:space-y-12 bg-surface-container-low/30 p-4 md:p-8 rounded-2xl border border-outline-variant/10" id="politics-feed">
-<div class="flex items-center gap-4 mb-4">
-<h3 class="font-label text-xs font-black uppercase tracking-widest text-on-tertiary-fixed-variant">Cobertura Estadual</h3>
-<div class="h-px flex-grow bg-outline-variant/20"></div>
-</div>
-<!-- State Article 1 -->
-<article class="group border-l-4 border-primary pl-4 md:pl-8 py-2 md:py-4 bg-white/50" itemscope="" itemtype="https://schema.org/NewsArticle">
-<div class="flex flex-col justify-center">
-<div class="flex flex-wrap items-center gap-2 mb-2 md:mb-3">
-<span class="px-2 py-0.5 bg-blue-100 text-blue-900 font-label text-[8px] md:text-[9px] font-bold uppercase rounded">São Paulo</span>
-<span class="font-label text-[9px] md:text-[10px] font-bold text-on-secondary-fixed-variant uppercase">O Globo</span>
-<span aria-hidden="true" class="text-outline-variant hidden sm:inline">•</span>
-<time class="text-[9px] md:text-[10px] text-outline uppercase font-semibold">Hoje, 09:15</time>
-</div>
-<h3 class="font-headline text-lg md:text-xl font-bold text-primary mb-2 md:mb-3 leading-snug group-hover:text-on-tertiary-container" itemprop="headline">
-                                    Assembleia Legislativa de SP discute privatização de linhas ferroviárias
-                                </h3>
-<p class="text-on-surface-variant text-sm mb-4 line-clamp-2" itemprop="description">
-                                    Projeto enviado pelo governador entra em regime de urgência; oposição promete obstrução por causa das tarifas.
-                                </p>
-<div class="flex gap-4">
-<a class="text-on-tertiary-container font-label text-[9px] md:text-[10px] font-bold uppercase tracking-tighter hover:underline decoration-2" href="politica.html" itemprop="url">Leia n'O Globo</a>
-<button class="text-slate-400 font-label text-[9px] md:text-[10px] font-bold uppercase tracking-tighter hover:text-primary transition-colors flex items-center gap-1">
-<span class="material-symbols-outlined text-[12px]" data-icon="bookmark">bookmark</span> Guardar
-                                    </button>
-</div>
-</div>
-</article>
-<!-- Mixed Layout / Specials -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pt-4">
-<article class="bg-primary text-white p-6 md:p-8 rounded-xl shadow-lg relative overflow-hidden group">
-<div class="relative z-10">
-<span class="bg-on-tertiary-container px-2 py-1 text-[9px] md:text-[10px] font-bold uppercase rounded mb-4 inline-block">Análise Exclusive</span>
-<h3 class="font-headline text-xl md:text-2xl font-bold mb-4 italic leading-tight">O tabuleiro de 2026 começa a ser desenhado nas capitais</h3>
-<p class="text-blue-100/70 text-xs md:text-sm mb-6 leading-relaxed">Como as alianças municipais atuais podem ditar o ritmo da sucessão nacional.</p>
-<button class="bg-white text-primary px-5 py-2 rounded-full font-label text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-orange-50 transition-colors">Acessar Dossier</button>
-</div>
-<span aria-hidden="true" class="material-symbols-outlined absolute -bottom-6 -right-6 text-7xl md:text-9xl text-white/5" data-icon="insights">insights</span>
-</article>
-<article class="bg-surface-container-low p-6 md:p-8 rounded-xl flex flex-col justify-between border border-outline-variant/10">
-<div>
-<div class="flex items-center justify-between mb-4">
-<span class="font-label text-[9px] md:text-[10px] font-bold text-on-secondary-fixed-variant uppercase tracking-widest">Poder360</span>
-<span class="material-symbols-outlined text-orange-600" data-icon="trending_up">trending_up</span>
-</div>
-<h4 class="font-headline text-lg font-bold text-primary mb-2 leading-tight">Dólar oscila com incertezas sobre o pacote fiscal</h4>
-<p class="text-on-surface-variant text-xs leading-relaxed">Mercado monitora declarações da Fazenda sobre cortes de gastos.</p>
-</div>
-<a class="mt-6 text-primary font-bold text-[9px] md:text-[10px] uppercase border-b-2 border-primary w-fit hover:text-on-tertiary-container hover:border-on-tertiary-container transition-all" href="economia.html">Ver no Poder360</a>
-</article>
-</div>
-</div>
-</section>
-<!-- Sidebar Column -->
-<aside class="lg:col-span-4 space-y-8">
-<!-- Trending Topics -->
-<section class="bg-white p-5 md:p-6 rounded-xl border border-outline-variant/10 shadow-sm sticky top-44">
-<div class="flex items-center gap-2 mb-6">
-<span class="material-symbols-outlined text-on-tertiary-container" data-icon="auto_awesome">auto_awesome</span>
-<h2 class="font-label text-[10px] md:text-xs uppercase tracking-widest font-extrabold text-primary">Trending Topics Políticos</h2>
-</div>
-<ul class="space-y-5" id="politics-trending">
-<li class="group cursor-pointer">
-<span class="text-[9px] text-outline font-bold uppercase tracking-tighter block mb-1">Top #1 em Brasília</span>
-<h4 class="font-headline text-base md:text-lg font-bold text-on-background group-hover:text-on-tertiary-container transition-colors">Votação da LDO</h4>
-<p class="text-[10px] text-on-surface-variant mt-1">12 portais noticiando agora</p>
 </li>
-<li class="group cursor-pointer">
-<span class="text-[9px] text-outline font-bold uppercase tracking-tighter block mb-1">Economia Política</span>
-<h4 class="font-headline text-base md:text-lg font-bold text-on-background group-hover:text-on-tertiary-container transition-colors">Reoneração da Folha</h4>
-<p class="text-[10px] text-on-surface-variant mt-1">Discussão em comissão especial</p>
-</li>
-<li class="group cursor-pointer">
-<span class="text-[9px] text-outline font-bold uppercase tracking-tighter block mb-1">Diplomacia</span>
-<h4 class="font-headline text-base md:text-lg font-bold text-on-background group-hover:text-on-tertiary-container transition-colors">Visita ao G20</h4>
-<p class="text-[10px] text-on-surface-variant mt-1">Preparativos para a cúpula</p>
+<li class="border-b border-slate-200 pb-3 last:border-0">
+<a class="block group" href="#">
+<span class="text-[10px] text-slate-500 font-bold block mb-1">REGIONAL</span>
+<h4 class="serif-headline text-lg font-bold group-hover:text-on-tertiary-container transition-colors">Infraestrutura: Obras na BR-101 são aceleradas</h4>
+</a>
 </li>
 </ul>
-<button class="w-full mt-6 py-2.5 border-2 border-slate-100 rounded-lg font-label text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:border-primary hover:text-primary transition-all">Ver todos os tópicos</button>
-</section>
-<!-- Premium Content Teaser -->
-<section class="bg-primary text-on-primary p-6 rounded-xl relative overflow-hidden group">
+</div>
+<!-- Small Callout -->
+<div class="bg-primary text-white p-6 rounded-xl relative overflow-hidden">
 <div class="relative z-10">
-<div class="flex items-center gap-2 mb-3">
-<span class="material-symbols-outlined text-on-tertiary-container" data-icon="workspace_premium">workspace_premium</span>
-<h3 class="font-label text-[10px] uppercase tracking-widest font-black">Nexus Exclusive</h3>
+<h3 class="serif-headline text-xl font-bold mb-2">Editorial Inteligente</h3>
+<p class="text-slate-400 text-sm mb-4">Assine nossa newsletter para análises políticas exclusivas todos os domingos.</p>
+<button class="w-full bg-[#f3673b] hover:bg-[#852300] text-white py-2 rounded-md font-bold text-sm transition-all">Assinar Agora</button>
 </div>
-<h4 class="font-headline text-lg font-bold mb-3 leading-tight">Relatórios de Inteligência Política Semanal</h4>
-<p class="text-[11px] text-blue-100/70 mb-5 leading-relaxed">Análises profundas dos bastidores do poder que você não encontra em nenhum outro portal.</p>
-<a class="inline-block w-full text-center bg-on-tertiary-container text-white py-2.5 rounded-lg font-label text-[10px] font-bold uppercase tracking-widest hover:brightness-110 transition-all shadow-lg shadow-on-tertiary-container/20" href="https://editorialintelligence.beehiiv.com/subscribe" target="_blank">
-                                Assinar Premium
-                            </a>
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'FILL' 1;">newspaper</span>
 </div>
-<span class="material-symbols-outlined absolute -bottom-8 -right-8 text-9xl text-white/5 pointer-events-none" data-icon="gavel">gavel</span>
-</section>
-<!-- Newsletter Card -->
-<section class="bg-surface-container-high p-5 md:p-6 rounded-xl relative overflow-hidden">
-<div class="relative z-10">
-<h3 class="font-headline text-lg md:text-xl font-bold text-primary mb-2">Expresso Brasília</h3>
-<p class="text-xs text-on-surface-variant mb-4 leading-relaxed">Receba os resumos das manhãs de Brasília no seu e-mail às 08h.</p>
-<form class="space-y-3">
-<input aria-label="Seu endereço de email" class="w-full bg-white border-none rounded-md px-4 py-2 text-sm focus:ring-2 focus:ring-primary" placeholder="seu@email.com" type="email"/>
-<button class="w-full bg-primary text-white py-2 rounded-md font-label text-[10px] font-bold uppercase tracking-widest hover:bg-primary/90 transition-colors">Inscrever-se</button>
-</form>
+</div>
 </div>
 </section>
-<!-- Map Anchor -->
-<section class="bg-white rounded-xl overflow-hidden border border-outline-variant/10 shadow-sm">
-<div class="h-32 md:h-40 bg-slate-200 relative">
-<img alt="Map illustration representing different regions" class="w-full h-full object-cover opacity-50 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChFFVsgdMIr-6AUpNhqUo5P5OkcTmgcThScC3X29lcVbPdoLdk56gR_VGm4YweatT4dTXal3R-y_ev5hlEURJwbQKEDt_7LDf6Y2KZwBz3-UCTCj0ntBObEvGhuoGQv1WpjSFRFmvD8wyNDqd0bMVe-Fcf5QGQ0RjJ9cDRKRDsWDsSIm-PWMsNJpysWYBFs5NN7kLvmL6q4wOIlxeKUdrpvdLkqgaQaDdqZQQH2pCOQHrCYzUKm0NG4Upy1vDZLARq2xwYhU8ywK0"/>
-<div class="absolute inset-0 flex items-center justify-center p-4">
-<a class="bg-white/90 backdrop-blur px-4 py-2 rounded-full font-label text-[10px] md:text-xs font-bold text-primary shadow-lg text-center hover:bg-white transition-all" href="estados.html">Explorar Mapa Político</a>
+<!-- Regional Dashboard Title -->
+<div class="mb-8 flex justify-between items-end">
+<div>
+<h2 class="serif-headline text-3xl font-bold">Cobertura Regional</h2>
+<p class="text-on-surface-variant text-sm">O pulso da política nos estados brasileiros</p>
+</div>
+<div class="flex gap-2">
+<button class="p-2 rounded-full hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-2 rounded-full hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 </div>
-<div class="p-3 text-center">
-<p class="text-[9px] text-outline font-semibold uppercase tracking-widest">Selecione sua região para notícias locais</p>
+<!-- Regional Cards Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all hover:shadow-lg">
+<div class="h-32 relative">
+<img class="w-full h-full object-cover" data-alt="University campus exterior during the day with students walking in distance, academic setting with classic architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCgvObFzpTQH96yWcKd3yuY5yBi6byIZjTs8u0UDt2nT2AaXc8NGeeoGavTGY2t7_XdaQ_SjBd40OqHZ6LqnOBaL5qzML_pIhs4P5YnP4ZvxTNNDrnBB9FAmWGk0d4XESUCXYQc2WODqqG6fMn1CycUEu9-lR8DX1fC2Bp77Ofdxfy6anyVBpHYBQMWqNQuulv4_2NTdSBKOKhoTb1uDycbGtQz5f5v9y0-kABjDV2dMTp4-zBPJy4MbdG9OszQrl66RgjYEx2jlM"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+<span class="absolute top-3 left-3 bg-white/90 px-2 py-1 rounded text-[10px] font-bold text-primary">EDUCAÇÃO</span>
+</div>
+<div class="p-5">
+<h4 class="serif-headline text-lg font-bold mb-2 leading-snug">Vagas em universidades federais aumentam 15%</h4>
+<div class="flex items-center justify-between mt-4">
+<span class="text-[10px] text-slate-400">Há 2 horas</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">share</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all hover:shadow-lg border-t-4 border-[#f3673b]">
+<div class="h-32 relative">
+<img class="w-full h-full object-cover" data-alt="Industrial cranes at a busy maritime port under a cloudy sky, showing logistics and shipping activity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAhC_zVXvzkDV-mqfbvlii3GRq4Y2-IL3tGc99OtHZ0stZGXUpq9DiRYFSciGyxc0HqQY5D_3T4uaXgevwZEKtwAuTkJuAso4-X55z1gT6a0iLaMjWFw4JXWQ0q6W-xU-lL3GYPsIZyMApxnaK1US1WxOKDhE5rBNlg2mSXN0f--DjxLHjIMFNrcgCmcqclT6Fis-ukhsWgvBmAP1M0ahQLDNuiyPFjh7z5JCPRs1_JYNmX_rQkIGkB6YRKht_MuTi-HNPiLnAQ74"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+<span class="absolute top-3 left-3 bg-white/90 px-2 py-1 rounded text-[10px] font-bold text-primary">INFRA</span>
+</div>
+<div class="p-5">
+<h4 class="serif-headline text-lg font-bold mb-2 leading-snug">Porto do Recife recebe investimento bilionário</h4>
+<div class="flex items-center justify-between mt-4">
+<span class="text-[10px] text-slate-400">Há 5 horas</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">bookmark</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all hover:shadow-lg">
+<div class="h-32 relative">
+<img class="w-full h-full object-cover" data-alt="Doctors walking down a clean brightly lit modern hospital corridor, symbolizing healthcare and progress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5COea0ELeRrDuNKb33xbVjA3pTiWgSeoTguebW2z_vtb7i81rhEcAMG5Y8BFanvPz9ERAXsycmv4tEgikoCILmAdZBamot1VCmJz9F2TuiNUu1Dcr4ujVaZvIT6Tq-F2OqKJv5OSCe8kmtAX0SH7aPY0_KNeV13SkXpIuZlVjagr6HCK89qH6CNg2VIF_wLJ5C7ZWIeyBxc-tePwu9QctcJ_p8mP3sFPdb4ZF_r7GWeu3qp9zy497gAhG0de5kd5Lz1cNsjfrqXo"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+<span class="absolute top-3 left-3 bg-white/90 px-2 py-1 rounded text-[10px] font-bold text-primary">SAÚDE</span>
+</div>
+<div class="p-5">
+<h4 class="serif-headline text-lg font-bold mb-2 leading-snug">Mutirão de cirurgias reduz fila de espera em 40%</h4>
+<div class="flex items-center justify-between mt-4">
+<span class="text-[10px] text-slate-400">Há 8 horas</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">chat_bubble</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden transition-all hover:shadow-lg">
+<div class="h-32 relative">
+<img class="w-full h-full object-cover" data-alt="Close up of high precision mechanical components in a high tech laboratory setting with cool blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkOHjKXf05f42XI0khm0MUgDqv0pslYlbw9s-2lYipw1WLHXxEH0LxzHVi3ApcqcON_W6LvXxusU9GQ2FeE-mAUVYT889-1rSK8TIO46sT_8-bsX-YG6kdIKlC2iIt5goSijNj6etdX5p49OGvvBBt_6yy8IwmsOuUHifwkK3X2Ml6DkvEoGr99nfYEt1-M5xXIM4GrklBsELafshJ0a1A0hUQDrjJJA-oWKHUJfRVrpDoH5bgKVDTFFSTkmPPVIGosF-Hvru77Gc"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+<span class="absolute top-3 left-3 bg-white/90 px-2 py-1 rounded text-[10px] font-bold text-primary">TECNOLOGIA</span>
+</div>
+<div class="p-5">
+<h4 class="serif-headline text-lg font-bold mb-2 leading-snug">Polo Tecnológico expande atuação para o interior</h4>
+<div class="flex items-center justify-between mt-4">
+<span class="text-[10px] text-slate-400">Ontem</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">visibility</span>
+</div>
+</div>
 </div>
 </section>
-</aside>
+<!-- Editorial Quote / Break -->
+<section class="bg-surface-container-low p-12 rounded-3xl text-center mb-16 relative overflow-hidden">
+<span class="material-symbols-outlined text-6xl text-slate-200 absolute top-4 left-8">format_quote</span>
+<p class="serif-headline text-2xl italic text-on-surface-variant max-w-3xl mx-auto relative z-10">
+                    "O verdadeiro compromisso do jornalismo político não é com os partidos, mas com a clareza dos fatos que moldam o futuro do cidadão."
+                </p>
+<div class="mt-6 font-bold text-primary">— Reginaldo Osnildo, Editor-Chefe</div>
+</section>
+<!-- Analysis Section -->
+<div class="flex flex-col md:flex-row gap-12 mb-16">
+<div class="md:w-2/3">
+<h3 class="serif-headline text-2xl font-bold border-b-2 border-primary inline-block mb-8">Análises e Opinião</h3>
+<div class="space-y-8">
+<article class="flex gap-6 items-start group">
+<div class="w-24 h-24 rounded-full overflow-hidden shrink-0 border-4 border-white shadow-md">
+<img class="w-full h-full object-cover" data-alt="Portrait of a middle aged man with graying hair and glasses, wearing a professional suit, smiling subtly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvcQwv2kSeoIYDXM7TezngkDmeU74ECqDYUYGmTu8kxvBK2thrxUKqPqirp5QPdoV-yXKo6JKTzV4dAMObwLNQ3IYOSja2DAvd2lBClbJgc0aOZ4ZPTv7POaUn_xaJwe7OSNuCb0v9kAHUcjJGIvZTrK3VoaWvCc6KvJeNOPFJhR143kBH0k7EknP3gf_MFSNG0nfGWKIfc7FAk24O4G0espIT5FENcR1Hq7acUsY8UXMGqPR3dXqNlxtc1IFVKUWUz4PFlPCB5HM"/>
+</div>
+<div>
+<span class="text-xs font-bold text-[#f3673b] uppercase mb-1 block">Por Marcus Vinícius</span>
+<h4 class="serif-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">A balança de poder no Congresso: O que esperar do segundo semestre</h4>
+<p class="text-slate-600 text-sm leading-relaxed line-clamp-2">As recentes alianças formadas indicam que o governo terá que ceder em pautas ambientais para avançar na economia...</p>
+</div>
+</article>
+<article class="flex gap-6 items-start group">
+<div class="w-24 h-24 rounded-full overflow-hidden shrink-0 border-4 border-white shadow-md">
+<img class="w-full h-full object-cover" data-alt="Professional woman in business attire with confident expression, neutral background, editorial style lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIa1NwbqBPMK9GHVt7uZV4gzG3npZ2chE7xfeV0-vObvVCNDI-8-oM_cp7TL4wFuWOUYglxahn5ElvFaZtx91y-EaKOsQK5U2Isjl87Ocz-VP5Sdi4siwYoOz-hK2leAU0174mgmWhc-ObrT6aT5BbmP9OXDg3XBoIM7GVrq8K8qLmQ2POPrP4KPXlbZEo4ifnYTj3wy7blUANeJbGB9EumBB0PWC2Ri2Ce5tmswA91Qc-wAHu4vFA-evtH5MW6rRaxmX8W76zgeA"/>
+</div>
+<div>
+<span class="text-xs font-bold text-[#f3673b] uppercase mb-1 block">Por Helena Soares</span>
+<h4 class="serif-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">Justiça e Sociedade: O papel do STF na estabilidade institucional</h4>
+<p class="text-slate-600 text-sm leading-relaxed line-clamp-2">A judicialização da política tem levado a Suprema Corte a arbitrar conflitos que deveriam ser resolvidos no campo legislativo...</p>
+</div>
+</article>
+</div>
+</div>
+<div class="md:w-1/3 bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+<h3 class="serif-headline text-xl font-bold mb-6">Radar Legislativo</h3>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center text-on-secondary-container font-bold">24</div>
+<div>
+<p class="text-sm font-bold text-primary">Projetos de Lei</p>
+<p class="text-xs text-slate-500">Em votação esta semana</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-error-container rounded-lg flex items-center justify-center text-on-error-container font-bold">08</div>
+<div>
+<p class="text-sm font-bold text-primary">Vetos Presidenciais</p>
+<p class="text-xs text-slate-500">Aguardando análise</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center text-on-tertiary-fixed font-bold">12</div>
+<div>
+<p class="text-sm font-bold text-primary">Audiências Públicas</p>
+<p class="text-xs text-slate-500">Agendadas para hoje</p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-slate-100 text-center">
+<a class="text-[#f3673b] text-sm font-bold hover:underline" href="#">Ver agenda completa</a>
+</div>
+</div>
 </div>
 </main>
 </div>
-<!-- Footer Component -->
-<footer class="w-full py-8 md:py-12 px-4 md:px-8 bg-slate-100 dark:bg-blue-950 border-t border-slate-200 dark:border-blue-900">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-<div class="flex flex-col items-center md:items-start text-center md:text-left">
-<a class="hover:opacity-80 transition-opacity flex flex-col md:flex-row items-center md:items-baseline gap-2 md:gap-4" href="index.html">
-<h2 class="text-xl font-serif italic text-blue-950 dark:text-white">Comunica SEM FIO</h2>
-<p class="font-sans text-[10px] md:text-xs tracking-tight text-slate-500 dark:text-slate-400">51.872.360/0001-14 | Reginaldo Osnildo © 2026</p>
-</a>
+<!-- Footer -->
+<footer class="w-full py-8 mt-auto bg-[#f3f4f5] dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col items-center justify-center gap-4 w-full px-8 text-center">
+<div class="flex flex-wrap justify-center gap-6 mb-2">
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 dark:text-slate-500 hover:text-[#f3673b] transition-colors opacity-100 hover:opacity-80" href="#">Sobre</a>
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 dark:text-slate-500 hover:text-[#f3673b] transition-colors opacity-100 hover:opacity-80" href="#">Contato</a>
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 dark:text-slate-500 hover:text-[#f3673b] transition-colors opacity-100 hover:opacity-80" href="#">Termos</a>
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 dark:text-slate-500 hover:text-[#f3673b] transition-colors opacity-100 hover:opacity-80" href="#">Privacidade</a>
 </div>
-<nav class="flex flex-wrap justify-center gap-4 md:gap-6">
-<a class="font-sans text-[10px] md:text-xs tracking-tight text-slate-500 hover:text-blue-900 dark:text-slate-400 transition-colors" href="sobre.html">Sobre Nós</a>
-<a class="font-sans text-[10px] md:text-xs tracking-tight text-slate-500 hover:text-blue-900 dark:text-slate-400 transition-colors" href="politica-de-privacidade.html">Política de Privacidade</a>
-<a class="font-sans text-[10px] md:text-xs tracking-tight text-slate-500 hover:text-blue-900 dark:text-slate-400 transition-colors" href="termos-de-uso.html">Termos de Uso</a>
-<a class="font-sans text-[10px] md:text-xs tracking-tight text-slate-500 hover:text-blue-900 dark:text-slate-400 transition-colors" href="contato.html">Contato</a>
-</nav>
-<div class="flex gap-4">
-<button aria-label="RSS Feed" class="material-symbols-outlined text-blue-900 dark:text-blue-200 cursor-pointer hover:text-on-tertiary-container transition-colors" data-icon="rss_feed">rss_feed</button>
-<button aria-label="Contact Email" class="material-symbols-outlined text-blue-900 dark:text-blue-200 cursor-pointer hover:text-on-tertiary-container transition-colors" data-icon="mail">mail</button>
-</div>
+<p class="font-['Public_Sans'] text-xs tracking-wide uppercase text-[#001736] dark:text-slate-400">
+                © Reginaldo Osnildo 2026 | CNPJ: 51.872.360/0001-14
+            </p>
 </div>
 </footer>
 </body></html>
