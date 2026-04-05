@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Saúde Final - Pronta para Publicação</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700;6..72,800&amp;family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#d6e3ff",
+                    "on-primary-fixed-variant": "#264778",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#43474f",
+                    "surface-dim": "#d9dadb",
+                    "surface": "#f8f9fa",
+                    "on-primary-container": "#7594ca",
+                    "tertiary-fixed": "#ffdbd0",
+                    "on-secondary-container": "#4a6774",
+                    "on-secondary-fixed-variant": "#2e4b57",
+                    "surface-bright": "#f8f9fa",
+                    "secondary-container": "#c6e4f4",
+                    "primary-fixed-dim": "#a9c7ff",
+                    "surface-tint": "#405f91",
+                    "on-tertiary-fixed": "#3a0a00",
+                    "surface-container-low": "#f3f4f5",
+                    "inverse-primary": "#a9c7ff",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#852300",
+                    "outline-variant": "#c4c6d0",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb59f",
+                    "surface-variant": "#e1e3e4",
+                    "on-primary-fixed": "#001b3d",
+                    "on-background": "#191c1d",
+                    "secondary-fixed-dim": "#adcbda",
+                    "surface-container-high": "#e7e8e9",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-secondary-fixed": "#001f2a",
+                    "inverse-surface": "#2e3132",
+                    "tertiary": "#330800",
+                    "on-tertiary-container": "#f3673b",
+                    "tertiary-container": "#561400",
+                    "primary-container": "#002b5b",
+                    "background": "#f8f9fa",
+                    "surface-container": "#edeeef",
+                    "secondary-fixed": "#c9e7f7",
+                    "primary": "#001736",
+                    "secondary": "#466270",
+                    "outline": "#747780",
+                    "on-surface": "#191c1d",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(0, 23, 54, 0) 0%, rgba(0, 23, 54, 0.9) 100%);
+        }
+        @media (max-width: 1024px) {
+            .side-nav-active {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#001736]/85 backdrop-blur-md flex justify-between items-center px-4 md:px-6 py-3">
+<div class="flex items-center gap-4 md:gap-8">
+<button class="lg:hidden p-2 text-white/80 hover:bg-white/10 rounded-full transition-all">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="text-xl md:text-2xl font-bold font-['Newsreader'] text-white whitespace-nowrap">Nexus Editorial</span>
+<div class="hidden xl:flex items-center gap-6">
+<a class="text-white/80 hover:text-white transition-colors font-['Newsreader'] tracking-tight" href="#">Brasil</a>
+<a class="text-white/80 hover:text-white transition-colors font-['Newsreader'] tracking-tight" href="#">Mundo</a>
+<a class="text-white/80 hover:text-white transition-colors font-['Newsreader'] tracking-tight" href="#">Economia</a>
+<a class="text-white/80 hover:text-white transition-colors font-['Newsreader'] tracking-tight" href="#">Esportes</a>
+</div>
+</div>
+<div class="flex items-center gap-2 md:gap-4">
+<div class="hidden sm:flex items-center bg-white/10 rounded-lg px-3 py-1.5 gap-2">
+<span class="material-symbols-outlined text-white/70 text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm text-white placeholder-white/50 w-32 md:w-48" placeholder="Buscar no Nexus..." type="text"/>
+</div>
+<div class="flex gap-1 md:gap-2">
+<button class="p-2 text-white/80 hover:bg-white/10 rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</button>
+<button class="p-2 text-white/80 hover:bg-white/10 rounded-full transition-all relative">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-[#f3673b] rounded-full"></span>
+</button>
+</div>
+<button class="bg-[#f3673b] hover:bg-[#852300] text-white px-3 md:px-5 py-1.5 rounded-md text-sm font-medium transition-colors">Entrar</button>
+</div>
+</nav>
+<div class="flex pt-16 min-h-screen">
+<!-- SideNavBar - Sidebar hides on tablet and shows on desktop -->
+<aside class="hidden lg:flex flex-col h-[calc(100vh-64px)] w-64 border-r border-slate-200/15 fixed bg-[#f8f9fa] pt-4 overflow-y-auto">
+<div class="px-6 py-4">
+<p class="font-['Public_Sans'] font-medium uppercase tracking-widest text-[0.75rem] text-on-surface-variant">Curadoria</p>
+<h3 class="font-headline text-xl font-bold text-primary">Edição Matinal</h3>
+</div>
+<nav class="flex-1 px-3 space-y-1 mt-4">
+<a class="flex items-center gap-3 px-4 py-3 text-[#001736]/70 hover:translate-x-1 hover:text-[#f3673b] transition-transform font-['Public_Sans'] font-medium uppercase tracking-widest text-[0.75rem]" href="#">
+<span class="material-symbols-outlined">gavel</span> Política
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#001736]/70 hover:translate-x-1 hover:text-[#f3673b] transition-transform font-['Public_Sans'] font-medium uppercase tracking-widest text-[0.75rem]" href="#">
+<span class="material-symbols-outlined">devices</span> Tecnologia
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#001736]/70 hover:translate-x-1 hover:text-[#f3673b] transition-transform font-['Public_Sans'] font-medium uppercase tracking-widest text-[0.75rem]" href="#">
+<span class="material-symbols-outlined">theater_comedy</span> Cultura
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#f3673b] bg-[#f3f4f5] font-bold font-['Public_Sans'] uppercase tracking-widest text-[0.75rem]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">medical_services</span> Saúde
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#001736]/70 hover:translate-x-1 hover:text-[#f3673b] transition-transform font-['Public_Sans'] font-medium uppercase tracking-widest text-[0.75rem]" href="#">
+<span class="material-symbols-outlined">science</span> Ciência
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#001736]/70 hover:translate-x-1 hover:text-[#f3673b] transition-transform font-['Public_Sans'] font-medium uppercase tracking-widest text-[0.75rem]" href="#">
+<span class="material-symbols-outlined">edit_note</span> Opinião
+                </a>
+</nav>
+<div class="p-6 mt-auto border-t border-slate-200/10">
+<div class="bg-primary p-4 rounded-xl text-center">
+<p class="text-white text-xs mb-3">Acesso ilimitado a análises exclusivas.</p>
+<button class="bg-[#f3673b] text-white text-xs font-bold py-2 px-4 rounded-full w-full uppercase tracking-tighter">Assinar Premium</button>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 lg:ml-64 bg-surface px-4 md:px-8 lg:px-12 py-8">
+<header class="mb-10 max-w-7xl mx-auto">
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-on-tertiary-container text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Editoria</span>
+<h1 class="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tight">Saúde e Bem-Estar</h1>
+</div>
+<p class="text-on-surface-variant max-w-2xl font-light text-base md:text-lg">A inteligência da notícia aplicada ao seu bem-viver. Dados, ciência e as políticas públicas que moldam a saúde do brasileiro.</p>
+</header>
+<!-- Destaque da Editoria (Hero) -->
+<section class="max-w-7xl mx-auto mb-12 md:mb-16 relative group overflow-hidden rounded-xl bg-primary min-h-[400px] md:min-h-[500px] flex items-end">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="modern medical laboratory with scientist working at professional microscope in clean bright environment with blue ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5eKTDHbqJlD-mxnX4YFxeW6yT9nrD3BcEnPMhA8Uo31QGOeCaVhYHNlb98d9XgNK-bEwNOCCo9R1NoCZg_PpHNElpHZuW3y8ilu9woJqKIOApB0nkEUDVHVyImO-Qr1V7YvHpIIuoRfsf_No-U7fiJIl0hDtbi93gyB3BPwiYLUavVVo1p-Cc7NOCV_ziloP3HuOXAnhHoDezNBejEPVnqlMlwU5soDw9psdtbwgS5TQdICXA_soiUdKb8ezw5UCF450KRj3qOL0"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative z-10 p-6 md:p-12 lg:p-16 max-w-4xl">
+<div class="flex items-center gap-2 text-[#f3673b] mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="uppercase tracking-widest text-xs font-bold">Destaque da Editoria</span>
+</div>
+<h2 class="font-headline text-3xl md:text-5xl lg:text-6xl text-white font-bold leading-tight mb-4 md:mb-6">
+                        Anvisa aprova nova geração de tratamentos genéticos para doenças raras no Brasil.
+                    </h2>
+<p class="text-white/80 text-base md:text-lg mb-6 md:mb-8 font-light leading-relaxed max-w-2xl">
+                        Decisão histórica marca o início de uma nova era na medicina nacional, com potencial de transformar a vida de milhares de pacientes através de terapias personalizadas de alta complexidade.
+                    </p>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+<button class="bg-white text-primary px-6 md:px-8 py-3 rounded-md font-bold hover:bg-surface transition-colors whitespace-nowrap">Ler Reportagem Completa</button>
+<span class="text-white/60 text-sm">Fonte: Ministério da Saúde</span>
+</div>
+</div>
+</section>
+<!-- Layout Grid: Articles & Trending -->
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+<!-- Articles Feed -->
+<div class="lg:col-span-8 space-y-10 md:space-y-12">
+<h3 class="font-headline text-2xl font-bold text-primary border-b-2 border-primary/10 pb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[#f3673b]">rss_feed</span>
+                        Últimas Notícias
+                    </h3>
+<div class="space-y-10">
+<!-- Article Card 1 -->
+<article class="flex flex-col md:flex-row gap-6 group">
+<div class="w-full md:w-56 xl:w-64 h-44 overflow-hidden rounded-lg bg-surface-container shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="hospital corridor with soft professional lighting clean sterile architecture and bright environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuc2qrXr9_eIEyJHNFmo63PKgb-GVtscC0m7QSqrrbnhyOJkZ162ub42QIh8X-GKz_kIfD9UbXt1EFsDaM0sigGNbU_tLLhzkX5pRpaoQE69s4WOo2-aFGA2r_91jkWPcROau9jqthrhsscD_Agnc0TiL5VzTQeDs1_hXt8yA8ov_Wg7Oueqgo9pU32SIQlrELqWtkhpzMk3hZkIiIMdjmeueoyAelfwsaKnK_1_PIijpPlxfN3nwRRN6Vs9t5dT-ybatDaidZGIk"/>
+</div>
+<div class="flex flex-col justify-between">
+<div>
+<div class="flex gap-4 mb-2">
+<span class="text-[10px] font-bold uppercase tracking-widest text-[#f3673b]">Política Pública</span>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest">Há 2 horas</span>
+</div>
+<h4 class="font-headline text-xl xl:text-2xl font-bold text-primary mb-2 leading-snug group-hover:text-[#f3673b] transition-colors">
+                                        Ministério da Saúde anuncia expansão da rede de oncologia no Norte e Nordeste.
+                                    </h4>
+<p class="text-on-surface-variant text-sm line-clamp-2 mb-4 font-light leading-relaxed">
+                                        Investimento de R$ 450 milhões prevê a construção de 12 novas unidades de tratamento intensivo e aquisição de aceleradores lineares para radioterapia.
+                                    </p>
+</div>
+<div>
+<button class="text-primary font-bold text-xs flex items-center gap-1 group/btn">
+                                        Ler Completo no <span class="text-[#f3673b] ml-1">Portal Brasil</span>
+<span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="flex flex-col md:flex-row gap-6 group">
+<div class="w-full md:w-56 xl:w-64 h-44 overflow-hidden rounded-lg bg-surface-container shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="doctor holding a stethoscope close up focused professional medical tools warm clinic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhydlyi83qwbGSoWQ33UtJxlUMJjugBdHQQDLQYAAwLRQpUbBB-IffP3Qzp7y9mJRPNND4LohODSWKNq01IU4hx4fDY4_sx-V2EtHkIY-l9rQ9PQ8RxVJs8wrkflroIaNK648MzoDUwwOy9U26UnA1zlkZPSsVxKNOaSOl88UhUMhQ3IzK51apwpsnM2K8e2JDWanfNouluhLsbxyGL-Fop2ocMu025sJHH0XTSmpIxWd62z0oYIIRsB1pjXcCNAIfIvwAijryP-U"/>
+</div>
+<div class="flex flex-col justify-between">
+<div>
+<div class="flex gap-4 mb-2">
+<span class="text-[10px] font-bold uppercase tracking-widest text-[#f3673b]">Medicina</span>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest">Há 5 horas</span>
+</div>
+<h4 class="font-headline text-xl xl:text-2xl font-bold text-primary mb-2 leading-snug group-hover:text-[#f3673b] transition-colors">
+                                        Albert Einstein inicia testes com IA para diagnóstico precoce de Alzheimer.
+                                    </h4>
+<p class="text-on-surface-variant text-sm line-clamp-2 mb-4 font-light leading-relaxed">
+                                        Algoritmo desenvolvido em parceria com Stanford apresenta precisão de 94% na identificação de sinais cognitivos sutis em exames de imagem.
+                                    </p>
+</div>
+<div>
+<button class="text-primary font-bold text-xs flex items-center gap-1 group/btn">
+                                        Ler Completo no <span class="text-[#f3673b] ml-1">G1 Saúde</span>
+<span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="flex flex-col md:flex-row gap-6 group">
+<div class="w-full md:w-56 xl:w-64 h-44 overflow-hidden rounded-lg bg-surface-container shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="glass laboratory tubes with colorful chemical solutions in a modern clean science facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-3j9W56zHRe53MufXrC6fn8JyOiEpZmwcDrdUGV9XtRtQiv_KtLT9fIQRbyCfT43Ysm7LCt32cWoQk-LzW-qnQgvj_WfWTax6jaX5WJwPy8Mnc8bdNqiPSYBBLhoC4nKca9KAJd7m0RE5uDLR6jfnZ-HT1n72_MRMW0_QYiLZ9ASRWYNu7a9FDQgIchImaHABGK904_yPIW2nk_NyhXw5CI6lkcfu2G6f1ER2WqHLwkStjuBxmi7W9WbuwEDUgWMrQ3B5lVuuXEY"/>
+</div>
+<div class="flex flex-col justify-between">
+<div>
+<div class="flex gap-4 mb-2">
+<span class="text-[10px] font-bold uppercase tracking-widest text-[#f3673b]">Farmacêutica</span>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest">Ontem</span>
+</div>
+<h4 class="font-headline text-xl xl:text-2xl font-bold text-primary mb-2 leading-snug group-hover:text-[#f3673b] transition-colors">
+                                        Fiocruz detalha produção de vacina nacional contra Dengue.
+                                    </h4>
+<p class="text-on-surface-variant text-sm line-clamp-2 mb-4 font-light leading-relaxed">
+                                        Instituto espera entregar o primeiro lote de 10 milhões de doses até o primeiro trimestre de 2025, reduzindo custos de importação.
+                                    </p>
+</div>
+<div>
+<button class="text-primary font-bold text-xs flex items-center gap-1 group/btn">
+                                        Ler Completo na <span class="text-[#f3673b] ml-1">Agência Fiocruz</span>
+<span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- Sidebar Trending & Widgets -->
+<aside class="lg:col-span-4 space-y-8">
+<!-- Trending Section -->
+<div class="bg-surface-container-low p-6 md:p-8 rounded-xl">
+<h3 class="font-headline text-xl font-bold text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-[#f3673b]">trending_up</span>
+                            Em Alta na Saúde
+                        </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+<div class="group cursor-pointer">
+<p class="text-[10px] font-bold uppercase text-[#f3673b] tracking-wider mb-1">Campanha</p>
+<h5 class="font-headline text-lg font-bold group-hover:underline leading-snug">Multivacinação 2024: Atualize a caderneta em todo o país.</h5>
+</div>
+<div class="group cursor-pointer">
+<p class="text-[10px] font-bold uppercase text-[#f3673b] tracking-wider mb-1">Inovação</p>
+<h5 class="font-headline text-lg font-bold group-hover:underline leading-snug">Cirurgia robótica cardíaca chega ao SUS em SP.</h5>
+</div>
+<div class="group cursor-pointer">
+<p class="text-[10px] font-bold uppercase text-[#f3673b] tracking-wider mb-1">Pesquisa</p>
+<h5 class="font-headline text-lg font-bold group-hover:underline leading-snug">Estudo da USP vincula dieta rica em fibras a longevidade renal.</h5>
+</div>
+<div class="group cursor-pointer">
+<p class="text-[10px] font-bold uppercase text-[#f3673b] tracking-wider mb-1">Eventos</p>
+<h5 class="font-headline text-lg font-bold group-hover:underline leading-snug">Congresso Brasileiro de Oncologia abre inscrições.</h5>
+</div>
+</div>
+</div>
+<!-- Newsletter Component -->
+<div class="bg-primary text-white p-6 md:p-8 rounded-xl relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-[#f3673b]/20 rounded-full blur-2xl"></div>
+<h4 class="font-headline text-2xl font-bold mb-4 relative z-10">Nexus Saúde</h4>
+<p class="text-white/70 text-sm mb-6 relative z-10">Receba toda manhã a curadoria das notícias que impactam sua qualidade de vida.</p>
+<form class="space-y-3 relative z-10">
+<input class="w-full bg-white/10 border-white/20 rounded-md px-4 py-2 text-sm focus:ring-[#f3673b] focus:border-[#f3673b] placeholder-white/40" placeholder="Seu melhor e-mail" type="email"/>
+<button class="w-full bg-[#f3673b] hover:bg-[#852300] text-white py-2.5 rounded-md font-bold text-sm transition-colors">Inscrever-se</button>
+</form>
+</div>
+<!-- Hospital Finder -->
+<div class="border border-outline-variant p-6 rounded-xl bg-surface">
+<h4 class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Serviços Proximidade</h4>
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg mb-2">
+<span class="material-symbols-outlined text-primary">emergency</span>
+<div>
+<p class="text-xs font-bold">Hospitais de Plantão</p>
+<p class="text-[10px] text-on-surface-variant">São Paulo, SP</p>
+</div>
+</div>
+<button class="w-full text-xs text-[#f3673b] font-bold mt-2 hover:underline">Ver mapa completo</button>
+</div>
+</aside>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="bg-[#f3f4f5] border-t border-slate-200/15 py-12">
+<div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4">
+<div class="text-center md:text-left">
+<span class="text-lg font-['Newsreader'] text-[#001736] font-bold block mb-2">Nexus Editorial</span>
+<p class="font-['Public_Sans'] text-sm text-[#001736]/60">© 2024 Nexus Editorial. A inteligência da notícia.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-8">
+<a class="font-['Public_Sans'] text-sm text-[#001736]/60 hover:text-[#f3673b] transition-colors" href="#">Privacidade</a>
+<a class="font-['Public_Sans'] text-sm text-[#001736]/60 hover:text-[#f3673b] transition-colors" href="#">Termos de Uso</a>
+<a class="font-['Public_Sans'] text-sm text-[#001736]/60 hover:text-[#f3673b] transition-colors" href="#">Expediente</a>
+<a class="font-['Public_Sans'] text-sm text-[#001736]/60 hover:text-[#f3673b] transition-colors" href="#">Anuncie</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&amp;family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f4f5",
+                        "outline-variant": "#c4c6d0",
+                        "on-secondary-fixed": "#001f2a",
+                        "on-primary-container": "#7594ca",
+                        "on-primary-fixed": "#001b3d",
+                        "secondary": "#466270",
+                        "on-surface-variant": "#43474f",
+                        "tertiary-fixed": "#ffdbd0",
+                        "surface-container": "#edeeef",
+                        "tertiary-fixed-dim": "#ffb59f",
+                        "primary-fixed-dim": "#a9c7ff",
+                        "outline": "#747780",
+                        "on-tertiary-fixed-variant": "#852300",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-container": "#c6e4f4",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "on-secondary-fixed-variant": "#2e4b57",
+                        "inverse-primary": "#a9c7ff",
+                        "background": "#f8f9fa",
+                        "tertiary-container": "#561400",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary-fixed-variant": "#264778",
+                        "surface": "#f8f9fa",
+                        "secondary-fixed-dim": "#adcbda",
+                        "secondary-fixed": "#c9e7f7",
+                        "on-background": "#191c1d",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "surface-dim": "#d9dadb",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#405f91",
+                        "on-surface": "#191c1d",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary": "#330800",
+                        "primary": "#001736",
+                        "on-tertiary-container": "#f3673b",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary-container": "#002b5b",
+                        "on-secondary-container": "#4a6774",
+                        "on-tertiary-fixed": "#3a0a00",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-on-tertiary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/85 dark:bg-slate-900/85 backdrop-blur-xl flex justify-between items-center px-6 py-4 max-w-full">
+<div class="text-2xl font-black font-['Newsreader'] text-blue-900 dark:text-white tracking-tighter">
+            Comunica SEM FIO
+        </div>
+<div class="hidden md:flex items-center gap-8 font-['Newsreader'] italic font-medium">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors duration-300" href="index.html">Technology</a>
+<a class="text-orange-600 dark:text-orange-400 font-bold border-b-2 border-orange-600" href="index.html">Justice</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors duration-300" href="index.html">Environment</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors duration-300" href="index.html">Novelas</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block px-4 py-1.5 rounded-full border border-outline-variant text-sm font-medium hover:bg-surface-container transition-all">
+                State Selection
+            </button>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant bg-surface-container-high">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional woman in a business suit against a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHIt0fh2DY2U0tRCcfSi4iSTNsSeHcWadgUcNZkIoe97WF3zRN8GzawddpZ_8xcDt5x9LPEsCABJ0OPF9dDgk1A0rOUnU1AnBYRWo4Tv6f_qNkF1vpLUJPjSVjV_V1yPr9ccWDiLGEPjufRsbiJX7kXbxkvJxlPgnK04r7gwbCqyadsUii73jrIBYLUJyIGcpcv-emNQlLcSommrHo9lSlh-cr9wThT3vKk-jo0uSwo463kxsdsRAtr11TfO3iq6Ro8vLZ1GN-tWk"/>
+</div>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col fixed left-0 top-0 pt-20 px-4 h-screen w-64 border-r border-slate-200/20 bg-slate-50 dark:bg-slate-950 z-40">
+<div class="mb-10 mt-4 px-4">
+<h2 class="text-lg font-bold text-blue-900 dark:text-blue-100 font-headline">Editorials</h2>
+<p class="font-['Public_Sans'] font-medium uppercase tracking-widest text-[10px] text-on-surface-variant">The Curated Monolith</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:translate-x-1 duration-200 font-label uppercase tracking-widest text-xs" href="index.html">
+<span class="material-symbols-outlined" data-icon="memory">memory</span>
+<span>Technology</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-orange-600 bg-orange-50/50 dark:bg-orange-900/20 font-bold hover:translate-x-1 duration-200 font-label uppercase tracking-widest text-xs" href="index.html">
+<span class="material-symbols-outlined" data-icon="gavel" style="font-variation-settings: 'FILL' 1;">gavel</span>
+<span>Justice</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:translate-x-1 duration-200 font-label uppercase tracking-widest text-xs" href="index.html">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<span>Environment</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:translate-x-1 duration-200 font-label uppercase tracking-widest text-xs" href="index.html">
+<span class="material-symbols-outlined" data-icon="theaters">theaters</span>
+<span>Entertainment</span>
+</a>
+</nav>
+<div class="mt-auto mb-8 px-4">
+<button class="w-full py-3 bg-primary text-on-primary rounded-md font-bold text-sm hover:opacity-90 transition-all">
+                Subscribe Now
+            </button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="lg:ml-64 pt-24 min-h-screen">
+<div class="max-w-7xl mx-auto px-6 pb-20">
+<!-- Hero Header -->
+<header class="mb-12 relative">
+<div class="flex flex-col md:flex-row items-end gap-6 mb-8">
+<h1 class="text-6xl md:text-8xl font-black text-primary tracking-tight leading-none">Justiça</h1>
+<span class="text-on-tertiary-container font-label uppercase tracking-[0.2em] text-sm font-bold mb-3">Editorial Intelligence</span>
+</div>
+<p class="max-w-2xl text-xl text-on-surface-variant font-headline italic leading-relaxed">
+                    Analyzing the machinery of law through real-time data from the Ministério Público and Courts of Justice.
+                </p>
+</header>
+<!-- Bento Grid: Main News & Law Updates -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-16">
+<!-- Primary Hero Card -->
+<article class="md:col-span-8 bg-surface-container-lowest rounded-xl overflow-hidden group">
+<div class="aspect-video overflow-hidden">
+<img alt="Brazilian Courtroom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="wide shot of a modern brazilian superior court room with wood paneling and majestic official symbols" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6DEHh1stUfILM7YOLVuWG0GSR5Q222yf8n1GNv4NCEINPaIDkqCKzpQC456PcDQrzaVfRIlbqBILPCsK_U_4nzm7dLScAzd8HURD5DxUsYiR8dkyJlxNVTkO3833BRF5QqzExHFbRyCdFDDqDMC_L0gSx1NaVwfi8PtE7LxhmroI62DRuJeRjFdiCOz9cfcXtpZfPrPemSFl9d9qeiELz4CaZ_KvizThh4PTl2rNyTqfYbejys49Zo3yOfKaCqM-kw0L8_8Bf7vI"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Supreme Action</span>
+<span class="text-on-surface-variant text-xs font-label">14 Min Read</span>
+</div>
+<h2 class="text-4xl font-bold text-primary mb-4 leading-tight">Digital Sovereignty: New Directives for Tech Giants in Judiciary Channels</h2>
+<p class="text-on-surface-variant body-lg mb-6 leading-relaxed">
+                            A deep dive into the recent STF decisions regarding data localization and its impact on ongoing Ministério Público investigations across state borders.
+                        </p>
+<a class="inline-flex items-center gap-2 text-on-tertiary-container font-bold hover:gap-4 transition-all" href="index.html">
+                            Read Full Analysis <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Side Updates Column -->
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-on-tertiary-container">
+<h3 class="text-on-tertiary-fixed-variant uppercase text-xs font-bold tracking-widest mb-4 font-label">Law Updates</h3>
+<div class="space-y-6">
+<div class="group cursor-pointer">
+<p class="text-xs text-on-surface-variant mb-1">MAR 24, 2024</p>
+<h4 class="text-xl font-bold text-primary group-hover:text-on-tertiary-container transition-colors">Revision of the Penal Code: Article 157 Nuances</h4>
+</div>
+<div class="group cursor-pointer">
+<p class="text-xs text-on-surface-variant mb-1">MAR 23, 2024</p>
+<h4 class="text-xl font-bold text-primary group-hover:text-on-tertiary-container transition-colors">New Compliance Norms for Public Bidding</h4>
+</div>
+<div class="group cursor-pointer">
+<p class="text-xs text-on-surface-variant mb-1">MAR 21, 2024</p>
+<h4 class="text-xl font-bold text-primary group-hover:text-on-tertiary-container transition-colors">Environmental Liability: Recent STJ Jurisprudence</h4>
+</div>
+</div>
+</div>
+<div class="bg-primary text-on-primary p-6 rounded-xl flex-grow flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="analytics">analytics</span>
+<h3 class="text-2xl font-bold mb-2">MP Transparency Portal</h3>
+<p class="text-on-primary-container text-sm leading-relaxed">Access real-time budget execution and performance metrics from state ministries.</p>
+</div>
+<button class="mt-6 bg-on-tertiary-container text-white w-full py-2.5 rounded-md font-bold text-sm shadow-lg shadow-on-tertiary-container/20">
+                            Explore Data
+                        </button>
+</div>
+</div>
+</section>
+<!-- Data Visuals / Court Decisions -->
+<section class="mb-16">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-3xl font-bold text-primary">Court Decisions Index</h2>
+<div class="flex gap-2">
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-medium cursor-pointer hover:bg-primary hover:text-white transition-all">STF</span>
+<span class="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-medium cursor-pointer hover:bg-primary hover:text-white transition-all">STJ</span>
+<span class="px-4 py-1.5 bg-primary text-white rounded-full text-xs font-medium cursor-pointer">TJs Estadual</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- TJ Card 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl transition-all hover:translate-y-[-4px]">
+<div class="flex justify-between items-start mb-6">
+<span class="text-[10px] font-bold text-on-tertiary-container uppercase tracking-widest font-label">TJ-SP</span>
+<span class="material-symbols-outlined text-outline" data-icon="gavel">gavel</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Consumer Rights in Digital Banking: Collective Action Victory</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Significant ruling regarding fraud liability in instant payment systems.</p>
+<div class="pt-4 border-t border-outline-variant/15 flex justify-between items-center text-xs">
+<span class="font-bold">Case #100234-SP</span>
+<span class="text-outline">Yesterday</span>
+</div>
+</div>
+<!-- TJ Card 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl transition-all hover:translate-y-[-4px]">
+<div class="flex justify-between items-start mb-6">
+<span class="text-[10px] font-bold text-on-tertiary-container uppercase tracking-widest font-label">TJ-RJ</span>
+<span class="material-symbols-outlined text-outline" data-icon="balance">balance</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Metropolitan Urban Planning: Suspension of New Zoning Law</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Constitutional challenge accepted regarding coastal environmental impact.</p>
+<div class="pt-4 border-t border-outline-variant/15 flex justify-between items-center text-xs">
+<span class="font-bold">Case #88219-RJ</span>
+<span class="text-outline">2 days ago</span>
+</div>
+</div>
+<!-- TJ Card 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl transition-all hover:translate-y-[-4px]">
+<div class="flex justify-between items-start mb-6">
+<span class="text-[10px] font-bold text-on-tertiary-container uppercase tracking-widest font-label">TJ-MG</span>
+<span class="material-symbols-outlined text-outline" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Mining Compensation: New Liquidation Parameters</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Definitive ruling on indirect damages for affected communities.</p>
+<div class="pt-4 border-t border-outline-variant/15 flex justify-between items-center text-xs">
+<span class="font-bold">Case #55041-MG</span>
+<span class="text-outline">3 days ago</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Transparency & Data Focus -->
+<section class="bg-surface-container rounded-3xl p-8 md:p-12 overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[20rem] rotate-12" data-icon="query_stats">query_stats</span>
+</div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="inline-block px-4 py-1 bg-white text-primary text-[10px] font-black uppercase tracking-widest mb-6 rounded-sm">Transparency Monitor</span>
+<h2 class="text-5xl font-bold text-primary mb-6 leading-[1.1]">The Productivity of the Public Ministry</h2>
+<p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                            Our proprietary algorithm tracks over 10,000 monthly filings to identify bottlenecks and efficiency peaks in state justice systems.
+                        </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<p class="text-4xl font-bold text-on-tertiary-container mb-1">89.4%</p>
+<p class="text-xs uppercase font-bold text-primary opacity-60">Digitalization Rate</p>
+</div>
+<div>
+<p class="text-4xl font-bold text-on-tertiary-container mb-1">122k</p>
+<p class="text-xs uppercase font-bold text-primary opacity-60">Active Inquiries</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-xl shadow-primary/5">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="map">map</span>
+</div>
+<h4 class="text-xl font-bold">Judiciary Map by State</h4>
+</div>
+<div class="aspect-[4/3] bg-surface-container-low rounded-lg mb-6 overflow-hidden">
+<img alt="Map of Brazil" class="w-full h-full object-cover" data-alt="minimalist stylized map of brazil showing judicial districts in varying shades of blue and orange" data-location="Brazil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfUDmN15GTz5SfrcIQrXUz0UcPIlgyvxhNNLM8uWhHLyrZnw4jsHfOOJVH1CKd52vcqzRuNzSfsqaYBtYsZJMDcdpksV-kWtCUSggxRBfPHSPJWU1J1fSDCSNsOEpwzeXN0_ovYvW0-c1cpMB590szNbiAVa09wYX_sQ0ORp4h-N3S_8GbclKQ0lFWDhOU0wx4YoFhEdU8qBBTM9isF_fLEMrrodocTWHaU93TAjGujnPMVnpR_Aulw8AzX5ad0Ql4JIEoNc5alHA"/>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center text-sm">
+<span class="font-medium">São Paulo (TJ-SP)</span>
+<span class="bg-green-100 text-green-800 px-2 py-0.5 rounded text-[10px] font-bold">OPTIMAL</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary w-[92%] h-full"></div>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="font-medium">Rio de Janeiro (TJ-RJ)</span>
+<span class="bg-orange-100 text-orange-800 px-2 py-0.5 rounded text-[10px] font-bold">WARNING</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-on-tertiary-container w-[65%] h-full"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-4 font-['Public_Sans'] text-sm">
+<div class="flex flex-col gap-2">
+<span class="text-xl font-black text-blue-900 dark:text-white font-headline">Comunica SEM FIO</span>
+<p class="text-slate-500 dark:text-slate-400">© 2026 Comunica SEM FIO. All rights reserved.</p><p class="text-slate-400 text-xs mt-1">CNPJ 51.872.360/0001-14</p>
+</div>
+<div class="flex gap-8 flex-wrap justify-center text-blue-900 dark:text-blue-200">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="index.html">About Us</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="index.html">Editorial Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="index.html">Privacy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="index.html">Contact</a>
+<a class="text-orange-600 underline transition-all duration-200 font-bold" href="index.html">States</a>
+</div>
+</footer>
+<!-- FAB for Breaking News (The Modern Element) -->
+<button class="fixed bottom-8 right-8 bg-on-tertiary-container text-white p-4 rounded-full shadow-[0px_8px_24px_rgba(25,28,29,0.12)] hover:scale-110 active:scale-95 transition-all z-50 group">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="emergency_home" style="font-variation-settings: 'FILL' 1;">emergency_home</span>
+<span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 whitespace-nowrap font-bold text-xs uppercase tracking-widest">Breaking Alerts</span>
+</div>
+</button>
+</body></html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f4f5",
+                        "outline-variant": "#c4c6d0",
+                        "on-secondary-fixed": "#001f2a",
+                        "on-primary-container": "#7594ca",
+                        "on-primary-fixed": "#001b3d",
+                        "secondary": "#466270",
+                        "on-surface-variant": "#43474f",
+                        "tertiary-fixed": "#ffdbd0",
+                        "surface-container": "#edeeef",
+                        "tertiary-fixed-dim": "#ffb59f",
+                        "primary-fixed-dim": "#a9c7ff",
+                        "outline": "#747780",
+                        "on-tertiary-fixed-variant": "#852300",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-container": "#c6e4f4",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "on-secondary-fixed-variant": "#2e4b57",
+                        "inverse-primary": "#a9c7ff",
+                        "background": "#f8f9fa",
+                        "tertiary-container": "#561400",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary-fixed-variant": "#264778",
+                        "surface": "#f8f9fa",
+                        "secondary-fixed-dim": "#adcbda",
+                        "secondary-fixed": "#c9e7f7",
+                        "on-background": "#191c1d",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "surface-dim": "#d9dadb",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#405f91",
+                        "on-surface": "#191c1d",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary": "#330800",
+                        "primary": "#001736",
+                        "on-tertiary-container": "#f3673b",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary-container": "#002b5b",
+                        "on-secondary-container": "#4a6774",
+                        "on-tertiary-fixed": "#3a0a00",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-on-tertiary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/85 dark:bg-slate-900/85 backdrop-blur-xl flex justify-between items-center px-6 py-4 max-w-full">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black font-['Newsreader'] text-blue-900 dark:text-white tracking-tighter">Comunica SEM FIO</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 font-['Newsreader'] italic" href="technology.html">Technology</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 font-['Newsreader'] italic" href="justice.html">Justice</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 font-['Newsreader'] italic" href="environment.html">Environment</a>
+<a class="text-orange-600 dark:text-orange-400 font-bold border-b-2 border-orange-600 font-['Newsreader'] italic" href="novelas.html">Novelas</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-4 py-2 rounded-md font-medium text-sm">State Selection</button>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border-2 border-primary/10">
+<img alt="User profile" data-alt="Close up portrait of a professional man with a friendly smile, clean corporate aesthetic, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHOqkU6CCpCJzW8WJNs0zLbg245JVDyimcuF8OZVao7LE69U9VZtTPeVDvKd5QSixx8yanx5AiiD84BJOy81AJsyCIU7kCqkca62T_TI4EYtlSeOOt-8oYzpcl8HLcbff8KkCpgNkCnajKAKaN-SpD9fZN5ZdEnlAtxGQG4LknaQPzFOdN7Lv3swfDw4YG2Kx4mRJNHpbUAPutCXB7QGENoy6J-W0ZcIiV5z5gWL8jbDDDjbKUjHK8HQBKvjvut2dtdael0fSK1pk"/>
+</div>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col fixed left-0 top-0 pt-20 px-4 h-screen w-64 border-r border-slate-200/20 bg-slate-50 dark:bg-slate-950 z-40">
+<div class="mb-10 mt-4">
+<h3 class="text-lg font-bold text-blue-900 dark:text-blue-100">Editorials</h3>
+<p class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">The Curated Monolith</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-['Public_Sans'] font-medium uppercase tracking-widest text-xs hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:translate-x-1 duration-200 group" href="technology.html">
+<span class="material-symbols-outlined text-xl group-hover:text-blue-900">memory</span>
+<span>Technology</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-['Public_Sans'] font-medium uppercase tracking-widest text-xs hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:translate-x-1 duration-200 group" href="justice.html">
+<span class="material-symbols-outlined text-xl group-hover:text-blue-900">gavel</span>
+<span>Justice</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 font-['Public_Sans'] font-medium uppercase tracking-widest text-xs hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:translate-x-1 duration-200 group" href="environment.html">
+<span class="material-symbols-outlined text-xl group-hover:text-blue-900">eco</span>
+<span>Environment</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-orange-600 bg-orange-50/50 dark:bg-orange-900/20 font-bold font-['Public_Sans'] uppercase tracking-widest text-xs hover:translate-x-1 duration-200" href="entertainment.html">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">theaters</span>
+<span>Entertainment</span>
+</a>
+</nav>
+<div class="mt-auto mb-8">
+<button class="w-full bg-primary text-on-primary py-3 rounded-md font-bold text-xs tracking-widest uppercase shadow-lg shadow-primary/20">Subscribe Now</button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="lg:ml-64 pt-24 pb-12 px-6 md:px-12">
+<!-- Header Hero -->
+<header class="mb-16 relative overflow-hidden">
+<div class="max-w-6xl">
+<div class="flex items-baseline gap-4 mb-4">
+<span class="bg-on-tertiary-container text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Headline</span>
+<span class="text-on-surface-variant text-sm font-medium">Monday, June 10, 2024</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold leading-[0.95] tracking-tight mb-8 max-w-4xl italic text-primary">O Destino de Luana: Revelações no Capítulo de Hoje.</h1>
+<div class="relative group cursor-pointer overflow-hidden rounded-xl bg-surface-container-low">
+<img alt="Hero drama" class="w-full h-[614px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic shot of two actors in a dramatic confrontation on a candlelit balcony, rich textures, deep shadows, romantic and intense atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTE3XA1OEh8XV-NnOz6YCgqwiIah8lIklDrecRWbWHou2gzvDiNKO9zyocgXbtjhH1Nn1Snb0tWjVhDNyYXeZPpZTV93j6nhOMS0KR8TVJ9-F5wNnZO4Yb0PzLixUM87VfFTu_w1VSDW6q2xGtOtNX4iWAVjlW9I98DELFUWbvDUxBwMtQIRWWqc61rN5U1SD5tfvthVzId8-usHcTWdpOplg3lMaGQvQI4aj_5OuH8OGvYLmLheB7TXx3Iptr3ZGAud1xUdptDCU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<div class="flex gap-4 items-center">
+<span class="material-symbols-outlined text-on-tertiary-container">play_circle</span>
+<p class="text-white text-lg font-medium">Assista ao resumo completo em vídeo</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Bento Grid Sections -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-20 max-w-7xl">
+<!-- Recap Column (6 cols) -->
+<div class="md:col-span-7 flex flex-col gap-8">
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+<h2 class="text-3xl font-bold italic text-primary">Recap Semanal</h2>
+<a class="text-on-tertiary-container font-bold text-sm uppercase tracking-widest flex items-center gap-1 group" href="recap.html">Ver Todos <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+<div class="space-y-12">
+<article class="flex flex-col md:flex-row gap-6 group">
+<div class="w-full md:w-48 h-32 flex-shrink-0 rounded-xl overflow-hidden">
+<img alt="Recap 1" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="High-fashion interior of a luxury office, sunset light hitting the glass walls, cinematic depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXyjnpXr0-HpwDi284T032A7s-2OdZ0EfYB1m2rAF9yh86gE2hGO_GCaauy2nU6VbJQosfWspCnTQQQcE6ZCG0iB-TymkJK_dEn6Hn4qQ1XcEXW1qWJ48fIobvZOoW0PjqTzFJlpWSZ2ggeVvm5MNpB1fhgzqoD5FOq-8QS_1K-3H5wN3mSq4GbFvywvBwU5UtmUW8oMempSBD63zKE5Qpw743XqG-fNp1cJhOFoxVwA8AshS4ciR_c4vCUplRtIsVmwDt3X0PE9I"/>
+</div>
+<div>
+<span class="text-on-tertiary-container text-[10px] font-bold uppercase tracking-widest mb-2 block">Capítulo 142</span>
+<h3 class="text-2xl font-bold mb-3 group-hover:text-on-tertiary-container transition-colors">O confronto no escritório de Antônio.</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Em uma cena carregada de tensão, Aline descobre as planilhas ocultas que podem destruir o império da família...</p>
+</div>
+</article>
+<article class="flex flex-col md:flex-row gap-6 group">
+<div class="w-full md:w-48 h-32 flex-shrink-0 rounded-xl overflow-hidden">
+<img alt="Recap 2" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Two people shaking hands in a formal setting, focus on the hands, soft professional lighting, blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSI1VH3n2k1JqITYpeORAEeb7Xtw4RkuwVTu5Wl5nnNpgWeG5jzk8T4esrVVoCZrN2xOZ2POj2uN5fS6ZdzafUY2N4-Brb3QyBDdm7B3fi-9J6WqvR8fhAnYJFlD-08x2a1LV1KjJbVxJOF3Ewe4_KG7mZYsyfyZuoKLsI1gAFfbKt5Zt0__WaIEv82mLKU8UMIoBfZKbEE2zod4eKuCQzqm7GkvaXMmRjj-EH-a7LtyDE9zeDNr0fS3UUnU9J9X8PfeWlW2pmMQ8"/>
+</div>
+<div>
+<span class="text-on-tertiary-container text-[10px] font-bold uppercase tracking-widest mb-2 block">Capítulo 141</span>
+<h3 class="text-2xl font-bold mb-3 group-hover:text-on-tertiary-container transition-colors">A aliança inesperada entre rivais.</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">César e Mário deixam o passado de lado para enfrentar uma ameaça comum que surge nos bastidores da alta sociedade.</p>
+</div>
+</article>
+</div>
+</div>
+<!-- Spoilers Column (5 cols) -->
+<div class="md:col-span-5 bg-surface-container-low rounded-3xl p-8 h-fit sticky top-28">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h2 class="text-3xl font-bold italic text-primary">Spoilers</h2>
+</div>
+<ul class="space-y-6">
+<li class="border-b border-outline-variant/30 pb-6 group cursor-default">
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-2 py-0.5 rounded-full uppercase tracking-tighter">Bomba</span>
+<p class="mt-3 font-medium text-lg leading-snug group-hover:text-on-tertiary-container transition-colors">O segredo de Helena virá à tona durante o casamento de sua irmã, provocando um escândalo nacional.</p>
+</li>
+<li class="border-b border-outline-variant/30 pb-6 group cursor-default">
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-2 py-0.5 rounded-full uppercase tracking-tighter">Retorno</span>
+<p class="mt-3 font-medium text-lg leading-snug group-hover:text-on-tertiary-container transition-colors">Um personagem dado como morto há 10 anos reaparece na porta da mansão no final da próxima semana.</p>
+</li>
+<li class="group cursor-default">
+<span class="text-[10px] font-bold text-on-tertiary-fixed-variant bg-tertiary-fixed px-2 py-0.5 rounded-full uppercase tracking-tighter">Reviravolta</span>
+<p class="mt-3 font-medium text-lg leading-snug group-hover:text-on-tertiary-container transition-colors">A vilã passará por uma redenção inesperada após salvar a vida de seu maior inimigo.</p>
+</li>
+</ul>
+<button class="w-full mt-8 bg-primary text-on-primary py-4 rounded-xl font-bold flex justify-center items-center gap-2 group overflow-hidden relative">
+<span class="relative z-10 uppercase text-xs tracking-widest">Receber no WhatsApp</span>
+<span class="material-symbols-outlined relative z-10 text-lg">message</span>
+<div class="absolute inset-0 bg-gradient-to-r from-on-tertiary-fixed-variant to-on-tertiary-container opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</button>
+</div>
+</section>
+<!-- Cast Section - Asymmetric horizontal scroll -->
+<section class="max-w-7xl">
+<div class="flex items-center gap-4 mb-10">
+<div class="h-[1px] flex-grow bg-outline-variant/40"></div>
+<h2 class="text-4xl font-bold italic text-primary px-4">Elenco de Gala</h2>
+<div class="h-[1px] flex-grow bg-outline-variant/40"></div>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-12 snap-x hide-scrollbar">
+<!-- Cast Card 1 -->
+<div class="min-w-[280px] snap-start bg-surface-container-lowest rounded-2xl overflow-hidden group">
+<div class="h-[400px] overflow-hidden">
+<img alt="Actress 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Studio portrait of a glamorous woman with wavy hair and elegant makeup, wearing a silk blouse, soft professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtCVrBZrzYLpz9eWcqz_i4iRBU_6wp5GTtLShy6sFtfy3FolREB4CdDxJ692IbmTnyxpiLtH0kuM9zGlYN0fd-QpFyrLAGVDKD8mHNr0w_JlwBx-mD8AaGhIekcAai7E9jYDEbdgUWv3e2nAIRs-6jHIpnGEFbso7wi5uTSsV3CKFhPCWH2gH3zy8vcyl_ekY1sTexJ3CMwcU3_U5cpfV_dxExgCPDzDUZpJ7kaWBz0fX6t6vOt4HFK-PDQk4MOrhweqjJNAQS6tc"/>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-primary">Mariana Rios</h4>
+<p class="text-on-tertiary-container text-xs font-bold uppercase tracking-widest">A Protagonista</p>
+<p class="text-on-surface-variant text-sm mt-3 italic">"Esta personagem é o maior desafio da minha carreira até agora."</p>
+</div>
+</div>
+<!-- Cast Card 2 -->
+<div class="min-w-[280px] snap-start bg-surface-container-lowest rounded-2xl overflow-hidden group">
+<div class="h-[400px] overflow-hidden">
+<img alt="Actor 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of a handsome man with a short beard and sharp features, wearing a dark turtleneck, moody editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBEkWXGh8-dyIxmMEdGiJL6FWV-ZdDm5nxlop_OvAqFc7dI61cI3E4JfbFULyItak1pA_AmDW-02JiPPLkuAsy6XCVU2qTU7YWS6aJK4HpCpVj-KAbL7WuQv9_VAlpxT1rGAhBI_rYdP80wI8_GJ19BDWNf8_LLcQkF0zRpFpCAMXotzstn_0NwD9DBWoKzQCIHhDgSPdvgEwgXr8ZAxDGTNADXzs6A7qsZdGF3eBrPcDs4z7qLRsmBMWuqrpvwkATih0pdHOShyQ"/>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-primary">Gabriel Leone</h4>
+<p class="text-on-tertiary-container text-xs font-bold uppercase tracking-widest">O Misterioso</p>
+<p class="text-on-surface-variant text-sm mt-3 italic">Interpretando um arquiteto com um passado sombrio e muitas dívidas.</p>
+</div>
+</div>
+<!-- Cast Card 3 -->
+<div class="min-w-[280px] snap-start bg-surface-container-lowest rounded-2xl overflow-hidden group">
+<div class="h-[400px] overflow-hidden">
+<img alt="Actress 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Portrait of a mature woman with sophisticated style, looking directly at camera with authority and grace, soft gray background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCymgIINwdOcFGhi5F261UVuxejZtIkkHlZ_dbjUIc23I0M_JCJWjuO6Ke-kd9ftXJnJqldyzOi-8lq64E9bRvlqlDgTxrJvbkIdLZcMdkPS790vCPRlyQjUH61wrT6krQTD-_PDNMoLGtDpyup22FzcI5QOzswu0qCaRY_DGx1EUSH-kX4iUHAp-luEVtu9V7AaRQ54-UWSaGdPdzWvY-5tuBhpKI66arFPPb9WtbdKednnWhEqF1p4bIWW7epMOp_Sdfq7yZyDCA"/>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-primary">Fernanda Montenegro</h4>
+<p class="text-on-tertiary-container text-xs font-bold uppercase tracking-widest">A Matriarca</p>
+<p class="text-on-surface-variant text-sm mt-3 italic">O pilar de sabedoria que tenta manter a família unida a qualquer custo.</p>
+</div>
+</div>
+<!-- Cast Card 4 -->
+<div class="min-w-[280px] snap-start bg-surface-container-lowest rounded-2xl overflow-hidden group">
+<div class="h-[400px] overflow-hidden">
+<img alt="Actor 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Portrait of a young charismatic man with curly hair, smiling warmly, natural sunlight casting soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd_SAMuVUmzQgyvpN9XC4-sdBIYTPg6b1EP6QO5I9ZpbW-UsZYo-_nHsDRSR8EeahSKsxHgy6zmYyL1UG15un-RThd1uulWxr9piR07PF6a6qVibbPi3OdHJzDXxlKfponFy1y0ZS6KFWwdA85V_kJHoIX2WurP9AM9BSQ37CnqxYDDjyfaj3EJI5W-GlooR4_RYe7wMwRnYFxTmdg4Dh76KAzz8Zh6Py4gna6crKVpt_sQV4ZdwbJlTQ9qL543pAnbV-pMUtMo5w"/>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-primary">Igor Rickli</h4>
+<p class="text-on-tertiary-container text-xs font-bold uppercase tracking-widest">O Vilão</p>
+<p class="text-on-surface-variant text-sm mt-3 italic">Sedutor e perigoso, seu plano para roubar as terras de Aline está pronto.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 lg:ml-64 lg:w-[calc(100%-16rem)]">
+<div class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-xl font-black text-blue-900 dark:text-white font-['Newsreader'] tracking-tighter">Comunica SEM FIO</span>
+<p class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400">© 2024 Comunica SEM FIO. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-all underline decoration-transparent hover:decoration-current" href="about.html">About Us</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-all underline decoration-transparent hover:decoration-current" href="policy.html">Editorial Policy</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-all underline decoration-transparent hover:decoration-current" href="privacy.html">Privacy</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-all underline decoration-transparent hover:decoration-current" href="contact.html">Contact</a>
+<a class="font-['Public_Sans'] text-sm text-orange-600 underline font-bold" href="states.html">States</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-on-tertiary-container hover:text-white transition-all group" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-on-tertiary-container hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+</footer>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

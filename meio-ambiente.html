@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f3f4f5",
+                    "outline-variant": "#c4c6d0",
+                    "on-secondary-fixed": "#001f2a",
+                    "on-primary-container": "#7594ca",
+                    "on-primary-fixed": "#001b3d",
+                    "secondary": "#466270",
+                    "on-surface-variant": "#43474f",
+                    "tertiary-fixed": "#ffdbd0",
+                    "surface-container": "#edeeef",
+                    "tertiary-fixed-dim": "#ffb59f",
+                    "primary-fixed-dim": "#a9c7ff",
+                    "outline": "#747780",
+                    "on-tertiary-fixed-variant": "#852300",
+                    "surface-bright": "#f8f9fa",
+                    "secondary-container": "#c6e4f4",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "on-secondary-fixed-variant": "#2e4b57",
+                    "inverse-primary": "#a9c7ff",
+                    "background": "#f8f9fa",
+                    "tertiary-container": "#561400",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#d6e3ff",
+                    "on-primary-fixed-variant": "#264778",
+                    "surface": "#f8f9fa",
+                    "secondary-fixed-dim": "#adcbda",
+                    "secondary-fixed": "#c9e7f7",
+                    "on-background": "#191c1d",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e1e3e4",
+                    "surface-dim": "#d9dadb",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#405f91",
+                    "on-surface": "#191c1d",
+                    "inverse-on-surface": "#f0f1f2",
+                    "tertiary": "#330800",
+                    "primary": "#001736",
+                    "on-tertiary-container": "#f3673b",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#e1e3e4",
+                    "primary-container": "#002b5b",
+                    "on-secondary-container": "#4a6774",
+                    "on-tertiary-fixed": "#3a0a00",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Public Sans", "sans-serif"],
+                    "label": ["Public Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-on-tertiary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/85 dark:bg-slate-900/85 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 max-w-full">
+<div class="text-2xl font-black font-['Newsreader'] text-blue-900 dark:text-white tracking-tighter">Comunica SEM FIO</div>
+<div class="hidden md:flex items-center space-x-8 font-['Newsreader'] italic font-medium">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors duration-300" href="technology.html">Technology</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors duration-300" href="justice.html">Justice</a>
+<a class="text-orange-600 dark:text-orange-400 font-bold border-b-2 border-orange-600" href="environment.html">Environment</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors duration-300" href="novelas.html">Novelas</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex items-center gap-2 bg-primary text-on-primary px-4 py-2 rounded-md font-medium text-sm">
+                    State Selection
+                </button>
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional journalist in a modern office setting, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2SxUG9pVUZq1kuCjC21dGj8j7C_HkWIIAhg3t1GlZx9gTXVF1Q0koPc7PLmxWFkwQ2KyEdl21WfpBNQCf4pQV5LMc7L1HnoRQh-OEKD38I8FMbqogqefM-ACvJhVpkPGXgd401zHJ_prrTSEFRnQ787qj7z4pCJytMdmWKItG0WQYEod4_-G-jqoA16HQdw6cHJb_bIiihVKdG29XLisFuZF8rCQPG49VEz5E8bzI3fkgTLpJLvhVKg7f0PHK8AmjR-9jz1fq_rQ"/>
+</div>
+</div>
+</div>
+</nav>
+<!-- SideNavBar (Visible on Large Screens) -->
+<aside class="hidden lg:flex flex-col fixed left-0 top-0 pt-24 px-4 h-screen w-64 border-r border-slate-200/20 bg-slate-50 dark:bg-slate-950 z-40">
+<div class="mb-8 px-2">
+<h3 class="text-lg font-bold text-blue-900 dark:text-blue-100">Editorials</h3>
+<p class="text-[10px] uppercase tracking-widest text-slate-500 font-medium">The Curated Monolith</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-3 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:translate-x-1 duration-200 rounded-xl group" href="technology.html">
+<span class="material-symbols-outlined" data-icon="memory">memory</span>
+<span class="font-['Public_Sans'] font-medium uppercase tracking-widest text-xs">Technology</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:translate-x-1 duration-200 rounded-xl group" href="justice.html">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span class="font-['Public_Sans'] font-medium uppercase tracking-widest text-xs">Justice</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 text-orange-600 bg-orange-50/50 dark:bg-orange-900/20 font-bold transition-all hover:translate-x-1 duration-200 rounded-xl" href="environment.html">
+<span class="material-symbols-outlined" data-icon="eco" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-['Public_Sans'] font-medium uppercase tracking-widest text-xs">Environment</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:translate-x-1 duration-200 rounded-xl group" href="entertainment.html">
+<span class="material-symbols-outlined" data-icon="theaters">theaters</span>
+<span class="font-['Public_Sans'] font-medium uppercase tracking-widest text-xs">Entertainment</span>
+</a>
+</nav>
+<div class="mt-auto mb-8 px-2">
+<button class="w-full py-4 bg-gradient-to-r from-on-tertiary-fixed-variant to-on-tertiary-container text-white rounded-md text-xs font-bold uppercase tracking-widest">
+                Subscribe Now
+            </button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="lg:ml-64 pt-24 pb-12 px-6 md:px-12 bg-surface">
+<!-- Hero Section: Environment -->
+<header class="mb-16">
+<div class="flex flex-col md:flex-row gap-8 items-end">
+<div class="flex-1">
+<span class="text-on-tertiary-container font-bold text-xs uppercase tracking-[0.2em] font-body mb-4 block">Editorial Focus</span>
+<h1 class="text-6xl md:text-8xl font-headline italic font-black text-primary leading-tight -ml-1">Meio Ambiente Final - Pronta para Publicação</h1>
+</div>
+<div class="max-w-md pb-4">
+<p class="text-on-surface-variant font-body leading-relaxed border-l-2 border-outline-variant pl-6">
+                        Investigating the intersection of regional biodiversity, climate emergency, and sustainable governance. The definitive voice for Brazilian environmental intelligence.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Featured Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-20">
+<!-- Large Hero Card -->
+<article class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest">
+<div class="aspect-[16/9] overflow-hidden">
+<img alt="Amazon Forest" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="majestic aerial view of winding amazon river through dense green rainforest canopy with misty atmosphere at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_nWgDhFdSbT2A6Vzj_KYaBuMLDnHqq2VO1kcvfOIhudkja3qt9Ot4a9gtg8WGKr5gDF3SyLSmmNi0NMXMsX4Jcy78K5QN9tLrQyju1GgrgOaSjq86gN8SkMUsq8oPib8fzSKsfwWdy35ZkCx74m8Q4zBfRnKyFRD5cUZCCPMhXyu66FEJ-7WxTQ8coZRS-vG1Tvoar15RpKOyhJXJWg1gq87GH2Q_q-43ev1QSBkN03ZjoB-8V6W1NS2Y905cjj5faP3OJtgHe4M"/>
+</div>
+<div class="p-8">
+<div class="flex gap-4 mb-4">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-[10px] font-bold uppercase tracking-wider">Sustainability</span>
+<span class="text-on-surface-variant text-xs flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span> 12 min read</span>
+</div>
+<h2 class="text-4xl font-headline font-bold text-primary mb-4 leading-tight">The Green Corridor: A New Strategy for Biome Resilience</h2>
+<p class="text-on-surface-variant font-body leading-relaxed mb-6 max-w-2xl">
+                        A deep dive into the cross-state cooperation frameworks aiming to restore the connecting arteries between the Amazon and the Atlantic Forest.
+                    </p>
+<button class="flex items-center gap-2 text-on-tertiary-container font-bold text-sm group-hover:translate-x-2 transition-transform">
+                        Read Full Investigation <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Side Featured Items -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<article class="bg-surface-container-low p-6 rounded-xl border-l-4 border-on-tertiary-container">
+<span class="text-on-tertiary-container font-bold text-[10px] uppercase tracking-widest mb-2 block">Climate Warning</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-3">Urban Heat Islands: The Invisible Killer in Coastal Cities</h3>
+<p class="text-on-surface-variant text-sm font-body line-clamp-3">
+                        New temperature data reveals that central districts are up to 8°C hotter than suburban green spaces.
+                    </p>
+</article>
+<article class="relative aspect-square rounded-xl overflow-hidden group">
+<img alt="Nature close up" class="w-full h-full object-cover" data-alt="close-up of vibrant orange butterfly resting on a native brazilian wildflower with soft morning dew" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSQC4DibTksPTS55uQS5iKPitFXSN4_7Fd396ZTJBBUOHWjNN3yuyV6n7-ZY4g15TK0UhoMx7CtuCVtc1nAw9tk4ktzn94n5FiB6VG8yfetAmdQ-K-BNzkjo1mhNobXUdvj9DV4Jx-rDzZwSL14nUE14SK7aihNOfEcwbWenIKK-r3vyZeehblyabb6V9Clua8HzEBjUZAEK6RiBPRgJbnTbkp6S4qSNZGCFNo3EptdIrF8tCIqvpa20-YyFdwI6hi8SZZeKSIjmY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent p-6 flex flex-col justify-end">
+<h3 class="text-xl font-headline font-bold text-white mb-2">Regional Nature: The Rediscovered Fauna of the Cerrado</h3>
+<p class="text-white/80 text-xs font-body">Photographic essay by Helena Marinho</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Newsletter Tonal Block -->
+<section class="bg-surface-container mb-20 p-12 rounded-xl flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-xl">
+<h2 class="text-3xl font-headline font-bold text-primary mb-2">Environmental Intel Briefing</h2>
+<p class="text-on-surface-variant font-body">Join 45,000 readers receiving curated insights on policy, tech, and nature every Friday morning.</p>
+</div>
+<div class="w-full md:w-auto flex gap-2">
+<input class="flex-1 md:w-64 bg-surface-container-lowest border-none rounded-md px-4 focus:ring-2 focus:ring-primary" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-bold text-sm">Join</button>
+</div>
+</section>
+<!-- Secondary Feed: Asymmetric Layout -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- News Card 1 -->
+<article class="flex flex-col">
+<div class="aspect-video rounded-xl overflow-hidden mb-6">
+<img alt="Eco Tech" class="w-full h-full object-cover" data-alt="modern modular solar panels integrated into a green vertical garden on a sleek architectural building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuuDbtX_mFoN5cT_rN04Q9yB75DFFYRFwTuaeubr5b-XG0v_CLgW_Q4lgeKbwTBsUNYDFkg0GSBGQzmmKoWXl4pIUuFZ7r1sIrRfqyFLIASb7heDc2w78tFaCTpQV_VvVqvl83T869r6dB3i7QOomTRKIQ4K92_8FNg-YbBA0R_avlcoRitiKTbXZh8Oxup61o_VCVMQcavil2WvT_TaOkiProj1udzypGgdUk7WYsw4JksytjCcbbffI0uUcme8D8xzJjUJJjd2Y"/>
+</div>
+<div class="flex-1">
+<span class="text-on-tertiary-container font-bold text-[10px] uppercase tracking-widest mb-2 block">Technology</span>
+<h4 class="text-2xl font-headline font-bold text-primary mb-3">Solar Glass: The Transparency Revolution in Urban Planning</h4>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">
+                        Emerging PV technology allows windows to generate power without compromising aesthetics or light.
+                    </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/15 flex justify-between items-center">
+<span class="text-xs text-on-surface-variant">Nov 14, 2024</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-on-tertiary-container" data-icon="bookmark">bookmark</span>
+</div>
+</article>
+<!-- News Card 2 -->
+<article class="flex flex-col">
+<div class="aspect-video rounded-xl overflow-hidden mb-6">
+<img alt="Ocean Conservation" class="w-full h-full object-cover" data-alt="low angle shot of crystal clear ocean waves crashing on a pristine white sand beach with turquoise water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQiovnLGCT8DJb91XW5P5Zk08iOFCeZxYY4h2hQXSXPzv0ixAMaoL99VnjrT2EIH0tEJbjqfEhxL0CwvEAzDgH3MZfRjnBvQqHTI2_4qmZw7uB9s_MHPjp-hYSBenZevHBDzSBT2XnP2Qop17Q3laKUJCOlScmvx0ct4X2e23DkClGWcJq0YV2uY6rHBLa9mg-gxr29cdRdZQFTaKEsZ3yiWtzSGPYW3_Uk3y0tFMESiEAcBQNEKimfa-uSt81n1wz19ot5jqVdvk"/>
+</div>
+<div class="flex-1">
+<span class="text-on-tertiary-container font-bold text-[10px] uppercase tracking-widest mb-2 block">Climate</span>
+<h4 class="text-2xl font-headline font-bold text-primary mb-3">Mangrove Restoration as Blue Carbon Assets</h4>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">
+                        Why coastal ecosystems are becoming the most valuable players in the voluntary carbon market.
+                    </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/15 flex justify-between items-center">
+<span class="text-xs text-on-surface-variant">Nov 12, 2024</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-on-tertiary-container" data-icon="bookmark">bookmark</span>
+</div>
+</article>
+<!-- News Card 3 -->
+<article class="flex flex-col">
+<div class="aspect-video rounded-xl overflow-hidden mb-6">
+<img alt="Policy Debate" class="w-full h-full object-cover" data-alt="interior of a modern conference hall with warm wood paneling and soft focus of people in discussion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfiIsix0FF5echA3DcbxCcGN4IiuqXa6uiaKvb9X3XV0wgtzt-IkXntfFdNvoB1Eg3v4DYcgUpYD-flNmaLODOD27Qx0xO9SgPkiNJzL8jTae8KcGS04I6ECQid_pldl_ORyz_XPwNR_WHNvocdu0FBpw9ZQqARDYE-oUvEWNpAK4iiWrsbF_2J43bdRJNhFV2KtPhVAXSYCA8lNyrL6dvcQ67HZz8hu54-0p3WwjoH_hzYJ7PtiAdOTLmg3_gmqnESlDWOz6nRBc"/>
+</div>
+<div class="flex-1">
+<span class="text-on-tertiary-container font-bold text-[10px] uppercase tracking-widest mb-2 block">Justice</span>
+<h4 class="text-2xl font-headline font-bold text-primary mb-3">The Rights of Rivers: A Legal Precedent in the Southeast</h4>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">
+                        Courts recognize the inherent legal rights of the Doce River basin, changing industrial liability forever.
+                    </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/15 flex justify-between items-center">
+<span class="text-xs text-on-surface-variant">Nov 10, 2024</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-on-tertiary-container" data-icon="bookmark">bookmark</span>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 lg:ml-64 w-auto">
+<div class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-2">
+<div class="text-xl font-black text-blue-900 dark:text-white">Comunica SEM FIO</div>
+<p class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400">© 2026 Comunica SEM FIO. All rights reserved. <br/> CNPJ 51.872.360/0001-14</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 font-['Public_Sans'] text-sm">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="about.html">About Us</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="editorial-policy.html">Editorial Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="privacy.html">Privacy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="contact.html">Contact</a>
+<a class="text-orange-600 underline transition-all duration-200" href="states.html">States</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer" data-icon="public">public</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer" data-icon="rss_feed">rss_feed</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer" data-icon="mail">mail</span>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head><title>Tecnologia Final - Pronta para Publicação</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f3f4f5",
+                    "outline-variant": "#c4c6d0",
+                    "on-secondary-fixed": "#001f2a",
+                    "on-primary-container": "#7594ca",
+                    "on-primary-fixed": "#001b3d",
+                    "secondary": "#466270",
+                    "on-surface-variant": "#43474f",
+                    "tertiary-fixed": "#ffdbd0",
+                    "surface-container": "#edeeef",
+                    "tertiary-fixed-dim": "#ffb59f",
+                    "primary-fixed-dim": "#a9c7ff",
+                    "outline": "#747780",
+                    "on-tertiary-fixed-variant": "#852300",
+                    "surface-bright": "#f8f9fa",
+                    "secondary-container": "#c6e4f4",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "on-secondary-fixed-variant": "#2e4b57",
+                    "inverse-primary": "#a9c7ff",
+                    "background": "#f8f9fa",
+                    "tertiary-container": "#561400",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#d6e3ff",
+                    "on-primary-fixed-variant": "#264778",
+                    "surface": "#f8f9fa",
+                    "secondary-fixed-dim": "#adcbda",
+                    "secondary-fixed": "#c9e7f7",
+                    "on-background": "#191c1d",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e1e3e4",
+                    "surface-dim": "#d9dadb",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#405f91",
+                    "on-surface": "#191c1d",
+                    "inverse-on-surface": "#f0f1f2",
+                    "tertiary": "#330800",
+                    "primary": "#001736",
+                    "on-tertiary-container": "#f3673b",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#e1e3e4",
+                    "primary-container": "#002b5b",
+                    "on-secondary-container": "#4a6774",
+                    "on-tertiary-fixed": "#3a0a00",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Public Sans", "sans-serif"],
+                    "label": ["Public Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3, .news-headline { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-on-tertiary-container selection:text-white">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/85 dark:bg-slate-900/85 backdrop-blur-xl flex justify-between items-center px-6 py-4 max-w-full">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black font-['Newsreader'] text-blue-900 dark:text-white tracking-tighter">Comunica SEM FIO</span>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-orange-600 dark:text-orange-400 font-bold border-b-2 border-orange-600 text-sm py-1 font-['Newsreader'] italic font-medium" href="index.html">Technology</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 hover:text-orange-500 transition-colors duration-300 text-sm py-1 font-['Newsreader'] italic font-medium" href="index.html">Justice</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 hover:text-orange-500 transition-colors duration-300 text-sm py-1 font-['Newsreader'] italic font-medium" href="index.html">Environment</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 hover:text-orange-500 transition-colors duration-300 text-sm py-1 font-['Newsreader'] italic font-medium" href="index.html">Novelas</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center bg-surface-container-high px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-outline text-sm" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-outline w-32 lg:w-48" placeholder="Search technology..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 text-xs font-bold uppercase tracking-widest rounded-md hover:opacity-80 transition-all active:scale-95">State Selection</button>
+<img alt="User profile" class="w-8 h-8 rounded-full object-cover" data-alt="Portrait of a modern professional user in a soft focus minimalist office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH3wEkYAwiY4IxoX2bgihQ0JbuHfh6KVEKxZqAb2QJ6-0xi9-Sej02u7PKjMzq_bO_jkdWLprgNIvFMeBcMbxYht1nv8ntQrAyVS0w97_gjrjX_jcV2SGwCJzlMbLVtf4OUSn4NmpU5HgfrsphGNO5rYowsib1c1ITcM9sHyK7YjxKi8BRxIphDhKCIYAne3dUyWnlczVMGk0k4aGby4Q4bFICUV83gz8YL1woF_tuudmVjRD9qzS68QOIHOccCahMzqqv24FGWJg"/>
+</div>
+</header>
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col fixed left-0 top-0 pt-20 px-4 h-screen w-64 border-r border-slate-200/20 bg-slate-50 dark:bg-slate-950 z-40">
+<div class="mb-8 px-2">
+<h2 class="text-lg font-bold text-blue-900 dark:text-blue-100">Editorials</h2>
+<p class="text-[10px] uppercase tracking-widest text-slate-500">The Curated Monolith</p>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg text-orange-600 bg-orange-50/50 dark:bg-orange-900/20 font-bold hover:translate-x-1 duration-200 transition-all font-['Public_Sans'] uppercase tracking-widest text-xs" href="index.html">
+<span class="material-symbols-outlined" data-icon="memory" style="font-variation-settings: 'FILL' 1;">memory</span>
+<span>Technology</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:translate-x-1 duration-200 transition-all font-['Public_Sans'] uppercase tracking-widest text-xs" href="index.html">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<span>Justice</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:translate-x-1 duration-200 transition-all font-['Public_Sans'] uppercase tracking-widest text-xs" href="index.html">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<span>Environment</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:translate-x-1 duration-200 transition-all font-['Public_Sans'] uppercase tracking-widest text-xs" href="index.html">
+<span class="material-symbols-outlined" data-icon="theaters">theaters</span>
+<span>Entertainment</span>
+</a>
+</nav>
+<div class="mt-auto mb-8 p-4 bg-primary-container rounded-xl">
+<p class="text-on-primary-container text-xs font-bold mb-2">Exclusive Insight</p>
+<p class="text-white text-[10px] leading-relaxed mb-4">Get the weekly analytical deep dive on silicon and society.</p>
+<button class="w-full bg-on-tertiary-container text-white py-2 rounded text-[10px] font-bold uppercase tracking-widest">Subscribe Now</button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="lg:ml-64 pt-24 pb-12 px-6 lg:px-12 max-w-7xl">
+<!-- Hero Section: Asymmetric Layout -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+<div class="lg:col-span-8 relative group overflow-hidden rounded-xl">
+<img class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Futuristic glowing neural network visualization with blue and orange ethereal light in a dark space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlzwtP-Ijlpw0wO7UIl0ntZh-pwy31mBemE3znOM_TrPBbfJLlCeALaW2T8SwoD-aQGEoV-Mbso10oIo7BS__TfP3teIzBR9mlbbu9Bi7nSaWxv59UDZB_Q2p1S1YPFc-NSxAVfUDPbPZR4PMqffqFowPXR07J9OSXqAQOyNqgxLegdP66pvuOI9ZsGANrQ2mNfUApQK1ICT_WGqqBJtqbfmv25eutfPrGb79N9xLj_MPi9mHyOMCfR2DkD31HnFFGOaUjr17q2hI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end">
+<span class="bg-on-tertiary-container text-white text-[10px] font-bold uppercase tracking-widest w-fit px-3 py-1 rounded-full mb-4">Artificial Intelligence</span>
+<h1 class="text-white text-4xl lg:text-5xl font-medium leading-tight mb-4 news-headline max-w-2xl">The Ghost in the Silicon: How LLMs are Redefining Human Creativity</h1>
+<p class="text-slate-200 text-lg line-clamp-2 max-w-xl mb-6">Beyond automation, generative models are creating a new synthesis of machine logic and artistic expression that challenges our definitions of authorship.</p>
+<div class="flex items-center gap-4 text-white text-xs font-medium">
+<span>By Elena Vance</span>
+<span class="w-1 h-1 bg-on-tertiary-container rounded-full"></span>
+<span>4 min read</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl transition-all hover:translate-y-[-4px]">
+<span class="text-on-tertiary-container text-[10px] font-bold uppercase tracking-widest mb-2 block">Flash Alert</span>
+<h3 class="text-xl font-bold mb-3 leading-snug">Quantum Computing: The 1000-Qubit Milestone Surpassed</h3>
+<p class="text-on-surface-variant text-sm mb-4">A new breakthrough in error correction brings us closer to the cryptographic apocalypse.</p>
+<a class="text-primary font-bold text-xs flex items-center gap-1 group" href="index.html">
+                        Read Analysis 
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-container p-6 rounded-xl border-l-4 border-on-tertiary-container">
+<h3 class="text-lg italic font-medium font-headline mb-2">"The keyboard is becoming as obsolete as the rotary phone."</h3>
+<p class="text-xs text-on-surface-variant">— Dr. Aris Thorne on Neuralink advancements</p>
+</div>
+<div class="relative overflow-hidden rounded-xl h-full min-h-[150px]">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Close up of retro electronic components and microchips with sharp focus and warm cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf3WyM2mwtVwZ6k-TPX9bqweFvtBLFGVVdh9OgfmyRlY1Uis6Kr_6yVKiw623KLNweUcfZTqlN4JkvmINA1poLjr1NjVTp5-GCB8Mn-zmSCuGUSUqjmfjGiBT2pDXPpjuUU0HnAqFfuluCnn6AhXK9_iQHiep8St1swzPWd2eWbGnHBKRqDec9Y5JGUloDsllFgvHhFoCANkwXpqso5lkjOIUSUHFqF0L0twDgAC_RDhJwOkYueeTmxblVgHtTEuQIZEXzLQTi9m0"/>
+<div class="absolute inset-0 bg-primary/40 flex items-center justify-center p-6 text-center">
+<p class="text-white font-headline text-xl italic font-bold">The Archives: 50 Years of Silicon</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Subsection: AI Bento Grid -->
+<div class="mb-8 flex justify-between items-end">
+<div>
+<h2 class="text-3xl font-medium news-headline text-primary">Intelligence Refined</h2>
+<div class="h-1 w-12 bg-on-tertiary-container mt-2"></div>
+</div>
+<a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors" href="index.html">View AI Feed</a>
+</div>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<img class="w-full h-48 object-cover" data-alt="Small friendly robot head with expressive digital eyes in a bright clean tech lab" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHVP9BhYhBlz6Dbexms6jUqiXVRTnRjHVCmoqsU2EOae-lbmOMxYJC2D_OcYxKQm-cbjlZdjjW5reCFYGk6vW1hIMcMwF7aXFPiyGMUdLJRjwLDV_I_OiuttOmXYHlxZ_hPRIIUUjRyxXlMJtodGZ3uyyhnj3B_XeybwfsHSM8XhnjSHY4Vr3ZNRlPT80hx8hBUemQIQWmNxCv7VuZEJLt-za0_9JRWviv4evAgYzHCBy7olPJSskouHFIc3QU8vnabVWSZRMPbD4"/>
+<div class="p-6">
+<span class="text-secondary font-bold text-[10px] uppercase tracking-widest block mb-2">Robotics</span>
+<h3 class="text-xl font-bold mb-2">Empathy Circuits</h3>
+<p class="text-on-surface-variant text-sm mb-4">New mechanical skin allows robots to feel texture and warmth, bridging the human-machine gap.</p>
+<div class="flex items-center justify-between">
+<span class="text-[10px] text-outline">Source: TechCrunch</span>
+<button class="material-symbols-outlined text-on-tertiary-container" data-icon="bookmark">bookmark</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<img class="w-full h-48 object-cover" data-alt="Abstract data visualization of DNA strands glowing with neon orange and blue colors on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhpTpjkTWF511Ba866_3132vTK8YVjWMHL6qMQ253QAus3CirT3qdEW__CkcpX9wK5y6DBZulFEiAs13iz7AZ1pVoG4CdbSodG767Xm9INm6T8kWrdzMNG6I4belLn1tzshpV-NoF3yYVrKMAC_WFLrSg95W06xPzPjyUO5i8AysxlDLOyhCtPNUHaOzdIpRqwVauj3IB8SYswlk3UaY-92Cn4y6sjso1I15c3t0LuLLyd_D9bp47XwG25qMeEpDuxhFWB9pPEBU4"/>
+<div class="p-6">
+<span class="text-secondary font-bold text-[10px] uppercase tracking-widest block mb-2">Biotech</span>
+<h3 class="text-xl font-bold mb-2">Data in the Blood</h3>
+<p class="text-on-surface-variant text-sm mb-4">Synthetic DNA storage reaches a new density milestone, promising immortal digital archives.</p>
+<div class="flex items-center justify-between">
+<span class="text-[10px] text-outline">Source: Nature</span>
+<button class="material-symbols-outlined text-on-tertiary-container" data-icon="bookmark">bookmark</button>
+</div>
+</div>
+</div>
+<div class="bg-primary text-white rounded-xl p-8 flex flex-col justify-between">
+<div>
+<span class="bg-on-tertiary-container text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Daily Brief</span>
+<h3 class="text-2xl font-headline italic font-bold mt-6 mb-4">"AI is not a tool; it's a new species of collaborator."</h3>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<div>
+<p class="text-xs font-bold">Listen: The Monolith Podcast</p>
+<p class="text-[10px] opacity-70">Episode 42: The Algorithmic Bias</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Subsection: Gadgets & Cybersecurity Asymmetric Split -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div>
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-medium news-headline">The Gadget Watch</h2>
+<span class="material-symbols-outlined text-outline-variant" data-icon="devices">devices</span>
+</div>
+<div class="space-y-8">
+<article class="flex gap-4 group">
+<img class="w-24 h-24 rounded-lg object-cover flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Sleek modern tablet on a wooden desk with cinematic overhead lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBQL64X5aQLeaLYKkYNjqCXAK1WhuUsyX63YrkKiUJsnlDyLGxS5tlC4F5CgzBXiZu3x5X66HUIjuqKxIxkaqzKKSvcdq_0frVtn5tSWD6A-czzOuMRDOj9exbIX_0-FBdJXSvdcQrUKWH1s-_tFCSo-eoZ6FATMlH5RWRty8tHaaE-vskyoVZnte_i4LHXyh7mSHUJUJ0o0p4LyMO5BiSFhU_NZYF6s3QrBkNMXpWHXAg76mMssnJVuLXRe__sFtMV5SjwqSMeVM"/>
+<div>
+<h4 class="font-bold text-lg leading-tight mb-1 group-hover:text-on-tertiary-container transition-colors">Minimalist Tablets: The 'Less is More' Tech Trend</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2">Why E-ink and distraction-free devices are making a comeback in 2024.</p>
+<p class="text-[10px] text-outline mt-2 uppercase tracking-tighter">Hardware • 12 Oct</p>
+</div>
+</article>
+<article class="flex gap-4 group">
+<img class="w-24 h-24 rounded-lg object-cover flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="High-end wireless headphones resting on a minimalist surface with soft teal backlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMWzmWTF_nXeX-PEjM8ODF8JtHj7ynaZMIyrQptC5gVXpN3_LsB2TcJIW3CYHAWwYIkRoxYDtk57RpVLG1561ST_r8yA9pdTDePsCvRACQEjfuNr026tog6np5hIyBRyODu_IfGil4-DBDz8C-zUnRIHHxL1yhQWnv7XRkCZ1TJitCE07TdxgVAOvDlpk8v3V1FL7KnoygK74GaY1lMUdH_5Fdzio8av8SnTxVrWPFgVYulTvj8f61J14kNLNAK7DrntksMgezY9o"/>
+<div>
+<h4 class="font-bold text-lg leading-tight mb-1 group-hover:text-on-tertiary-container transition-colors">Spatial Audio: Can You Hear the Architecture?</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2">How software is simulating physical acoustics to create impossible soundscapes.</p>
+<p class="text-[10px] text-outline mt-2 uppercase tracking-tighter">Audio • 11 Oct</p>
+</div>
+</article>
+<article class="flex gap-4 group">
+<img class="w-24 h-24 rounded-lg object-cover flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Close up of a luxury smartwatch showing biometric data with clean typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN-vVER6hHyFe96jHoL48G4xw05EoheKlvS3lLUv8Mn4FmH6TLOqgrEzm9T03tvxO6UvBU1m4g0aVGdqs2PY6T2oCyes57wLZvAeRzEJtjG3EI2GJ7qzhKowVQU9yrqxxia2GnzDCffqwmpsiXc_sgeqHYgRBp5KGoKlC3ztalnSuMlogqJ7ALWFDZvYOZ_dGr_E3q-pQB3JwsEB5XgOa-xKCRkEC7NJvFBqWnZQCARn0XRCCOzMt35mWHYDEFFc-oNKYvfXezBQE"/>
+<div>
+<h4 class="font-bold text-lg leading-tight mb-1 group-hover:text-on-tertiary-container transition-colors">The Wearable Doctor: Continuous Monitoring Risks</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2">Navigating the thin line between health tracking and health anxiety.</p>
+<p class="text-[10px] text-outline mt-2 uppercase tracking-tighter">Wearables • 10 Oct</p>
+</div>
+</article>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl relative overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-2 text-error mb-4">
+<span class="material-symbols-outlined" data-icon="security" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.2em]">Cybersecurity Matrix</span>
+</div>
+<h2 class="text-3xl font-medium news-headline mb-6 text-primary">The Zero-Day Reality</h2>
+<div class="space-y-6">
+<div class="border-b border-outline-variant/30 pb-4">
+<p class="text-[10px] font-bold text-on-tertiary-container mb-1">CRITICAL VULNERABILITY</p>
+<h4 class="font-bold text-lg mb-2">Protocol 7X: The Flaw in Global Cloud Infrastructure</h4>
+<p class="text-sm text-on-surface-variant">Security researchers identify a core routing flaw that could expose 30% of enterprise data.</p>
+</div>
+<div class="border-b border-outline-variant/30 pb-4">
+<p class="text-[10px] font-bold text-secondary mb-1">DATA PRIVACY</p>
+<h4 class="font-bold text-lg mb-2">Encrypted Messaging: The New Legislative Front</h4>
+<p class="text-sm text-on-surface-variant">Privacy advocates clash with law enforcement over backdoors in consumer apps.</p>
+</div>
+<div class="pb-4">
+<p class="text-[10px] font-bold text-secondary mb-1">OPINION</p>
+<h4 class="font-bold text-lg mb-2">The End of the Password is Finally Here</h4>
+<p class="text-sm text-on-surface-variant">Passkeys and biometric shards are winning the war against phishing.</p>
+</div>
+</div>
+<button class="mt-4 flex items-center gap-2 text-primary font-bold text-xs group">
+                        Enter Security Vault 
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="lock_open">lock_open</span>
+</button>
+</div>
+<!-- Glassy background decoration -->
+<div class="absolute -bottom-20 -right-20 w-64 h-64 bg-on-tertiary-container/10 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex flex-col items-center md:items-start">
+<span class="text-xl font-black text-blue-900 dark:text-white mb-2">Comunica SEM FIO</span>
+<p class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400">© 2026 Comunica SEM FIO. All rights reserved. CNPJ 51.872.360/0001-14</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="index.html">About Us</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="index.html">Editorial Policy</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="index.html">Privacy</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="index.html">Contact</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white underline transition-all duration-200" href="index.html">States</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400" data-icon="rss_feed">rss_feed</span>
+<span class="material-symbols-outlined text-slate-400" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-slate-400" data-icon="share">share</span>
+</div>
+</footer>
+<!-- FAB: Only for specific actions as per mandate -->
+<button class="fixed bottom-8 right-8 bg-on-tertiary-container text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_8px_24px_rgba(25,28,29,0.06)] hover:scale-110 active:scale-95 transition-all z-50">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</body></html>

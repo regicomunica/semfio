@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<!-- Google Tag Manager -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Home Final - Pronta para Publicação</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb59f",
+                    "on-secondary-container": "#4a6774",
+                    "inverse-surface": "#2e3132",
+                    "on-primary-fixed": "#001b3d",
+                    "surface": "#f8f9fa",
+                    "surface-dim": "#d9dadb",
+                    "secondary-fixed": "#c9e7f7",
+                    "error": "#ba1a1a",
+                    "on-background": "#191c1d",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#466270",
+                    "secondary-container": "#c6e4f4",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "primary-container": "#002b5b",
+                    "primary-fixed": "#d6e3ff",
+                    "on-tertiary-fixed": "#3a0a00",
+                    "secondary-fixed-dim": "#adcbda",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#a9c7ff",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "on-tertiary-container": "#f3673b",
+                    "on-secondary-fixed": "#001f2a",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-surface-variant": "#43474f",
+                    "on-secondary-fixed-variant": "#2e4b57",
+                    "outline": "#747780",
+                    "primary": "#001736",
+                    "outline-variant": "#c4c6d0",
+                    "primary-fixed-dim": "#a9c7ff",
+                    "on-primary-container": "#7594ca",
+                    "tertiary": "#330800",
+                    "tertiary-container": "#561400",
+                    "surface-container-low": "#f3f4f5",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "background": "#f8f9fa",
+                    "tertiary-fixed": "#ffdbd0",
+                    "on-tertiary-fixed-variant": "#852300",
+                    "surface-variant": "#e1e3e4",
+                    "surface-tint": "#405f91",
+                    "surface-container": "#edeeef",
+                    "on-primary-fixed-variant": "#264778"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Public Sans", "sans-serif"],
+                    "label": ["Public Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; background-color: #f8f9fa; color: #191c1d; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .headline-serif { font-family: 'Newsreader', serif; }
+        .tonal-shift { background-color: #f3f4f5; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-background selection:bg-on-tertiary-container selection:text-white">
+<!-- Google Tag Manager (noscript) -->
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+<div class="flex flex-col w-full max-w-[1440px] mx-auto px-4 md:px-8 py-4">
+<div class="flex justify-between items-center gap-4">
+<a class="text-2xl lg:text-3xl font-serif font-bold text-primary shrink-0 uppercase tracking-tight" href="index.html">Comunica SEM FIO</a>
+<div class="flex items-center gap-2 md:gap-6 flex-1 justify-end">
+<div class="hidden sm:flex items-center bg-surface-container-high px-4 py-2 rounded-lg flex-1 max-w-xs">
+<span class="material-symbols-outlined text-outline text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-outline" placeholder="Buscar notícias..." type="text"/>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary cursor-pointer sm:hidden" data-icon="search">search</span>
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="public">public</span>
+<a class="bg-primary text-on-primary px-3 md:px-5 py-2 rounded-md text-[10px] md:text-xs font-semibold uppercase tracking-wider transition-all hover:opacity-90 whitespace-nowrap inline-block" href="estados.html">Selecionar Estado</a>
+</div>
+</div>
+</div>
+<nav class="flex items-center justify-start border-t border-slate-200/50 mt-4 pt-4 overflow-x-auto no-scrollbar">
+<div class="flex gap-6 md:gap-8 whitespace-nowrap pb-1">
+<a class="text-on-tertiary-container font-bold border-b-2 border-on-tertiary-container font-sans uppercase tracking-wider text-[10px] md:text-xs" href="index.html">Home</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-sans uppercase tracking-wider text-[10px] md:text-xs" href="politica.html">Política</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-sans uppercase tracking-wider text-[10px] md:text-xs" href="policia.html">Polícia</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-sans uppercase tracking-wider text-[10px] md:text-xs" href="educacao.html">Educação</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-sans uppercase tracking-wider text-[10px] md:text-xs" href="saude.html">Saúde</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-sans uppercase tracking-wider text-[10px] md:text-xs" href="futebol.html">Futebol</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-sans uppercase tracking-wider text-[10px] md:text-xs" href="turismo.html">Turismo</a>
+</div>
+</nav>
+</div>
+</header>
+<!-- Layout Wrapper -->
+<div class="flex w-full max-w-[1440px] mx-auto">
+<!-- SideNavBar (Responsive visibility) -->
+<aside class="hidden xl:flex flex-col fixed left-0 top-32 bottom-0 w-64 bg-surface border-r border-slate-200/50 z-40 px-6 py-4 overflow-y-auto no-scrollbar">
+<h2 class="text-primary font-sans text-sm font-bold uppercase tracking-widest mb-1">Comunica Feed</h2>
+<p class="text-slate-500 text-xs mb-8">Atualizações em tempo real</p>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-4 py-3 text-on-tertiary-container font-semibold bg-tertiary-fixed rounded-xl transition-all hover:translate-x-1" href="index.html">
+<span class="material-symbols-outlined text-lg" data-icon="bolt">bolt</span>
+<span class="text-sm">Últimas Notícias</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-surface-container rounded-xl transition-all hover:translate-x-1" href="tendencias.html">
+<span class="material-symbols-outlined text-lg" data-icon="trending_up">trending_up</span>
+<span class="text-sm">Tendências</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-surface-container rounded-xl transition-all hover:translate-x-1" href="politica.html">
+<span class="material-symbols-outlined text-lg" data-icon="gavel">gavel</span>
+<span class="text-sm">Política</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-surface-container rounded-xl transition-all hover:translate-x-1" href="mundo.html">
+<span class="material-symbols-outlined text-lg" data-icon="language">language</span>
+<span class="text-sm">Mundo</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-surface-container rounded-xl transition-all hover:translate-x-1" href="economia.html">
+<span class="material-symbols-outlined text-lg" data-icon="payments">payments</span>
+<span class="text-sm">Economia</span>
+</a>
+<div class="mt-8 pt-8 border-t border-slate-200/50">
+<h3 class="text-primary font-sans text-[10px] font-bold uppercase tracking-widest mb-4">Configurações</h3>
+<div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-semibold text-slate-700">Push: SC</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-7 h-4 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-on-tertiary-container"></div>
+</label>
+</div>
+<p class="text-[10px] text-slate-400 leading-tight">Receba alertas instantâneos de Santa Catarina.</p>
+</div>
+</div>
+</nav>
+</aside>
+<main class="w-full pt-36 pb-20 px-4 md:px-8 xl:ml-64">
+<!-- GOOGLE ADSENSE SLOT -->
+<!-- Section: Destaques do Brasil -->
+<section class="mb-16">
+<div class="flex items-end justify-between mb-8 gap-4">
+<div class="shrink-0">
+<span class="text-on-tertiary-container text-xs font-bold uppercase tracking-[0.2em] mb-2 block">Curadoria Principal</span>
+<h2 class="headline-serif text-3xl md:text-4xl font-bold text-primary">Destaques do Brasil</h2>
+</div>
+<div class="hidden sm:block h-[1px] flex-grow mb-2 bg-slate-200"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Hero Card -->
+<article class="lg:col-span-8 group relative overflow-hidden rounded-xl bg-white border border-slate-100 shadow-sm transition-shadow hover:shadow-md">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Brasília architecture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB82ZkzXHhzXOlmvhjAOOjKpCs10tQmIN-DBg-cnsswGxfEUo8vGuzobOJ12WaYwUrk70Kp2FpuOu2Frr-9UwsD8hAGd1ZmXQSM4t50gmIWg34dy9HJZei5WHa-1ceOtUF1RNkLFvbFB_jnr291KnKW4Ynp2kVken7o9pGZ1hnCJ79tUx81bnNakByuKk2MrMzdCHzupE2ffCBAxS82ANue9ac_QuxhD7YcioEUlj3z1Y_O3fcd8rw-k8RasEMVZfqYVH3VyMEHQYs"/>
+</div>
+<div class="p-6 md:p-8">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-4">Política</span>
+<h3 class="headline-serif text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight group-hover:text-on-tertiary-container transition-colors">Reforma Tributária avança no Senado com novos ajustes fundamentais</h3>
+<p class="text-on-surface-variant text-base md:text-lg mb-6 leading-relaxed">O texto-base recebeu aprovação em primeira instância, prometendo simplificar o consumo e unificar impostos estaduais e federais no longo prazo.</p>
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-6 py-3 rounded-md font-semibold text-sm transition-all hover:bg-on-primary-container" href="politica.html">
+                            Ler no Comunica SEM FIO
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Side Feature Grid -->
+<div class="lg:col-span-4 flex flex-col md:flex-row lg:flex-col gap-8">
+<div class="flex-1 flex flex-col gap-8">
+<article class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm flex-1">
+<span class="text-on-tertiary-container text-[10px] font-bold uppercase tracking-widest mb-3 block">Saúde</span>
+<h4 class="headline-serif text-xl font-bold mb-3 leading-snug hover:text-on-tertiary-container transition-colors cursor-pointer" onclick="window.location.href='saude.html'">Novas campanhas de vacinação atingem marca histórica em 2024</h4>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-3">A adesão do público jovem superou as expectativas do Ministério da Saúde no último trimestre.</p>
+<a class="text-on-tertiary-fixed-variant font-bold text-[10px] md:text-xs uppercase tracking-wider hover:underline" href="saude.html">Leia mais no Comunica</a>
+</article>
+<article class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm flex-1">
+<span class="text-on-tertiary-container text-[10px] font-bold uppercase tracking-widest mb-3 block">Economia</span>
+<h4 class="headline-serif text-xl font-bold mb-3 leading-snug hover:text-on-tertiary-container transition-colors cursor-pointer" onclick="window.location.href='economia.html'">Ibovespa registra alta impulsionada por commodities e mercado externo</h4>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-3">Analistas preveem estabilidade para o próximo mês com a redução da inflação global.</p>
+<a class="text-on-tertiary-fixed-variant font-bold text-[10px] md:text-xs uppercase tracking-wider hover:underline" href="economia.html">Ler no Comunica SEM FIO</a>
+</article>
+</div>
+<div class="bg-primary p-6 md:p-8 rounded-xl text-white flex flex-col justify-center items-center text-center lg:h-auto md:w-64 lg:w-full shrink-0">
+<span class="material-symbols-outlined text-4xl mb-4 text-on-tertiary-container">campaign</span>
+<h5 class="font-sans font-bold text-lg mb-2">Newsletter Comunica</h5>
+<p class="text-primary-fixed text-[10px] mb-4">Receba os destaques do Brasil todas as manhãs no seu e-mail.</p>
+<button class="w-full py-2 bg-on-tertiary-container text-white rounded-md text-xs font-bold transition-transform active:scale-95">INSCREVER-SE</button>
+</div>
+</div>
+</div>
+</section>
+<!-- GOOGLE ADSENSE SLOT -->
+<!-- Section: Notícias por Estado -->
+<section class="mb-16 py-8 md:py-12 rounded-2xl bg-surface-container-low px-4 md:px-8">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-10">
+<div>
+<h2 class="headline-serif text-2xl md:text-3xl font-bold text-primary">Sua Região: Santa Catarina</h2>
+<p class="text-on-surface-variant text-sm mt-1">Cobertura local personalizada pelo Comunica SEM FIO.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 bg-white rounded-full text-[10px] md:text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all shadow-sm" onclick="window.location.href='sp.html'">SP</button>
+<button class="px-4 py-2 bg-white rounded-full text-[10px] md:text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all shadow-sm" onclick="window.location.href='rj.html'">RJ</button>
+<button class="px-4 py-2 bg-white rounded-full text-[10px] md:text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all shadow-sm" onclick="window.location.href='mg.html'">MG</button>
+<button class="px-4 py-2 bg-white rounded-full text-[10px] md:text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all shadow-sm" onclick="window.location.href='ba.html'">BA</button>
+<button class="px-4 py-2 bg-white rounded-full text-[10px] md:text-xs font-bold text-primary hover:bg-primary hover:text-white transition-all shadow-sm" onclick="window.location.href='pr.html'">PR</button>
+<button class="px-4 py-2 bg-primary text-white rounded-full text-[10px] md:text-xs font-bold shadow-sm" onclick="window.location.href='estados.html'">+ Todos</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 md:gap-6">
+<!-- State News Items -->
+<div class="flex gap-4 items-start group bg-white/50 p-3 rounded-xl hover:bg-white transition-colors cursor-pointer" onclick="window.location.href='sp.html'">
+<div class="w-16 h-16 shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="São Paulo skyline" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArRVnby9wCwqLjBXaswt0rFdR7IPFEOQ4idt8SI60_u-tu7uxhPQ7ngl3rmf-W5s0vLW7XL-XFkbFIz4pelJmxqgvnQtrNXCPDv9BlAqVBYw62_ADoEstcsYkLyTL69ZJgKX3yv5v0B9psvTet-s-cu4TLh7v51jFkgu6i8oPSErbgIrF7EN06JAmXgIZzLbcYDpUZW_e9RRYPY7jr0H4oEqTVeFTaht2tOBfc0LPbF8-y1q_tOFFISgbuoH6wubV_4oQ5GO-1Cno"/>
+</div>
+<div>
+<span class="text-[10px] font-bold text-on-tertiary-container uppercase">São Paulo</span>
+<h5 class="text-sm font-bold text-primary group-hover:text-on-tertiary-container transition-colors leading-tight mt-1">Metrô amplia horário de funcionamento para feriado</h5>
+<div class="flex gap-2 mt-2">
+<button class="text-[#25D366] hover:opacity-70 transition-opacity"><svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg></button>
+<button class="text-black hover:opacity-70 transition-opacity"><svg class="w-3 h-3 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></button>
+</div>
+</div>
+</div>
+<div class="flex gap-4 items-start group bg-white/50 p-3 rounded-xl hover:bg-white transition-colors cursor-pointer" onclick="window.location.href='rj.html'">
+<div class="w-16 h-16 shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Rio de Janeiro" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA9xXalNmEoIL4D0bbZFz6_xxr1un-MSd2Hbs4jxkTpzH-VxAFrnyGj0Tno7C4rPdrX_rBiRjG-JJzbkThlyOEBLZ9UB6m8RG-ZG3qIhsYB9TNd22qedsTO3DDZrfc-KiyJOemaLVX3uaAI-NNDdu-rETzDUfYP6AqA0AA1nB6u8Wc6asSZDJN0OWHLuAG92m-f2cxk7dhcs5p1hDZlBpqEB_5PJHpTLFcnNR30K2-YxkrksKG9w82VHDS0yrbQbSD75wCtuiGjv8"/>
+</div>
+<div>
+<span class="text-[10px] font-bold text-on-tertiary-container uppercase">Rio de Janeiro</span>
+<h5 class="text-sm font-bold text-primary group-hover:text-on-tertiary-container transition-colors leading-tight mt-1">Festival de cinema movimenta a orla de Copacabana</h5>
+<div class="flex gap-2 mt-2">
+<button class="text-[#25D366] hover:opacity-70 transition-opacity"><svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg></button>
+<button class="text-black hover:opacity-70 transition-opacity"><svg class="w-3 h-3 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></button>
+</div>
+</div>
+</div>
+<div class="flex gap-4 items-start group bg-white/50 p-3 rounded-xl hover:bg-white transition-colors cursor-pointer" onclick="window.location.href='mg.html'">
+<div class="w-16 h-16 shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Minas Gerais" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv2ElLn-UeeWR1gs7Em3saMtJiCSbGCUIaZdNfu_s7bPwx9c8ejrfPSTYC-E1XuMNSnvlo23rRKfHFi_0vMDOxy1vBVWT2hJtXfa7d4g6yfbBRSqZXeQjZKRZAalt_XRpo_r9yHFaq_klgZiEsh31oxrD_c224LXxgpFfm1JsmitOS_zfT9PqrD21lrC1Ao2_iFnF7FYOWpxCfkY57Xf71vdNOOp0wn3GAwir4eh3Qcf5ZR57Qmy26bI6q2nXJrKm8tGqslAyF1Yk"/>
+</div>
+<div>
+<span class="text-[10px] font-bold text-on-tertiary-container uppercase">Minas Gerais</span>
+<h5 class="text-sm font-bold text-primary group-hover:text-on-tertiary-container transition-colors leading-tight mt-1">Circuito gastronômico atrai turistas para o interior</h5>
+<div class="flex gap-2 mt-2">
+<button class="text-[#25D366] hover:opacity-70 transition-opacity"><svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg></button>
+<button class="text-black hover:opacity-70 transition-opacity"><svg class="w-3 h-3 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></button>
+</div>
+</div>
+</div>
+<div class="flex gap-4 items-start group bg-white/50 p-3 rounded-xl hover:bg-white transition-colors cursor-pointer" onclick="window.location.href='ba.html'">
+<div class="w-16 h-16 shrink-0 rounded-lg overflow-hidden shadow-sm">
+<img alt="Bahia" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMQe4g6vSaz_89Gn8B9S-Qewg1tSAm4Hfz168SRXg6KnteWqauZI-pRLWHubsyjkC3WG8eYWszdeaA1rqxPszb5hsgTGWaSGyEFxkyNQtuQ124ULbTuwlWp1rJFvrsj3yNXYDw_Ofg9OFQKB-NdLXmBNbvPc9TPuDtDlvUdJm3TJlcCvH5VrPnAiFMPh9RhIoKJOboZGdOL7XXNu4MXHXBrcHWcIQ9Rm1GQGqmerW06wm2A7K0ZHcbznHUPa-J9hhTHU_i8QBSM0I"/>
+</div>
+<div>
+<span class="text-[10px] font-bold text-on-tertiary-container uppercase">Bahia</span>
+<h5 class="text-sm font-bold text-primary group-hover:text-on-tertiary-container transition-colors leading-tight mt-1">Novas rotas aéreas conectam Salvador ao exterior</h5>
+<div class="flex gap-2 mt-2">
+<button class="text-[#25D366] hover:opacity-70 transition-opacity"><svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg></button>
+<button class="text-black hover:opacity-70 transition-opacity"><svg class="w-3 h-3 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Editorias -->
+<section class="mb-20">
+<div class="flex items-center gap-4 mb-10">
+<h2 class="headline-serif text-3xl font-bold text-primary">Editorias</h2>
+<div class="h-px flex-grow bg-slate-200"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+<!-- Editoria items -->
+<div class="group border-l-4 border-primary pl-6 py-2">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="account_balance">account_balance</span>
+<h3 class="font-bold text-lg text-primary uppercase tracking-wider">Política</h3>
+</div>
+<ul class="space-y-4">
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="politica.html">CPI das Bets inicia convocação de depoimentos</a>
+<p class="text-xs text-on-surface-variant mt-1">Há 2 horas • Política Nacional</p>
+</li>
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="politica.html">Prefeituras buscam novos acordos de saneamento</a>
+<p class="text-xs text-on-surface-variant mt-1">Há 5 horas • Regional</p>
+</li>
+</ul>
+</div>
+<div class="group border-l-4 border-error pl-6 py-2">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-error" data-icon="local_police">local_police</span>
+<h3 class="font-bold text-lg text-primary uppercase tracking-wider">Polícia</h3>
+</div>
+<ul class="space-y-4">
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="policia.html">Operação contra lavagem de dinheiro recupera milhões</a>
+<p class="text-xs text-on-surface-variant mt-1">Há 1 hora • Segurança</p>
+</li>
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="policia.html">Polícia Federal reforça fronteira no Norte do país</a>
+<p class="text-xs text-on-surface-variant mt-1">Há 4 horas • Fronteiras</p>
+</li>
+</ul>
+</div>
+<div class="group border-l-4 border-blue-400 pl-6 py-2">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-blue-400" data-icon="school">school</span>
+<h3 class="font-bold text-lg text-primary uppercase tracking-wider">Educação</h3>
+</div>
+<ul class="space-y-4">
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="educacao.html">ENEM 2024: Guia completo para o segundo dia de prova</a>
+<p class="text-xs text-on-surface-variant mt-1">Há 30 min • Carreira</p>
+</li>
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="educacao.html">Universidades federais anunciam 50 mil novas vagas</a>
+<p class="text-xs text-on-surface-variant mt-1">Há 6 horas • Ensino Superior</p>
+</li>
+</ul>
+</div>
+<div class="group border-l-4 border-green-500 pl-6 py-2">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-green-500" data-icon="medical_services">medical_services</span>
+<h3 class="font-bold text-lg text-primary uppercase tracking-wider">Saúde</h3>
+</div>
+<ul class="space-y-4">
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="saude.html">Avanço tecnológico: Novo tratamento contra o câncer é aprovado</a>
+<p class="text-xs text-on-surface-variant mt-1">Ontem • Ciência</p>
+</li>
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="saude.html">Dengue: Especialistas alertam para prevenção no verão</a>
+<p class="text-xs text-on-surface-variant mt-1">Há 8 horas • Saúde Pública</p>
+</li>
+</ul>
+</div>
+<div class="group border-l-4 border-yellow-500 pl-6 py-2">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-yellow-500" data-icon="sports_soccer">sports_soccer</span>
+<h3 class="font-bold text-lg text-primary uppercase tracking-wider">Futebol</h3>
+</div>
+<ul class="space-y-4">
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="futebol.html">Brasileirão: Disputa pelo título fica acirrada no topo</a>
+<p class="text-xs text-on-surface-variant mt-1">Há 15 min • Esportes</p>
+</li>
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="futebol.html">Seleção Brasileira inicia treinos para as Eliminatórias</a>
+<p class="text-xs text-on-surface-variant mt-1">Há 3 horas • Internacional</p>
+</li>
+</ul>
+</div>
+<div class="group border-l-4 border-on-tertiary-container pl-6 py-2">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="beach_access">beach_access</span>
+<h3 class="font-bold text-lg text-primary uppercase tracking-wider">Turismo</h3>
+</div>
+<ul class="space-y-4">
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="turismo.html">As 10 praias brasileiras mais desejadas para o Réveillon</a>
+<p class="text-xs text-on-surface-variant mt-1">Destaque • Viagens</p>
+</li>
+<li class="group/item">
+<a class="block text-on-surface hover:text-on-tertiary-container transition-colors font-medium" href="turismo.html">Ecoturismo no Pantanal registra crescimento de 25%</a>
+<p class="text-xs text-on-surface-variant mt-1">Há 12 horas • Natureza</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- GOOGLE ADSENSE SLOT -->
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 bg-slate-100 py-12 px-4 md:px-8">
+<div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center lg:items-start gap-2">
+<a class="text-2xl font-serif font-bold text-primary shrink-0 uppercase tracking-tight" href="index.html">Comunica SEM FIO</a>
+<p class="text-slate-500 font-sans text-xs tracking-tight">51.872.360/0001-14 | Reginaldo Osnildo © 2026</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 md:gap-8">
+<a class="text-slate-500 hover:text-primary transition-colors text-[10px] md:text-xs font-sans uppercase tracking-widest" href="sobre.html">Sobre Nós</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-[10px] md:text-xs font-sans uppercase tracking-widest" href="contato.html">Contato</a>
+<a class="text-on-tertiary-container font-medium text-[10px] md:text-xs font-sans uppercase tracking-widest underline decoration-2 underline-offset-4" href="privacidade.html">Privacidade</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-[10px] md:text-xs font-sans uppercase tracking-widest" href="termos.html">Termos de Uso</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-[10px] md:text-xs font-sans uppercase tracking-widest" href="anuncie.html">Anuncie</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center hover:bg-primary hover:text-white transition-all cursor-pointer shadow-sm">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center hover:bg-primary hover:text-white transition-all cursor-pointer shadow-sm">
+<span class="material-symbols-outlined text-sm">rss_feed</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Google Tag Manager (body) -->
+</body></html>
