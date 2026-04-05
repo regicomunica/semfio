@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Educação Final - Comunica SEM FIO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#405f91",
+                    "on-tertiary-container": "#f3673b",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#466270",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#191c1d",
+                    "on-surface": "#191c1d",
+                    "on-primary-fixed-variant": "#264778",
+                    "on-surface-variant": "#43474f",
+                    "on-secondary-fixed": "#001f2a",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-container-high": "#e7e8e9",
+                    "inverse-surface": "#2e3132",
+                    "primary": "#001736",
+                    "tertiary-fixed": "#ffdbd0",
+                    "on-secondary-fixed-variant": "#2e4b57",
+                    "error": "#ba1a1a",
+                    "tertiary": "#330800",
+                    "surface-variant": "#e1e3e4",
+                    "tertiary-container": "#561400",
+                    "background": "#f8f9fa",
+                    "inverse-primary": "#a9c7ff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#7594ca",
+                    "on-primary-fixed": "#001b3d",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#852300",
+                    "surface": "#f8f9fa",
+                    "secondary-fixed-dim": "#adcbda",
+                    "on-error": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "secondary-container": "#c6e4f4",
+                    "primary-fixed": "#d6e3ff",
+                    "outline": "#747780",
+                    "on-secondary-container": "#4a6774",
+                    "surface-dim": "#d9dadb",
+                    "tertiary-fixed-dim": "#ffb59f",
+                    "outline-variant": "#c4c6d0",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#c9e7f7",
+                    "primary-fixed-dim": "#a9c7ff",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#3a0a00",
+                    "primary-container": "#002b5b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-on-tertiary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#001736]/85 backdrop-blur-md dark:bg-slate-950/85 shadow-sm dark:shadow-none h-16 flex justify-between items-center px-6 max-w-full">
+<div class="text-2xl font-black text-white font-['Newsreader'] tracking-tight">Comunica SEM FIO</div>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-['Newsreader'] font-bold tracking-tight text-slate-300 hover:text-white transition-colors" href="index.html">Política</a>
+<a class="font-['Newsreader'] font-bold tracking-tight text-slate-300 hover:text-white transition-colors" href="tecnologia.html">Tecnologia</a>
+<a class="font-['Newsreader'] font-bold tracking-tight text-slate-300 hover:text-white transition-colors" href="saude.html">Saúde</a>
+<a class="font-['Newsreader'] font-bold tracking-tight text-[#f3673b] border-b-2 border-[#f3673b] pb-1" href="educacao.html">Educação</a>
+<a class="font-['Newsreader'] font-bold tracking-tight text-slate-300 hover:text-white transition-colors" href="justica.html">Justiça</a>
+<a class="font-['Newsreader'] font-bold tracking-tight text-slate-300 hover:text-white transition-colors" href="esportes.html">Esportes</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
+<input class="bg-white/10 border-none rounded-full py-1 pl-10 pr-4 text-sm text-white placeholder-slate-400 focus:ring-1 focus:ring-[#f3673b] w-48 transition-all" placeholder="Buscar..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-4 py-1.5 rounded-md text-sm font-medium hover:opacity-90 transition-all active:scale-95 duration-200">Sign In</button>
+</div>
+</nav>
+<div class="flex pt-16 min-h-screen">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col py-4 px-3 h-[calc(100vh-4rem)] w-64 border-r border-slate-200 dark:border-slate-800 bg-[#f8f9fa] dark:bg-slate-950 sticky top-16 overflow-y-auto">
+<div class="mb-6 px-2">
+<h2 class="text-lg font-bold text-[#001736] dark:text-white">Editoriais</h2>
+<p class="text-xs text-slate-500 font-medium">Comunica SEM FIO - Regional</p>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 font-['Public_Sans'] font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">policy</span> Política
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 font-['Public_Sans'] font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">biotech</span> Tecnologia
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 font-['Public_Sans'] font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">construction</span> Infraestrutura
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 font-['Public_Sans'] font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">medical_services</span> Saúde
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-[#f3673b] font-bold bg-[#f3f4f5] dark:bg-slate-900 font-['Public_Sans'] text-sm translate-x-1 duration-150" href="#">
+<span class="material-symbols-outlined text-lg">school</span> Educação
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 font-['Public_Sans'] font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">gavel</span> Justiça
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 font-['Public_Sans'] font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">eco</span> Meio Ambiente
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 font-['Public_Sans'] font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">sports_soccer</span> Esportes
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 font-['Public_Sans'] font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">explore</span> Turismo
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 font-['Public_Sans'] font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">theater_comedy</span> Novelas
+                </a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 w-full bg-surface">
+<!-- Hero Section: Breaking News Education -->
+<section class="relative w-full h-[614px] flex items-end p-8 md:p-16 mb-12">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="wide shot of university students walking through a modern sunlit campus courtyard with clean architecture and lush green spaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhn7wKAw88I-LM-3qSj9kTIa5BOXqXb1VgN_xfG-RWa-oAklRjpVHbZ_8PogkGaFIX97bX9-mmdQBy8ud6lfugCZFVb8frQVRyOWKQhJJ6aX-0bd2qoqOCn0boP0MaQOQLIJoO9H7ZchHDAp607zXeNJjOL8JU-EkWfXgVcmuN7_P_4j06286scl7MQUZKGRwLt5XGBkg6RFBcpmzyqjg_aquF3n8oc4J1R85f0eWUWo1ev3qNRzVIPkJCyhsq8wMDqnYUwbYXU1w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#001736] via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<span class="bg-[#f3673b] text-white text-[0.7rem] uppercase tracking-[0.1rem] px-3 py-1 rounded-full mb-4 inline-block font-bold">Destaque ENEM 2026</span>
+<h1 class="text-white text-5xl md:text-7xl font-bold leading-tight mb-6">O Futuro das Federais: Entre o Teto de Gastos e a Inovação Digital.</h1>
+<p class="text-slate-200 text-lg md:text-xl font-body max-w-2xl mb-8 leading-relaxed">Análise profunda sobre como as principais instituições de ensino do Brasil estão se adaptando aos novos cortes orçamentários e à pressão tecnológica.</p>
+<button class="bg-[#f3673b] hover:bg-[#852300] text-white px-8 py-3 rounded-md font-bold transition-all flex items-center gap-2 group shadow-lg">
+                        Ler Análise Completa 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</section>
+<div class="px-6 md:px-12 lg:px-16 space-y-16 pb-20">
+<!-- Statistics Bento Grid -->
+<section>
+<div class="mb-8 border-l-4 border-[#f3673b] pl-4">
+<h2 class="text-3xl font-bold text-primary">Educação em Números</h2>
+<p class="text-on-surface-variant font-medium">Os indicadores que definem o cenário acadêmico brasileiro este ano.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between shadow-sm border-t-4 border-primary">
+<div>
+<span class="material-symbols-outlined text-[#f3673b] text-4xl mb-4">analytics</span>
+<h3 class="text-5xl font-black text-primary mb-2">3.9M</h3>
+<p class="text-on-surface-variant font-bold uppercase text-xs tracking-widest">Inscritos no ENEM</p>
+</div>
+<p class="mt-6 text-sm text-on-surface-variant leading-relaxed">Crescimento de 12% em relação ao ano anterior, sinalizando recuperação no interesse acadêmico pós-crise.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl text-center flex flex-col items-center justify-center">
+<h3 class="text-4xl font-bold text-[#f3673b] mb-1">82%</h3>
+<p class="text-xs font-bold text-on-surface uppercase tracking-tighter">Taxa de Alfabetização Digital</p>
+</div>
+<div class="bg-primary text-white p-6 rounded-xl flex flex-col items-center justify-center text-center">
+<h3 class="text-4xl font-bold mb-1">R$ 14B</h3>
+<p class="text-xs font-bold uppercase tracking-tighter opacity-80">Investimento em Pesquisa</p>
+</div>
+<div class="md:col-span-4 bg-[#f3f4f5] rounded-xl overflow-hidden flex flex-col md:flex-row shadow-sm">
+<div class="flex-1 p-8">
+<h3 class="text-2xl font-bold mb-4">Concentração de Vagas por Região</h3>
+<p class="mb-6 text-on-surface-variant">Sudeste ainda retém a maioria das vagas em cursos de medicina e engenharia de elite, aponta levantamento exclusivo.</p>
+<div class="space-y-4">
+<div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden"><div class="bg-primary h-full w-[45%]"></div></div>
+<div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden"><div class="bg-[#f3673b] h-full w-[25%]"></div></div>
+</div>
+</div>
+<div class="w-full md:w-1/3 bg-slate-300">
+<img class="w-full h-full object-cover" data-alt="close up of a person working on a tablet with data charts and financial graphics reflecting in their glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOCwPTrmbKc1fvBjEnin2PXx51KZ1--QiX-1eFZTkpjGOqzM6IASDkIq2Qw0FtgrNQWXrixIqlCb_Y5R_vq1i172pFkIHZx9ZhOdADuCXJWlxNRMvMztV92Vgx5Qa6Zp7MMYvzSLiAdxtSERIFCFC-WQh1UDYMVvBewe2KxHqCxPWeLEe0IT0K7FmVUVQ1qPVUNqeAKRbYfAoqr_YyOWEYRJMYoHSMv9Rc9LmJqNcEM7lJH5oSolTKN7WjQopb4eTrL2USXYxx1rk"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Critical Analysis Feed -->
+<section>
+<div class="flex justify-between items-end mb-8">
+<div class="border-l-4 border-[#f3673b] pl-4">
+<h2 class="text-3xl font-bold text-primary">Análises Críticas</h2>
+<p class="text-on-surface-variant font-medium">Opiniões de especialistas e investigações profundas.</p>
+</div>
+<a class="text-sm font-bold text-[#f3673b] hover:underline" href="#">Ver todas as colunas</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Article 1 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="dramatic black and white portrait of an elderly intellectual woman in a library filled with books looking thoughtfully at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJpBm9eo4k1xX87HYFoN4JNH5dk_-4PkcnL2CGwQpIf7s5bleIxn4MpwXTMt-gAuGNr8Ue9KpH3jCBgoCM89SD1oy7zMY2MFxK5D_TnMoUkAN876zGEJ8N3OBi8wtmgD0Whu6LCo9T4vypx_jdDHAlqanxr9yI0Oww2nW4SzxAp77-_PqTGs9xGr3uYUDxJ7bwI7AASqG3nkg5XLf_3jSjpWBG9VVGVxNQ6k9K4f7qKP9d9FK-NkmahtWBSHC0jPlJ0NEE6usuByA"/>
+</div>
+<span class="text-[0.65rem] font-black uppercase text-[#f3673b] tracking-[0.2rem] mb-2 block">Educação Básica</span>
+<h3 class="text-2xl font-bold leading-tight group-hover:text-[#f3673b] transition-colors">A erosão do magistério: por que os jovens não querem mais ser professores no Brasil?</h3>
+<div class="mt-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-slate-300"></div>
+<span class="text-xs font-bold text-on-surface-variant">Por Prof. Dra. Helena Mendes</span>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="wide shot of a futuristic classroom with students wearing virtual reality headsets exploring a digital anatomy model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZYhxuPl_9QVkl-Ui6XZ8VjcLs_ZbA89iAe1nX0kS8Lx37v4jfB_xFd6g8xla1nm5OSmRo8izUvelZFRvbmuloIOiHLQUvq9vmHvedyatoklOUii0-nok6c2d4lfrtXPhHXkiTBBX7IW6aBP1Sgd4G_jPFUAdakIWl9Oc73_j6kiIOBUU2pALldw4H77m4qUEaAT3kr-Xed3RfdP7R6cRfanOir1Q1nFbfAVWVuFtbu-J1XJWTzmy8-_eDRAK5nkkmbpvZtf5bZxs"/>
+</div>
+<span class="text-[0.65rem] font-black uppercase text-[#f3673b] tracking-[0.2rem] mb-2 block">Tecnologia</span>
+<h3 class="text-2xl font-bold leading-tight group-hover:text-[#f3673b] transition-colors">IA na sala de aula: Ferramenta de democratização ou nova barreira social?</h3>
+<div class="mt-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-slate-300"></div>
+<span class="text-xs font-bold text-on-surface-variant">Por Ricardo Falcão, Lab-Inov</span>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="abstract architectural shot of a modern library staircase showing clean lines and minimal wooden textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLIbFnKzDgLEl4CiSQVAyamqAlDtSlP5_Ntpg5nkopoKhSg6D6QbYHSM_lZ3AtioPEJ10wHhHIStp8FAO_rvO8GDVEna7nHxjLITc2yh-q38RCtGHxL0AKQpjDE66QIhr0Z4L7aLKF8AWitENshBVDKAhXv_TgrEQ9aZKmB3xsZbPaUyctaxDAlci1K6BwiGHXeHDsWtvC-lUx3PNYgZtOYmcBKGOMh7LYFP3gGko4nMMT2nLvVDNsqn9CM44LU86J_29N2CCgWPE"/>
+</div>
+<span class="text-[0.65rem] font-black uppercase text-[#f3673b] tracking-[0.2rem] mb-2 block">Ensino Superior</span>
+<h3 class="text-2xl font-bold leading-tight group-hover:text-[#f3673b] transition-colors">O fim do diploma? O mercado de trabalho e a ascensão das micro-certificações.</h3>
+<div class="mt-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-slate-300"></div>
+<span class="text-xs font-bold text-on-surface-variant">Por Equipe Editorial</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Universities Section -->
+<section class="bg-primary text-white p-12 rounded-2xl flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h2 class="text-4xl font-bold mb-4">Guia das Universidades 2026</h2>
+<p class="text-slate-300 text-lg mb-8">Acesse o ranking atualizado das melhores instituições do país, com foco em empregabilidade e produção científica.</p>
+<div class="flex flex-wrap gap-3">
+<button class="bg-white text-primary px-6 py-2 rounded-md font-bold text-sm hover:bg-[#f3673b] hover:text-white transition-all">Públicas (Federais/Estaduais)</button>
+<button class="bg-white/10 text-white border border-white/20 px-6 py-2 rounded-md font-bold text-sm hover:bg-white/20 transition-all">Privadas com FIES/ProUni</button>
+</div>
+</div>
+<div class="w-full md:w-80 grid grid-cols-2 gap-4">
+<div class="bg-white/5 p-4 rounded-lg border border-white/10 text-center">
+<div class="text-2xl font-bold text-[#f3673b]">USP</div>
+<div class="text-[0.6rem] uppercase opacity-60">Líder América Latina</div>
+</div>
+<div class="bg-white/5 p-4 rounded-lg border border-white/10 text-center">
+<div class="text-2xl font-bold text-[#f3673b]">Unicamp</div>
+<div class="text-[0.6rem] uppercase opacity-60">Inovação Patenteada</div>
+</div>
+<div class="bg-white/5 p-4 rounded-lg border border-white/10 text-center">
+<div class="text-2xl font-bold text-[#f3673b]">UFRJ</div>
+<div class="text-[0.6rem] uppercase opacity-60">Pesquisa Médica</div>
+</div>
+<div class="bg-white/5 p-4 rounded-lg border border-white/10 text-center">
+<div class="text-2xl font-bold text-[#f3673b]">UFMG</div>
+<div class="text-[0.6rem] uppercase opacity-60">Ciência Social</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="w-full py-12 mt-auto bg-[#f3f4f5] dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col items-center justify-center gap-6 w-full px-8 text-center">
+<div class="flex flex-wrap justify-center gap-8 mb-4">
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Privacidade</a>
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Termos</a>
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Contato</a>
+<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Sobre</a>
+</div>
+<div class="flex items-center gap-4 text-slate-400">
+<span class="material-symbols-outlined text-xl">social_leaderboard</span>
+<span class="material-symbols-outlined text-xl">camera_outdoor</span>
+<span class="material-symbols-outlined text-xl">alternate_email</span>
+</div>
+<p class="font-['Public_Sans'] text-xs tracking-wide uppercase text-[#001736] dark:text-slate-400">
+                        © Reginaldo Osnildo 2026 | CNPJ: 51.872.360/0001-14
+                    </p>
+</div>
+</footer>
+</main>
+</div>
+<!-- Mobile Bottom NavBar (Visible only on small screens) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-white/90 backdrop-blur-md border-t border-slate-200 z-50 flex items-center justify-around px-2">
+<a class="flex flex-col items-center justify-center text-slate-400" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400" href="politica.html">
+<span class="material-symbols-outlined">policy</span>
+<span class="text-[10px] font-bold">Política</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#f3673b]" href="educacao.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span>
+<span class="text-[10px] font-bold">Educação</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400" href="#">
+<span class="material-symbols-outlined">menu</span>
+<span class="text-[10px] font-bold">Mais</span>
+</a>
+</nav>
+</body></html>
