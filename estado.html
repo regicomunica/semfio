@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comunica SEM FIO | Feed por Estado</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen">
+  <header class="bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 py-5 flex items-center justify-between gap-3">
+      <a href="index.html" class="text-2xl font-black">Comunica SEM FIO</a>
+      <nav class="text-sm flex items-center gap-4">
+        <a href="index.html" class="hover:underline">Início</a>
+        <a href="estados.html" class="hover:underline">Estados</a>
+        <a href="meio-ambiente.html" class="hover:underline">Meio Ambiente</a>
+        <a href="novelas.html" class="hover:underline">Novelas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-6">
+    <section class="bg-white border border-slate-200 rounded-xl p-4">
+      <h1 id="title" class="text-2xl font-extrabold">Carregando estado...</h1>
+      <p id="status" class="text-sm text-slate-600 mt-2">Buscando notícias recentes.</p>
+      <p id="updated" class="text-xs text-slate-500 mt-1"></p>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-xl p-4">
+      <ul id="feed" class="space-y-3"></ul>
+    </section>
+  </main>
+
+  <script>
+    const STATES = {
+      AC: 'Acre', AL: 'Alagoas', AP: 'Amapá', AM: 'Amazonas', BA: 'Bahia', CE: 'Ceará',
+      DF: 'Distrito Federal', ES: 'Espírito Santo', GO: 'Goiás', MA: 'Maranhão', MT: 'Mato Grosso',
+      MS: 'Mato Grosso do Sul', MG: 'Minas Gerais', PA: 'Pará', PB: 'Paraíba', PR: 'Paraná',
+      PE: 'Pernambuco', PI: 'Piauí', RJ: 'Rio de Janeiro', RN: 'Rio Grande do Norte',
+      RS: 'Rio Grande do Sul', RO: 'Rondônia', RR: 'Roraima', SC: 'Santa Catarina',
+      SP: 'São Paulo', SE: 'Sergipe', TO: 'Tocantins'
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const uf = (params.get('uf') || '').toUpperCase();
+    const stateName = STATES[uf];
+
+    const titleEl = document.getElementById('title');
+    const statusEl = document.getElementById('status');
+    const updatedEl = document.getElementById('updated');
+    const feedEl = document.getElementById('feed');
+
+    function escapeHtml(text) {
+      return text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#039;');
+    }
+
+    if (!stateName) {
+      titleEl.textContent = 'Estado inválido';
+      statusEl.textContent = 'Use o botão de Estados para escolher um estado válido.';
+    } else {
+      titleEl.textContent = `Notícias de ${stateName} (${uf})`;
+      load();
+    }
+
+    function buildRssUrl(name, ufCode) {
+      const q = encodeURIComponent(`notícias ${name} ${ufCode} when:1d`);
+      return `https://news.google.com/rss/search?q=${q}&hl=pt-BR&gl=BR&ceid=BR:pt-419`;
+    }
+
+    async function load() {
+      statusEl.textContent = 'Coletando feed...';
+      try {
+        const rssUrl = buildRssUrl(stateName, uf);
+        const proxy = `https://api.allorigins.win/raw?url=${encodeURIComponent(rssUrl)}`;
+        const res = await fetch(proxy, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+        const xmlText = await res.text();
+        const xml = new DOMParser().parseFromString(xmlText, 'text/xml');
+        const items = [...xml.querySelectorAll('item')].slice(0, 20).map((item) => ({
+          title: item.querySelector('title')?.textContent?.trim() || 'Sem título',
+          link: item.querySelector('link')?.textContent?.trim() || '#',
+          source: item.querySelector('source')?.textContent?.trim() || 'Fonte não informada',
+          date: item.querySelector('pubDate')?.textContent?.trim() || '',
+        }));
+
+        if (!items.length) {
+          feedEl.innerHTML = '<li class="text-sm text-slate-500">Nenhuma notícia disponível no momento.</li>';
+        } else {
+          feedEl.innerHTML = items.map((n) => `
+            <li class="border border-slate-200 rounded-lg p-3">
+              <a class="font-semibold hover:underline" href="${n.link}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.title)}</a>
+              <div class="text-xs text-slate-500 mt-1">${escapeHtml(n.source)} • ${new Date(n.date).toLocaleString('pt-BR')}</div>
+            </li>
+          `).join('');
+        }
+
+        statusEl.textContent = `Feed carregado para ${stateName}.`;
+        updatedEl.textContent = `Última atualização: ${new Date().toLocaleString('pt-BR')}`;
+      } catch (error) {
+        statusEl.textContent = 'Falha ao carregar notícias agora. Tente novamente em alguns minutos.';
+        feedEl.innerHTML = `<li class="text-sm text-red-600">Erro técnico: ${escapeHtml(String(error.message || error))}</li>`;
+      }
+    }
+  </script>
+</body>
+</html>

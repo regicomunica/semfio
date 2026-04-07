@@ -1,400 +1,202 @@
 <!DOCTYPE html>
-
-<html class="light" lang="pt-br"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Comunica SEM FIO - Home Page Final</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,700;6..72,900&amp;family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-tint": "#405f91",
-                    "on-tertiary-container": "#f3673b",
-                    "on-tertiary": "#ffffff",
-                    "secondary": "#466270",
-                    "on-secondary": "#ffffff",
-                    "on-background": "#191c1d",
-                    "on-surface": "#191c1d",
-                    "on-primary-fixed-variant": "#264778",
-                    "on-surface-variant": "#43474f",
-                    "on-secondary-fixed": "#001f2a",
-                    "on-primary": "#ffffff",
-                    "surface-container-low": "#f3f4f5",
-                    "surface-container-highest": "#e1e3e4",
-                    "surface-container-high": "#e7e8e9",
-                    "inverse-surface": "#2e3132",
-                    "primary": "#001736",
-                    "tertiary-fixed": "#ffdbd0",
-                    "on-secondary-fixed-variant": "#2e4b57",
-                    "error": "#ba1a1a",
-                    "tertiary": "#330800",
-                    "surface-variant": "#e1e3e4",
-                    "tertiary-container": "#561400",
-                    "background": "#f8f9fa",
-                    "inverse-primary": "#a9c7ff",
-                    "inverse-on-surface": "#f0f1f2",
-                    "surface-container-lowest": "#ffffff",
-                    "on-primary-container": "#7594ca",
-                    "on-primary-fixed": "#001b3d",
-                    "surface-bright": "#f8f9fa",
-                    "on-tertiary-fixed-variant": "#852300",
-                    "surface": "#f8f9fa",
-                    "secondary-fixed-dim": "#adcbda",
-                    "on-error": "#ffffff",
-                    "surface-container": "#edeeef",
-                    "secondary-container": "#c6e4f4",
-                    "primary-fixed": "#d6e3ff",
-                    "outline": "#747780",
-                    "on-secondary-container": "#4a6774",
-                    "surface-dim": "#d9dadb",
-                    "tertiary-fixed-dim": "#ffb59f",
-                    "outline-variant": "#c4c6d0",
-                    "error-container": "#ffdad6",
-                    "secondary-fixed": "#c9e7f7",
-                    "primary-fixed-dim": "#a9c7ff",
-                    "on-error-container": "#93000a",
-                    "on-tertiary-fixed": "#3a0a00",
-                    "primary-container": "#002b5b"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Newsreader"],
-                    "body": ["Public Sans"],
-                    "label": ["Public Sans"]
-            }
-          },
-        },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .editorial-shadow {
-            box-shadow: 0px 8px 24px rgba(25, 28, 29, 0.06);
-        }
-        body {
-            font-family: 'Public Sans', sans-serif;
-            background-color: #f8f9fa;
-            color: #191c1d;
-        }
-        h1, h2, h3, h4 {
-            font-family: 'Newsreader', serif;
-        }
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f3f4f5;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #001736;
-            border-radius: 10px;
-        }
-    </style>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comunica SEM FIO | Agregador de Notícias por Estado</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-surface text-on-background">
-<!-- TopNavBar -->
-<header class="bg-[#001736]/85 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm">
-<div class="flex justify-between items-center px-6 h-16 w-full max-w-full">
-<div class="flex items-center gap-4">
-<span class="text-2xl font-black text-white font-['Newsreader'] tracking-tight">Comunica SEM FIO</span>
-</div>
-<nav class="hidden lg:flex items-center gap-8 font-['Newsreader'] font-bold tracking-tight">
-<a class="text-slate-300 hover:text-white transition-colors" href="politica.html">Política</a>
-<a class="text-slate-300 hover:text-white transition-colors" href="tecnologia.html">Tecnologia</a>
-<a class="text-slate-300 hover:text-white transition-colors" href="saude.html">Saúde</a>
-<a class="text-slate-300 hover:text-white transition-colors" href="educacao.html">Educação</a>
-<a class="text-slate-300 hover:text-white transition-colors" href="justica.html">Justiça</a>
-<a class="text-slate-300 hover:text-white transition-colors" href="esportes.html">Esportes</a>
-</nav>
-<div class="flex items-center gap-4">
-<div class="hidden md:flex bg-white/10 rounded-full px-4 py-1.5 items-center gap-2">
-<span class="material-symbols-outlined text-white text-lg">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-white text-sm placeholder:text-slate-400 w-32 xl:w-48" placeholder="Buscar notícias..." type="text"/>
-</div>
-<button class="bg-primary text-white px-5 py-2 rounded-md font-['Public_Sans'] font-medium text-sm scale-95 duration-200 active:opacity-80 transition-all hover:bg-white/10">
-                    Sign In
-                </button>
-</div>
-</div>
-</header>
-<div class="flex pt-16 min-h-screen">
-<!-- SideNavBar -->
-<aside class="hidden lg:flex flex-col py-4 px-3 h-[calc(100vh-64px)] w-64 border-r border-slate-200 sticky top-16 bg-[#f8f9fa] overflow-y-auto custom-scrollbar">
-<div class="mb-6 px-3">
-<h2 class="text-lg font-bold text-[#001736] font-['Public_Sans']">Editoriais</h2>
-<p class="text-xs text-slate-500 font-['Public_Sans']">Comunica SEM FIO - Regional</p>
-</div>
-<nav class="flex flex-col gap-1">
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-[#f3673b] font-bold bg-[#f3f4f5] translate-x-1 duration-150 font-['Public_Sans'] text-sm" href="index.html">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
-<span>Início</span>
-</a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors font-['Public_Sans'] text-sm" href="politica.html">
-<span class="material-symbols-outlined">policy</span>
-<span>Política</span>
-</a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors font-['Public_Sans'] text-sm" href="tecnologia.html">
-<span class="material-symbols-outlined">biotech</span>
-<span>Tecnologia</span>
-</a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors font-['Public_Sans'] text-sm" href="infraestrutura.html">
-<span class="material-symbols-outlined">construction</span>
-<span>Infraestrutura</span>
-</a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors font-['Public_Sans'] text-sm" href="saude.html">
-<span class="material-symbols-outlined">medical_services</span>
-<span>Saúde</span>
-</a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors font-['Public_Sans'] text-sm" href="educacao.html">
-<span class="material-symbols-outlined">school</span>
-<span>Educação</span>
-</a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors font-['Public_Sans'] text-sm" href="justica.html">
-<span class="material-symbols-outlined">gavel</span>
-<span>Justiça</span>
-</a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors font-['Public_Sans'] text-sm" href="meio-ambiente.html">
-<span class="material-symbols-outlined">eco</span>
-<span>Meio Ambiente</span>
-</a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors font-['Public_Sans'] text-sm" href="esportes.html">
-<span class="material-symbols-outlined">sports_soccer</span>
-<span>Esportes</span>
-</a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors font-['Public_Sans'] text-sm" href="turismo.html">
-<span class="material-symbols-outlined">explore</span>
-<span>Turismo</span>
-</a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors font-['Public_Sans'] text-sm" href="novelas.html">
-<span class="material-symbols-outlined">theater_comedy</span>
-<span>Novelas</span>
-</a>
-</nav>
-</aside>
-<!-- Main Content -->
-<main class="flex-1 px-6 py-8 overflow-hidden">
-<div class="max-w-7xl mx-auto">
-<!-- Breaking Hero Section - Bento Style -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12">
-<div class="md:col-span-8 group relative overflow-hidden rounded-xl h-[500px]">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern urban skyline of Brasilia with the iconic National Congress building under a dramatic sunset with purple and orange sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSzCGoJOlMBRkWtGYqbRInlW-UHnf3r8ih3hbcjq1wTPqjvzTHDEaHACf50DGRmxnxLumV1mrk1KUGo_zuDZWEqzHI6nM94vFWpBmsFk5pWAuzJvar56kLiDXhPzi02CIlaPKarQW2Ts42d5RzhNUPAYOOkEE5qco32cNGAeKf0lINm6AjRFSIshXHpHbOtYmENwzpD5Z8K48nPawoEI3GMzAoCKwU7g4ZSEqoVzZnsqr_qhZkgDXeb8sBJOtDVl5BIjc7ksNQJ90"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
-<div class="absolute bottom-0 p-8">
-<span class="bg-on-tertiary-container text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">Política Nacional</span>
-<h1 class="text-4xl md:text-5xl text-white font-black leading-tight mb-4">Reformas Estruturais: O Futuro da Economia Brasileira em Debate no Congresso</h1>
-<p class="text-slate-200 font-['Public_Sans'] max-w-2xl text-lg">Decisões tomadas hoje em Brasília podem definir o rumo do investimento estrangeiro e do crescimento do PIB para a próxima década.</p>
-</div>
-</div>
-<div class="md:col-span-4 flex flex-col gap-6">
-<div class="bg-surface-container-lowest editorial-shadow rounded-xl p-6 flex flex-col justify-between h-full group">
-<div>
-<span class="text-on-tertiary-container text-xs font-bold uppercase tracking-wider mb-2 block">Tecnologia</span>
-<h3 class="text-2xl font-bold text-primary group-hover:text-on-tertiary-container transition-colors">O avanço do 5G e a inclusão digital no interior do Brasil</h3>
-</div>
-<div class="mt-4 flex items-center justify-between text-slate-500 text-sm">
-<span>Há 2 horas</span>
-<span class="material-symbols-outlined">arrow_forward</span>
-</div>
-</div>
-<div class="bg-primary text-white rounded-xl p-6 flex flex-col justify-between h-full group">
-<div>
-<span class="text-on-tertiary-container text-xs font-bold uppercase tracking-wider mb-2 block">Saúde</span>
-<h3 class="text-2xl font-bold group-hover:underline">Brasil atinge marca histórica em cobertura vacinal regional</h3>
-</div>
-<p class="text-slate-300 text-sm mt-2">Dados do Ministério da Saúde apontam crescimento de 15%...</p>
-</div>
-</div>
-</div>
-<!-- Section: Destaques por Estado -->
-<div class="mb-12">
-<div class="flex items-center justify-between mb-8">
-<h2 class="text-3xl font-black text-primary border-l-4 border-on-tertiary-container pl-4">Destaques Regionais</h2>
-<div class="flex gap-2">
-<button class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center hover:bg-slate-100 transition-colors">
-<span class="material-symbols-outlined">chevron_left</span>
-</button>
-<button class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center hover:bg-slate-100 transition-colors">
-<span class="material-symbols-outlined">chevron_right</span>
-</button>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Card 1: SP -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow group">
-<div class="h-40 overflow-hidden relative">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="High angle view of Paulista Avenue in Sao Paulo at night with vibrant light trails from traffic and illuminated skyscrapers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGYwTD2rCoVdTyx4bwGmDKnv2vU-9yuUyvMmKrxe-IYk0u05bvFk8AyTroNh6LgjErlnmEGIs54YTLXvbdXW_I_g8uTYE7Gy1oG1sT7ReS3wJ6nWw9JuAk97YgIr8KwM6ND-o61H7iH76f7rdwkU-fio1b532mtd7m2QY0zt3LmWKyt6A-QIzLsXY_0nKNE9zSdCeNKkO3vQ4Yym3WRdDPwG4BRvGE7wIWTd_ixR9IyR0-IA1jkSnS-ALxN9PieCaXA88FRetgXVs"/>
-<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-2 py-1 rounded text-[10px] font-bold text-primary">SÃO PAULO</div>
-</div>
-<div class="p-5">
-<h4 class="text-lg font-bold text-primary mb-2 line-clamp-2">Nova linha do Metrô promete aliviar trânsito na Zona Leste</h4>
-<p class="text-slate-600 text-xs font-['Public_Sans'] mb-4 line-clamp-3">Obras começam no próximo mês com investimento bilionário em infraestrutura urbana.</p>
-<a class="text-[#f3673b] font-bold text-xs uppercase tracking-widest flex items-center gap-1 group-hover:underline" href="#">
-                                    Ler mais <span class="material-symbols-outlined text-sm">trending_flat</span>
-</a>
-</div>
-</div>
-<!-- Card 2: RJ -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow group">
-<div class="h-40 overflow-hidden relative">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Scenic view of Christ the Redeemer statue overlooking Guanabara Bay in Rio de Janeiro during a clear sunny day" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-zDtRx4aLdF5W6xntyGbdG4ZJglUDilGb43apY9uA2RDT6kpTYwfCl_lxiaP2tk0UA53cZGqLD5hZYN07Ej1qGGFw_RTfxsjDvtNrkUKPtYK-yn3l1aUe7YwhLQtiM5m7bkX2Sq0XWwd_-oa8Jdd4l4x_oIfygUzS2tQmm0iCk4s0en-y8Os2s2LOTTZObnb5jy9OVZLeoLTDIdl0Goene_gD4E__2d0r5KefFmb7SQbLTiRCiGJVQCS1P96Attbg1vrLY0a11h8"/>
-<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-2 py-1 rounded text-[10px] font-bold text-primary">RIO DE JANEIRO</div>
-</div>
-<div class="p-5">
-<h4 class="text-lg font-bold text-primary mb-2 line-clamp-2">Cultura e Turismo: Eventos internacionais batem recorde de público</h4>
-<p class="text-slate-600 text-xs font-['Public_Sans'] mb-4 line-clamp-3">A capital fluminense se consolida como o principal hub cultural do continente.</p>
-<a class="text-[#f3673b] font-bold text-xs uppercase tracking-widest flex items-center gap-1 group-hover:underline" href="#">
-                                    Ler mais <span class="material-symbols-outlined text-sm">trending_flat</span>
-</a>
-</div>
-</div>
-<!-- Card 3: MG -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow group">
-<div class="h-40 overflow-hidden relative">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Atmospheric view of the historic town of Ouro Preto in Minas Gerais with its colonial baroque churches and mountain backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk_oLlKXVdTNwzfT-xLMRtnNwj57yKPqTkgNJfqX_PCfgk5kZlARQFGkzs5FcpyMVG0FTPJYqaooCSP_KVUgFUShb4cL6fc0XycXrnciDDZTAND9hZq_WL5zr1L4dDB1Zatk5d3zlgnOjpGb8pzvQd5Vxl_kZPstg7PGaOMN5T8DWYs3xi-tuekMkhTSupYUqtLt3ApaAfzg_f01GZsqiKcfqLSzwp-vhYnpfonQ8T8CoHs3hegCRV5SRVYB93zlku52Ilxcb0ApM"/>
-<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-2 py-1 rounded text-[10px] font-bold text-primary">MINAS GERAIS</div>
-</div>
-<div class="p-5">
-<h4 class="text-lg font-bold text-primary mb-2 line-clamp-2">Agronegócio mineiro projeta safra recorde de café especial</h4>
-<p class="text-slate-600 text-xs font-['Public_Sans'] mb-4 line-clamp-3">Pequenos produtores ganham mercado global com foco em sustentabilidade.</p>
-<a class="text-[#f3673b] font-bold text-xs uppercase tracking-widest flex items-center gap-1 group-hover:underline" href="#">
-                                    Ler mais <span class="material-symbols-outlined text-sm">trending_flat</span>
-</a>
-</div>
-</div>
-<!-- Card 4: BA -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow group">
-<div class="h-40 overflow-hidden relative">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Colorful colonial architecture of Pelourinho in Salvador, Bahia with cobblestone streets and bright blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDdwzuZ32QYCcOEutPrg7doRaQUk2KDJ8wP3rTvvsCsRaRv54xXMN87hmqqZhYrAQKlIoWHnKTB7xdBkrJi6WypMfgb3wgZcEWAeCKpV00ptQGx3iJbyVUl5koA4I7IpWhFfG_6IIPhn6dfxD1A9p9Gt0HjwyHaeL1N5gEVq6Ogx5tIUGUaYf4XQlfTa2OOuAsCwPI28Bo_4flnbFEhyJW5h1AU7gohKSOlMaW4Do0ab4MaKJl5w5sPrAvQc2PNdC_yNinwY-nOMU"/>
-<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-2 py-1 rounded text-[10px] font-bold text-primary">BAHIA</div>
-</div>
-<div class="p-5">
-<h4 class="text-lg font-bold text-primary mb-2 line-clamp-2">Energia Eólica: Bahia lidera expansão de matriz limpa</h4>
-<p class="text-slate-600 text-xs font-['Public_Sans'] mb-4 line-clamp-3">Parques no sertão baiano atraem investimentos europeus de larga escala.</p>
-<a class="text-[#f3673b] font-bold text-xs uppercase tracking-widest flex items-center gap-1 group-hover:underline" href="#">
-                                    Ler mais <span class="material-symbols-outlined text-sm">trending_flat</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<!-- Interactive News Grid - Asymmetric Layout -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-10 py-12 border-t border-slate-200">
-<div class="lg:col-span-2">
-<h3 class="text-2xl font-black text-primary mb-8 font-['Newsreader']">Análise &amp; Opinião</h3>
-<div class="space-y-10">
-<article class="flex flex-col md:flex-row gap-6 group">
-<div class="md:w-1/3 aspect-video md:aspect-square overflow-hidden rounded-xl">
-<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Abstract digital visualization of global connectivity and data flowing through space with neon blue and cyan lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWTmV97PQTBpoZFE4GqP5BXqatqe8LkUmT5UOKs9b2DD0Mjyit6POt5E1c6o3AYbu980o6O-f7hLReG-T7-gIStW2QmELzrgELKK53kUdiQMkXk2r4KU2_LrfUe8P3MnBiVMnvILl6iTBPrXeaymHXEXXY5eSQql78-xx4VLI0YzMyu-YxqqKI_B6CgX2Q8MY08bGLY5XiLflFlnWDUetBuzWUTlzbLGM9Os3p5vYAVJfw7piEVg93AoQEfG7muMWxktWGyl-V_v0"/>
-</div>
-<div class="md:w-2/3">
-<div class="flex items-center gap-4 mb-3">
-<span class="text-on-tertiary-container font-bold text-xs">JUSTIÇA</span>
-<span class="text-slate-400 text-xs">Por Editorial Central</span>
-</div>
-<h4 class="text-2xl font-bold text-primary mb-3 group-hover:text-on-tertiary-container transition-colors">Cibersegurança: O novo campo de batalha das instituições democráticas</h4>
-<p class="text-slate-600 leading-relaxed font-['Public_Sans'] mb-4">Como as recentes atualizações no código penal brasileiro tentam acompanhar a velocidade dos crimes digitais em massa...</p>
-<div class="flex items-center gap-2 text-slate-400 text-xs">
-<span class="material-symbols-outlined text-sm">schedule</span>
-<span>Leitura de 8 min</span>
-</div>
-</div>
-</article>
-<article class="flex flex-col md:flex-row gap-6 group">
-<div class="md:w-1/3 aspect-video md:aspect-square overflow-hidden rounded-xl">
-<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Interior of a modern university library with students studying at long wooden tables surrounded by books and soft warm light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVyMvgBICQdw9z036mufT_Kvt6qz5Vnk04HbAS51HW7sqFRNW3SFMQ0PmaxPXqqaaSe7yP4juugL3woM7u06aMFLvSGBVAnYzihMPMTesTeC5iZot9ESTxyU-1DaJ8hxuDiS7OWk9Iy5_489wnz3S9YuuUqf3JRj0Swh7b9A35GpRBLoEIHDDvVclchgJPQPcGgu6hHPrtXPQSRmjjuUCeRE-zl0lir-s9v2pKaBtqvNJIm3X-pZvly02ztFeH73X1eHffYCOwPac"/>
-</div>
-<div class="md:w-2/3">
-<div class="flex items-center gap-4 mb-3">
-<span class="text-on-tertiary-container font-bold text-xs">EDUCAÇÃO</span>
-<span class="text-slate-400 text-xs">Por Ricardo Santos</span>
-</div>
-<h4 class="text-2xl font-bold text-primary mb-3 group-hover:text-on-tertiary-container transition-colors">O impacto da Inteligência Artificial nas salas de aula brasileiras</h4>
-<p class="text-slate-600 leading-relaxed font-['Public_Sans'] mb-4">Especialistas discutem se as ferramentas de IA são aliadas ou ameaças ao desenvolvimento crítico dos estudantes do ensino médio.</p>
-<div class="flex items-center gap-2 text-slate-400 text-xs">
-<span class="material-symbols-outlined text-sm">schedule</span>
-<span>Leitura de 12 min</span>
-</div>
-</div>
-</article>
-</div>
-</div>
-<div class="bg-surface-container-low rounded-2xl p-8 h-fit">
-<h3 class="text-xl font-bold text-primary mb-6 border-b border-slate-300 pb-4">Últimas Notícias</h3>
-<div class="space-y-6">
-<div class="group cursor-pointer">
-<div class="flex justify-between items-start mb-1">
-<span class="text-[10px] text-on-tertiary-container font-black uppercase tracking-widest">Esportes</span>
-<span class="text-[10px] text-slate-400">10:45</span>
-</div>
-<p class="text-primary font-bold group-hover:text-on-tertiary-container transition-colors">Seleção Brasileira convoca novos talentos para eliminatórias</p>
-</div>
-<div class="group cursor-pointer">
-<div class="flex justify-between items-start mb-1">
-<span class="text-[10px] text-on-tertiary-container font-black uppercase tracking-widest">Meio Ambiente</span>
-<span class="text-[10px] text-slate-400">10:12</span>
-</div>
-<p class="text-primary font-bold group-hover:text-on-tertiary-container transition-colors">Fundo Amazônia recebe novos aportes para fiscalização remota</p>
-</div>
-<div class="group cursor-pointer">
-<div class="flex justify-between items-start mb-1">
-<span class="text-[10px] text-on-tertiary-container font-black uppercase tracking-widest">Novelas</span>
-<span class="text-[10px] text-slate-400">09:55</span>
-</div>
-<p class="text-primary font-bold group-hover:text-on-tertiary-container transition-colors">Estreia de superprodução de época lidera audiência no horário nobre</p>
-</div>
-<div class="group cursor-pointer">
-<div class="flex justify-between items-start mb-1">
-<span class="text-[10px] text-on-tertiary-container font-black uppercase tracking-widest">Tecnologia</span>
-<span class="text-[10px] text-slate-400">09:30</span>
-</div>
-<p class="text-primary font-bold group-hover:text-on-tertiary-container transition-colors">Startup brasileira de fintech recebe aporte série C de investidores americanos</p>
-</div>
-</div>
-<button class="w-full mt-8 py-3 border border-primary text-primary font-bold text-xs uppercase tracking-widest rounded-md hover:bg-primary hover:text-white transition-all">
-                            Ver todas as atualizações
-                        </button>
-</div>
-</div>
-</div>
-</main>
-</div>
-<!-- Footer -->
-<footer class="bg-[#f3f4f5] w-full py-8 mt-auto border-t border-slate-200">
-<div class="flex flex-col items-center justify-center gap-4 w-full px-8 text-center">
-<div class="flex flex-wrap justify-center gap-6 mb-2">
-<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Privacidade</a>
-<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Termos</a>
-<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Contato</a>
-<a class="font-['Public_Sans'] text-xs tracking-wide uppercase text-slate-500 hover:text-[#f3673b] transition-colors" href="#">Sobre</a>
-</div>
-<p class="font-['Public_Sans'] text-xs tracking-wide uppercase text-[#001736]">
-                © Reginaldo Osnildo 2026 | CNPJ: 51.872.360/0001-14
-            </p>
-<div class="flex gap-4 opacity-60">
-<span class="material-symbols-outlined cursor-pointer hover:text-on-tertiary-container">share</span>
-<span class="material-symbols-outlined cursor-pointer hover:text-on-tertiary-container">mail</span>
-<span class="material-symbols-outlined cursor-pointer hover:text-on-tertiary-container">rss_feed</span>
-</div>
-</div>
-</footer>
-<!-- FAB for Breaking News Alerts (Contextual) -->
-<button class="fixed bottom-6 right-6 w-14 h-14 bg-[#f3673b] text-white rounded-full flex items-center justify-center editorial-shadow hover:scale-110 active:scale-95 transition-all z-40 group">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
-<span class="absolute right-full mr-3 bg-primary text-white text-[10px] font-bold py-1 px-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Alertas Urgentes</span>
-</button>
-</body></html>
+<body class="bg-slate-50 text-slate-900 min-h-screen">
+  <header class="bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-6">
+      <h1 class="text-3xl font-black tracking-tight">Comunica SEM FIO</h1>
+      <p class="text-slate-300 mt-2">Curadoria em tempo real de notícias dos 26 estados + DF, com atualização diária contínua.</p>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-6 space-y-8">
+    <section class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h2 class="text-lg font-bold">Painel de atualização</h2>
+          <p id="lastUpdate" class="text-sm text-slate-600">Última atualização: ainda não carregado.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <label for="autoRefresh" class="text-sm font-medium">Atualização automática (15 min)</label>
+          <input id="autoRefresh" type="checkbox" class="rounded border-slate-300" checked />
+          <button id="refreshBtn" class="px-4 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-700">Atualizar agora</button>
+        </div>
+      </div>
+      <p id="status" class="mt-3 text-sm text-slate-600">Iniciando coleta...</p>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+      <h2 class="text-xl font-extrabold mb-4">Destaques nacionais agregados</h2>
+      <div id="headlineFeed" class="space-y-3"></div>
+    </section>
+
+    <section class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-4">
+        <h2 class="text-xl font-extrabold">Feed por estado</h2>
+        <input id="stateFilter" type="text" placeholder="Filtrar estado..." class="w-full md:w-72 rounded-lg border-slate-300" />
+      </div>
+      <div id="statesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </section>
+  </main>
+
+  <script>
+    const BRAZILIAN_STATES = [
+      { uf: 'AC', name: 'Acre' }, { uf: 'AL', name: 'Alagoas' }, { uf: 'AP', name: 'Amapá' },
+      { uf: 'AM', name: 'Amazonas' }, { uf: 'BA', name: 'Bahia' }, { uf: 'CE', name: 'Ceará' },
+      { uf: 'DF', name: 'Distrito Federal' }, { uf: 'ES', name: 'Espírito Santo' }, { uf: 'GO', name: 'Goiás' },
+      { uf: 'MA', name: 'Maranhão' }, { uf: 'MT', name: 'Mato Grosso' }, { uf: 'MS', name: 'Mato Grosso do Sul' },
+      { uf: 'MG', name: 'Minas Gerais' }, { uf: 'PA', name: 'Pará' }, { uf: 'PB', name: 'Paraíba' },
+      { uf: 'PR', name: 'Paraná' }, { uf: 'PE', name: 'Pernambuco' }, { uf: 'PI', name: 'Piauí' },
+      { uf: 'RJ', name: 'Rio de Janeiro' }, { uf: 'RN', name: 'Rio Grande do Norte' }, { uf: 'RS', name: 'Rio Grande do Sul' },
+      { uf: 'RO', name: 'Rondônia' }, { uf: 'RR', name: 'Roraima' }, { uf: 'SC', name: 'Santa Catarina' },
+      { uf: 'SP', name: 'São Paulo' }, { uf: 'SE', name: 'Sergipe' }, { uf: 'TO', name: 'Tocantins' },
+    ];
+
+    const REFRESH_MS = 15 * 60 * 1000;
+    let refreshTimer = null;
+    let stateNewsCache = [];
+
+    const statusEl = document.getElementById('status');
+    const lastUpdateEl = document.getElementById('lastUpdate');
+    const statesGrid = document.getElementById('statesGrid');
+    const headlineFeed = document.getElementById('headlineFeed');
+    const stateFilter = document.getElementById('stateFilter');
+
+    function formatDate(dateStr) {
+      if (!dateStr) return 'Sem data';
+      const dt = new Date(dateStr);
+      if (Number.isNaN(dt.getTime())) return 'Sem data';
+      return dt.toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' });
+    }
+
+    function escapeHtml(text) {
+      return text
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+    }
+
+    function buildRssUrl(stateName, uf) {
+      const query = encodeURIComponent(`notícias ${stateName} ${uf} when:1d`);
+      return `https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-419`;
+    }
+
+    async function fetchStateNews(state) {
+      const rssUrl = buildRssUrl(state.name, state.uf);
+      const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(rssUrl)}`;
+
+      const response = await fetch(proxyUrl, { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const xmlText = await response.text();
+      const xml = new DOMParser().parseFromString(xmlText, 'text/xml');
+      const parserError = xml.querySelector('parsererror');
+      if (parserError) {
+        throw new Error('Falha ao interpretar RSS');
+      }
+
+      const items = [...xml.querySelectorAll('item')].slice(0, 3).map((item) => ({
+        title: item.querySelector('title')?.textContent?.trim() || 'Sem título',
+        link: item.querySelector('link')?.textContent?.trim() || '#',
+        pubDate: item.querySelector('pubDate')?.textContent?.trim() || '',
+        source: item.querySelector('source')?.textContent?.trim() || 'Fonte não informada',
+      }));
+
+      return { ...state, items };
+    }
+
+    function renderHeadlines(data) {
+      const merged = data
+        .flatMap((stateData) => stateData.items.map((item) => ({ ...item, state: stateData.name, uf: stateData.uf })))
+        .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+        .slice(0, 10);
+
+      if (!merged.length) {
+        headlineFeed.innerHTML = '<p class="text-sm text-slate-500">Sem destaques no momento.</p>';
+        return;
+      }
+
+      headlineFeed.innerHTML = merged.map((item) => `
+        <article class="border border-slate-200 rounded-lg p-3 hover:bg-slate-50">
+          <div class="text-xs text-slate-500 mb-1">${escapeHtml(item.state)} (${escapeHtml(item.uf)}) • ${escapeHtml(item.source)} • ${escapeHtml(formatDate(item.pubDate))}</div>
+          <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="font-semibold hover:underline">${escapeHtml(item.title)}</a>
+        </article>
+      `).join('');
+    }
+
+    function renderStates(data) {
+      const filter = stateFilter.value.trim().toLowerCase();
+      const filtered = data.filter((stateData) => {
+        const key = `${stateData.name} ${stateData.uf}`.toLowerCase();
+        return key.includes(filter);
+      });
+
+      if (!filtered.length) {
+        statesGrid.innerHTML = '<p class="text-sm text-slate-500">Nenhum estado encontrado para o filtro informado.</p>';
+        return;
+      }
+
+      statesGrid.innerHTML = filtered.map((stateData) => {
+        const list = stateData.items.length
+          ? stateData.items.map((item) => `
+            <li class="text-sm">
+              <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="hover:underline">${escapeHtml(item.title)}</a>
+              <div class="text-xs text-slate-500">${escapeHtml(item.source)} • ${escapeHtml(formatDate(item.pubDate))}</div>
+            </li>
+          `).join('')
+          : '<li class="text-sm text-slate-500">Sem notícias recentes para este estado.</li>';
+
+        return `
+          <article class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+            <h3 class="text-lg font-bold">${escapeHtml(stateData.name)} <span class="text-slate-500">(${escapeHtml(stateData.uf)})</span></h3>
+            <ul class="mt-3 space-y-3">${list}</ul>
+          </article>
+        `;
+      }).join('');
+    }
+
+    async function loadNews() {
+      statusEl.textContent = 'Coletando notícias por estado...';
+      const tasks = BRAZILIAN_STATES.map((state) => fetchStateNews(state));
+      const results = await Promise.allSettled(tasks);
+
+      const success = results.filter((r) => r.status === 'fulfilled').map((r) => r.value);
+      const failed = results.filter((r) => r.status === 'rejected').length;
+
+      stateNewsCache = success;
+      renderHeadlines(stateNewsCache);
+      renderStates(stateNewsCache);
+
+      const updatedAt = new Date();
+      lastUpdateEl.textContent = `Última atualização: ${updatedAt.toLocaleString('pt-BR', { dateStyle: 'full', timeStyle: 'medium' })}`;
+      statusEl.textContent = failed
+        ? `Atualizado com ${success.length} estados e ${failed} falhas de coleta (fonte indisponível ou bloqueio temporário).`
+        : `Atualizado com sucesso para ${success.length} estados.`;
+    }
+
+    function restartAutoRefresh() {
+      if (refreshTimer) clearInterval(refreshTimer);
+      const enabled = document.getElementById('autoRefresh').checked;
+      if (enabled) {
+        refreshTimer = setInterval(loadNews, REFRESH_MS);
+      }
+    }
+
+    document.getElementById('refreshBtn').addEventListener('click', loadNews);
+    document.getElementById('autoRefresh').addEventListener('change', restartAutoRefresh);
+    stateFilter.addEventListener('input', () => renderStates(stateNewsCache));
+
+    loadNews();
+    restartAutoRefresh();
+  </script>
+</body>
+</html>
